@@ -1,0 +1,71 @@
+== 内核版本串 (vermagic 基准) ==
+Linux version 5.15.178-android13-8-g362d545d31a5 (build-user@build-host) (Android (8508608, based on r450784e) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6), LLD 14.0.7) #1 SMP PREEMPT Sun Dec 01 08:10:00 UTC 2024
+
+== 已加载模块 (含 vermagic 相关) ==
+kiwi_v2 12378112 0 - Live 0x0000000000000000 (OE)
+msm_drm 3407872 37 - Live 0x0000000000000000 (OE)
+qdss_bridge 32768 0 - Live 0x0000000000000000 (E)
+ipa_clientsm 274432 0 - Live 0x0000000000000000 (OE)
+coresight_tmc 98304 0 - Live 0x0000000000000000 (E)
+ipanetm 16384 0 - Live 0x0000000000000000 (OE)
+usb_f_qdss 36864 8 qdss_bridge,coresight_tmc, Live 0x0000000000000000 (E)
+usb_f_gsi 110592 8 - Live 0x0000000000000000 (E)
+rndisipam 73728 1 ipa_clientsm, Live 0x0000000000000000 (OE)
+millet_binder 28672 0 [permanent], Live 0x0000000000000000 (E)
+nxp_nci 49152 1 - Live 0x0000000000000000 (OE)
+swr_dmic_dlkm 28672 0 - Live 0x0000000000000000 (OE)
+cnss2 499712 1 kiwi_v2, Live 0x0000000000000000 (OE)
+stm_nfc_i2c 40960 0 - Live 0x0000000000000000 (OE)
+camera 6635520 29 - Live 0x0000000000000000 (OE)
+msm_video 696320 0 - Live 0x0000000000000000 (OE)
+machine_dlkm 122880 0 - Live 0x0000000000000000 (OE)
+goodix_core 368640 0 - Live 0x0000000000000000 (OE)
+coresight_hwevent 16384 0 - Live 0x0000000000000000 (E)
+bt_fm_slim 32768 1 - Live 0x0000000000000000 (OE)
+coresight_tpda 24576 0 - Live 0x0000000000000000 (E)
+ipam 4292608 23 ipa_clientsm,ipanetm,rndisipam, Live 0x0000000000000000 (OE)
+msm_kgsl 1957888 55 - Live 0x0000000000000000 (OE)
+msm_eva 454656 0 - Live 0x0000000000000000 (OE)
+cameralog 24576 0 - Live 0x0000000000000000 (OE)
+rmnet_sch 20480 0 - Live 0x0000000000000000 (OE)
+wcd938x_dlkm 225280 3 swr_dmic_dlkm,machine_dlkm, Live 0x0000000000000000 (OE)
+lpass_cdc_rx_macro_dlkm 155648 1 machine_dlkm, Live 0x0000000000000000 (OE)
+hardwareinfo 16384 0 - Live 0x0000000000000000 (OE)
+rmnet_perf 16384 0 - Live 0x0000000000000000 (OE)
+rmnet_offload 32768 0 - Live 0x0000000000000000 (OE)
+lpass_cdc_va_macro_dlkm 86016 0 - Live 0x0000000000000000 (OE)
+rmnet_perf_tether 20480 0 - Live 0x0000000000000000 (OE)
+lpass_cdc_wsa_macro_dlkm 147456 0 - Live 0x0000000000000000 (OE)
+sync_fence 28672 1 msm_drm, Live 0x0000000000000000 (OE)
+rmnet_shs 221184 0 - Live 0x0000000000000000 (OE)
+msm_hw_fence 143360 1 msm_drm, Live 0x0000000000000000 (OE)
+mbhc_dlkm 90112 1 wcd938x_dlkm, Live 0x0000000000000000 (OE)
+lpass_cdc_wsa2_macro_dlkm 143360 0 - Live 0x0000000000000000 (OE)
+swr_ctrl_dlkm 86016 4 lpass_cdc_rx_macro_dlkm,lpass_cdc_va_macro_dlkm,lpass_cdc_wsa_macro_dlkm,lpass_cdc_wsa2_macro_dlkm, Live 0x0000000000000000 (OE)
+... 总行数: 406
+
+== 模块目录与 vermagic ==
+--- /vendor/lib/modules ---
+lrw-r--r-- 1 root root 24 2009-01-01 08:00 /vendor/lib/modules -> /vendor_dlkm/lib/modules
+--- /system/lib/modules ---
+lrw-r--r-- 1 root root 24 2009-01-01 08:00 /system/lib/modules -> /system_dlkm/lib/modules
+
+== 抽取若干厂商模块的 vermagic / __versions CRC ==
+--- /vendor/lib/modules/adsp_loader_dlkm.ko ---
+vermagic=5.15.78 SMP preempt mod_unload modversions aarch64
+__UNIQUE_ID_vermagic290
+--- /vendor/lib/modules/adsp_sleepmon.ko ---
+vermagic=5.15.78 SMP preempt mod_unload modversions aarch64
+__UNIQUE_ID_vermagic290
+--- /vendor/lib/modules/altmode-glink.ko ---
+vermagic=5.15.78 SMP preempt mod_unload modversions aarch64
+__UNIQUE_ID_vermagic290
+
+== kallsyms 导出符号抽样 (KMI 相关) ==
+not exported: ksu_is_safe_mode
+not exported: susfs_enable
+0000000000000000 T sched_setaffinity
+0000000000000000 T __traceiter_sched_switch
+0000000000000000 T register_kprobe
+0000000000000000 T kallsyms_lookup_name
+not exported: task_struct

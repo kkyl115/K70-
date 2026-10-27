@@ -1,0 +1,101 @@
+== su 路径 ==
+MISS /debug_ramdisk/su
+MISS /sbin/su
+-rwxr-xr-x 1 root shell ?  302200 2009-01-01 08:00 /system/bin/su
+MISS /system/xbin/su
+MISS /data/adb/ksu/bin/su
+lrwxrwxrwx 1 root root u:object_r:adb_data_file:s0  14 2026-09-06 08:52 /data/adb/ksu/bin/ksud -> /data/adb/ksud
+MISS /data/adb/magisk/su
+MISS /data/adb/ap/bin/su
+
+== /data/adb 内容 ==
+total 4936
+drwx------ 17 root   root   u:object_r:adb_data_file:s0             3452 2026-10-27 20:35 .
+drwxrwx--x 61 system system u:object_r:system_data_root_file:s0     4096 2026-10-27 20:22 ..
+drwxr-xr-x  2 root   root   u:object_r:adb_data_file:s0             3452 2026-10-27 04:52 VerifiedBootHash
+drwxrwxrwx  2 root   root   u:object_r:adb_data_file:s0             3452 2026-10-27 19:26 XiaoCaiYe
+drwxr-xr-x  4 root   root   u:object_r:adb_data_file:s0             3452 2026-10-03 05:09 YH
+drwx------  2 root   root   u:object_r:adb_data_file:s0             3452 2026-09-07 06:16 aperf
+drwxrwxrwx  2 root   root   u:object_r:adb_data_file:s0             3452 2026-09-07 05:02 aperf_game_state
+drwx------  5 root   root   u:object_r:adb_data_file:s0             3452 2026-10-18 19:49 k70_balance_lab
+drwx------  5 root   root   u:object_r:adb_data_file:s0             3452 2026-10-18 20:02 k70_balance_lab_g2
+drwxrwxrwx  2 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 08:37 kpm
+drwx------  9 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 08:09 ksu
+-rwxr-xr-x  1 root   root   u:object_r:ksu_file:s0               4990848 2026-10-27 20:35 ksud
+lrwxrwxrwx  1 root   root   u:object_r:adb_data_file:s0               30 2026-09-08 02:58 metamodule -> /data/adb/modules/hybrid_mount
+drwxr-xr-x  2 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 20:33 modules
+drwx------  2 root   root   u:object_r:system_file:s0               3452 1970-02-19 17:04 modules_update
+drwxr-xr-x  2 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 20:33 post-fs-data.d
+drwxr-xr-x  2 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 20:33 service.d
+drwxr-xr-x  2 root   root   u:object_r:adb_data_file:s0             3452 2026-10-27 05:25 susfs4ksu
+drwxr-xr-x  4 root   root   u:object_r:adb_data_file:s0             3452 1970-01-01 20:33 tricky_store
+
+== ksu 目录 ==
+/data/adb/ksu:
+total 205059
+drwx------  9 root root      3452 1970-01-01 08:09 .
+drwx------ 17 root root      3452 2026-10-27 20:35 ..
+-rw-r--r--  1 root root      7064 2026-10-27 22:24 .allowlist
+-rw-------  1 root root      3280 2026-10-27 03:13 .dynamic_managers
+-rw-------  1 root root       108 1970-01-01 08:34 .feature_config
+-rw-------  1 root root       305 2026-10-27 04:42 .susfs.json
+-rw-rw-rw-  1 root root        17 1970-01-01 21:26 .umount
+drwx------  2 root root      3452 2026-10-27 20:35 bin
+-rw-------  1 root root 201326592 2026-10-27 05:27 ksu_backup_3d3a6218fe62b307209c6ba1e65dfeaad77408ce
+-rw-------  1 root root   8388608 2026-09-06 08:52 ksu_backup_6555eec9acdb0ed224aeaad4e998d16b5ec73dc1
+drwx------  2 root root      3452 2026-10-27 20:35 lib
+drwx------  2 root root      3452 2026-10-27 20:21 log
+drwxrwxrwx  4 root root      3452 2026-10-27 05:30 module_configs
+-rw-rw-rw-  1 root root         0 1970-01-01 08:09 preinit_status
+drwx------  3 root root      3452 2026-10-27 04:55 profile
+-rw-------  1 root root         0 2026-10-27 05:30 sulogd.lock
+-rw-r--r--  1 root root        69 2026-10-27 19:43 susfs_config
+drwx------  2 root root      3452 2026-10-27 19:57 temporary-root
+drwx------  2 root root      3452 2026-10-27 06:45 verified_modules
+
+/data/adb/ksu/bin:
+total 2826
+drwx------ 2 root root    3452 2026-10-27 20:35 .
+drwx------ 9 root root    3452 1970-01-01 08:09 ..
+-rwxr-xr-x 1 root root  154248 2026-10-27 20:35 bootctl
+-rwxr-xr-x 1 root root 1710600 2026-10-27 20:35 busybox
+lrwxrwxrwx 1 root root      14 2026-09-06 08:52 ksud -> /data/adb/ksud
+-rwxr-xr-x 1 root root  769600 2026-10-27 19:27 magiskboot
+-rwxr-xr-x 1 root root  246592 2026-10-27 05:43 mkbootfs
+lrwxrwxrwx 1 root root      14 2026-10-27 20:35 resetprop -> /data/adb/ksud
+
+/data/adb/ksu/lib:
+total 18
+drwx------ 2 root root 3452 2026-10-27 20:35 .
+drwx------ 9 root root 3452 1970-01-01 08:09 ..
+-rwxr-xr-x 1 root root 9800 2026-10-27 20:35 libadbroot.so
+
+/data/adb/ksu/log:
+total 48422
+drwx------ 2 root root     3452 2026-10-27 20:21 .
+drwx------ 9 root root     3452 1970-01-01 08:09 ..
+-rw-rw-rw- 1 root root  1554021 2026-10-27 20:22 dmesg.log
+-rw-rw-rw- 1 root root  1316663 2026-10-27 19:57 dmesg.old.log
+-rw-rw-rw- 1 root root 20365471 2026-10-27 20:22 logcat.log
+-rw-rw-rw- 1 root root 25107050 2026-10-27 19:57 logcat.old.log
+-rw-rw-rw- 1 root root      344 1970-01-01 20:28 modules_info
+-rw-rw-rw- 1 root root      344 1970-01-01 19:39 modules_info.old
+-rw------- 1 root root  1127783 2026-10-27 22:25 sulog-2026-10-27.log
+-rw-r----- 1 root root    21924 2026-10-27 19:28 sulog.log
+-rw-rw-rw- 1 root root       94 1970-01-01 20:28 znctx
+-rw-rw-rw- 1 root root       94 1970-01-01 19:39 znctx.old
+
+/data/adb/ksu/module_configs:
+total 12
+drwxrwxrwx 4 root root 3452 2026-10-27 05:30 .
+drwx------ 9 root root 3452 1970-01-01 08:09 ..
+drwxrwxrwx 2 root root 3452 1970-01-12 17:42 hybrid_mount
+drwx------ 2 root root 3452 2026-10-27 05:30 internal.ksud.sulogd
+
+== 已加载模块 (kernelsu) ==
+总模块数: 406
+
+== /sys/module ==
+8021q 8250 adsp_loader_dlkm adsp_sleepmon altmode_glink arm_smmu asix audio_pkt_dlkm audio_prm_dlkm audpkt_ion_dlkm aw882xx_dlkm bam_dma bcl_pmic5 bcl_soc binder binder_alloc binder_gki binder_prio blk_cgroup blk_crypto block block2mtd bluetooth boot_stats bootinfo brd bridge bt_fm_slim btbcm btpower btqca btsdio bwmon c1dcvs_scmi c1dcvs_vendor camcc_kalama camera cameralog can can_gw cdc_ncm cdsp_loader cdsprm cec cfg80211 charger_ulog_glink chipreg cifs clk_dummy clk_qcom clk_rpmh cmd_db cnss2 cnss_nl cnss_plat_ipc_qmi_svc cnss_prealloc cnss_utils configfs core_hang_detect coresight coresight_csr coresight_cti coresight_dummy coresight_funnel coresight_hwevent coresight_remote_etm coresight_replicator coresight_stm coresight_tgu coresight_tmc coresight_tpda coresight_tpdm cpq cpu_hotplug cpu_voltage_cooling cpufreq cpufreq_stats_scmi cpufreq_stats_vendor cpuidle cqhci crypto_qti_common crypto_qti_hwkm cryptomgr cs35l41_dlkm cs35l43_dlkm damon_reclaim dcc_v2 dcvs_fp ddr_cdev debug_ext debug_kinfo debug_regulator debug_symbol debugcc_kalama dispcc_kalama dm_bufio dm_mod dm_snapshot dm_user dm_verity dmesg_dumper dns_resolver drm drm_kms_helper dump_display dwc3_msm dynamic_debug edac_core efi_pstore ehci_hcd ehset eud f2fs f_fs_ipc_log firmware_class fpc1555 frpc_adsprpc fsa4480_i2c fscrypto fuse gcc_kalama gdsc_regulator gh_arm_drv gh_ctrl gh_dbl gh_irq_lend gh_mem_notifier gh_msgq gh_rm_drv gh_tlmm_vm_mem_access gh_virt_wdt glink_pkt glink_probe goodix_core goodix_fod gpr_dlkm gpucc_kalama gsim gspca_main gunyah hardwareinfo hci_uart hdcp_qseecom_dlkm hdmi_dlkm heap_mem_ext_v01 hid hid_apple hid_logitech_hidpp hid_magicmouse hid_prodikeys hid_steam hid_wiimote hid_xbox_haptics_mi hidp hisi_rng hung_task_enh hvc_dcc hvc_gunyah hwid hwkm i2c_algo_bit i2c_msm_geni i3c_master_msm_geni icc_bcm_voter icc_debug icc_rpmh icc_test industrialio_buffer_cb iommu_logger ip6_gre ip6_tunnel ip_gre ip_set ipa_clientsm ipa_fmwk ipam ipanetm ipip ipv6 ir_kbd_i2c ir_spi kernel kfence kiwi_v2 kunit kvm l2tp_core l2tp_ppp leds_qti_flash leds_qti_tri_led libnvdimm llcc_qcom loop low_free_memory_kill lpass_cdc_dlkm lpass_cdc_rx_macro_dlkm lpass_cdc_tx_macro_dlkm lpass_cdc_va_macro_dlkm lpass_cdc_wsa2_macro_dlkm lpass_cdc_wsa_macro_dlkm lt9611uxc mac80211 machine_dlkm max31760_fan mbhc_dlkm mdt_loader mem_buf mem_buf_dev mem_buf_msgq mem_hooks mem_offline memlat memlat_scmi memlat_vendor memory_dump_v2 memory_hotplug metis mhi mhi_cntrl_qcom mhi_dev_dtr mhi_dev_netdev mhi_dev_satellite mhi_dev_uci mi_cnss_statistic mi_exception_log mi_freqwdg mi_log mi_memory mi_mempool mi_power mi_schedule mi_thermal_interface microdump_collector miev migt miicmpfilter millet_binder millet_core millet_hs millet_oem_cgroup millet_pkg millet_sig minet minidump miwill mmcblk module mpbe msm_dma_iommu_mapping msm_drm msm_eva msm_ext_display msm_geni_serial msm_gpi msm_hw_fence msm_kgsl msm_lmh_dcvs msm_memshare msm_mmrm msm_performance msm_qmp msm_sharedmem msm_show_epoch msm_show_resume_irq msm_sysstats msm_video mtd mtd_blkdevs mtdblock mtdoops nb7vpq904m nf_conntrack nf_conntrack_amanda nf_conntrack_ftp nf_conntrack_h323 nf_conntrack_irc nf_conntrack_netbios_ns nf_conntrack_sane nf_conntrack_tftp nfc ns nvme nvme_core nvmem_qcom_spmi_sdam nvmem_qfprom nxp_nci ofpart overlay page_alloc page_reporting panel_event_notifier pci_msm_drv pcie_aspm pdr_interface perf_helper perfmgr phy_generic phy_msm_m31_eusb2 phy_msm_snps_eusb2 phy_msm_ssusb_qmp phy_qcom_emu phy_qcom_ufs phy_qcom_ufs_qmp_v4 phy_qcom_ufs_qmp_v4_kalama phy_qcom_ufs_qmp_v4_khaje phy_qcom_ufs_qmp_v4_kona phy_qcom_ufs_qmp_v4_lahaina phy_qcom_ufs_qmp_v4_waipio phy_qcom_ufs_qrbtc_sdm845 pinctrl_crow pinctrl_kalama pinctrl_lpi_dlkm pinctrl_msm pinctrl_spmi_gpio pinctrl_spmi_mpp pm8941_pwrkey pmic_glink pmic_pon_log pmu_scmi pmu_vendor policy_engine ppp_mppe printk proxy_consumer pstore pwm_qti_lpg q6_dlkm q6_notifier_dlkm q6_pdr_dlkm qbt_handler qce50_dlkm qcedev_mod_dlkm qcom_aoss qcom_cpu_vendor_hooks qcom_cpufreq_hw qcom_cpufreq_hw_debug qcom_cpuss_sleep_stats qcom_dcvs qcom_dload_mode qcom_dma_heaps qcom_edac qcom_esoc qcom_geni_serial qcom_glink qcom_glink_smem qcom_hv_haptics qcom_hwspinlock qcom_iommu_debug qcom_iommu_util qcom_ipc_lite qcom_ipc_logging qcom_ipcc qcom_llcc_pmu qcom_logbuf_vh qcom_lpm qcom_pdc qcom_pil_info qcom_pmu_lib qcom_pon qcom_q6v5 qcom_q6v5_pas qcom_ramdump qcom_reboot_reason qcom_rimps qcom_rpmh qcom_scm qcom_smd qcom_spmi_adc5_gen3 qcom_spmi_pmic qcom_spmi_temp_alarm qcom_sysmon qcom_tsens qcom_va_minidump qcom_vadc_common qcom_wdt_core qcrypto_msm_dlkm qdss_bridge qmi_helpers qnoc_crow qnoc_kalama qnoc_qos qrng_dlkm qrtr qrtr_gunyah qrtr_mhi qrtr_smd qsee_ipc_irq_bridge qseecom_proxy qti_battery_charger qti_battery_debug qti_cpufreq_cdev qti_devfreq_cdev qti_fixed_regulator qti_ocp_notifier qti_qmi_cdev qti_qmi_sensor_v2 qti_regmap_debugfs qti_userspace_cdev r8152 radio_i2c_rtc6226_qca ramoops random rcupdate rcutree rdbg reboot_mode redriver regmap_spmi repeater repeater_i2c_eusb2 repeater_qti_pmic_eusb2 rfcomm rfkill rimps_log rmnet_aps rmnet_core rmnet_ctl rmnet_offload rmnet_perf rmnet_perf_tether rmnet_sch rmnet_shs rmnet_wlan rndisipam rng_core rpmh_regulator rproc_qcom_common rq_stats rtc_pm8xxx sch_htb sched_walt scsi_mod sdhci sdhci_msm sdpm_clk secure_buffer sg sit sla slab_common slim_qcom_ngd_ctrl slimbus smcinvoke_dlkm smem smp2p smp2p_sleepstate snd snd_event_dlkm snd_pcm snd_soc_core snd_soc_hdmi_codec snd_timer snd_usb_audio snd_usb_audio_qmi soc_sleep_stats socinfo spf_core_dlkm spi_msm_geni spmi_glink_debug spmi_pmic_arb spmi_pmic_arb_debug sps_drv spurious srcutree stm_console stm_core stm_ftrace stm_nfc_i2c stm_p_basic stm_p_ost stm_st54se_gpio stub_dlkm stub_regulator subsystem_sleep_stats swinfo swr_ctrl_dlkm swr_dlkm swr_dmic_dlkm swr_haptics_dlkm sync_fence synx_driver sys_pm_vx sysmon_subsystem_stats sysrq tcp_bbr3 tcp_bic tcp_cubic tcp_htcp tcsrcc_kalama thermal_minidump thermal_pause tipc tmecom_intf ttm tz_log_dlkm ucsi_glink ufs_qcom ufshcd_core ufshcd_crypto_qti ufshcd_pci ufshcd_pltfrm usb_bam usb_f_ccid usb_f_cdev usb_f_diag usb_f_gsi usb_f_qdss usb_f_uvc usb_storage usbcore usbhid usbmon uvcvideo v4l2_mem2mem vhost vhost_iotlb videobuf2_common videobuf2_dma_sg videobuf2_v4l2 videocc_kalama vmw_vsock_virtio_transport_common vsock wacom watchdog wcd938x_dlkm wcd938x_slave_dlkm wcd9xxx_dlkm wcd_core_dlkm wireguard wl2866d wl2868c wlan_firmware_service workqueue wsa883x_dlkm wsa884x_dlkm xhci_hcd xiaomi_touch xiaomi_wifi_gpio xlogchar xm_power xpad xt_quota2 xt_recent xz_dec zram zsmalloc 
+ls: /sys/module/*ksu*: No such file or directory
+/sys/module/kernel

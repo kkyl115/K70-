@@ -1,0 +1,37 @@
+== swaps ==
+Filename				Type		Size		Used		Priority
+/dev/block/zram0                        partition	16777212	6820268		-2
+
+== zram0 ==
+  disksize                 17179869184
+  comp_algorithm           lzo [lzo-rle] lz4 zstd 
+cat: /sys/block/zram0/mem_limit: Permission denied
+  mem_limit                
+  backing_dev              /dev/block/dm-51
+cat: /sys/block/zram0/writeback: Permission denied
+  writeback                
+  max_comp_streams         8
+
+== MGLRU ==
+enabled=0x0000
+0
+
+== PSI ==
+--- /proc/pressure/cpu ---
+some avg10=13.03 avg60=11.37 avg300=14.34 total=1131011793
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+--- /proc/pressure/io ---
+some avg10=0.00 avg60=0.02 avg300=0.01 total=30998861
+full avg10=0.00 avg60=0.00 avg300=0.00 total=15895186
+--- /proc/pressure/memory ---
+some avg10=0.00 avg60=0.04 avg300=0.10 total=22002787
+full avg10=0.00 avg60=0.00 avg300=0.04 total=15780130
+
+== uclamp (0/3/7) ==
+
+== sched 调参接口 ==
+  /proc/sys/kernel/sched_util_clamp_min                1024
+  /proc/sys/kernel/sched_util_clamp_max                1024
+
+== WALT 接口 ==
+ls: /sys/kernel/walt: No such file or directory
