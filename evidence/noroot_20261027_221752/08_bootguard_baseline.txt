@@ -1,0 +1,25 @@
+备份目录存在: /storage/emulated/0/Download/BootGuard/A_backup_20261027_124239
+total 328152
+-rw-rw----. 1 u0_a252 media_rw        77 Oct 27 12:42 COMPLETE.txt
+-rw-rw----. 1 u0_a252 media_rw       425 Oct 27 12:42 README.txt
+-rw-rw----. 1 u0_a252 media_rw       399 Oct 27 12:42 SHA256SUMS
+-rw-rw----. 1 u0_a252 media_rw 201326592 Oct 27 12:42 boot_a.img
+-rw-rw----. 1 u0_a252 media_rw  25165824 Oct 27 12:42 dtbo_a.img
+-rw-rw----. 1 u0_a252 media_rw   8388608 Oct 27 12:42 init_boot_a.img
+-rw-rw----. 1 u0_a252 media_rw    131072 Oct 27 12:42 vbmeta_a.img
+-rw-rw----. 1 u0_a252 media_rw 100663296 Oct 27 12:42 vendor_boot_a.img
+
+== 实测 SHA-256 ==
+5b030bc2a740166fa9c34daa851f5174199067332675abe200245fe11473a95e  boot_a.img
+aac33c81251f8789a32eb4330067b86bc5853b58c1101ca9a7699041178232df  dtbo_a.img
+e70351d22243ce995bec0fc755dc8e2c63cb161f0dcb16bd11366f6937ca9e7a  init_boot_a.img
+403175daae8c10b1e2c2ec40f83980480edafd2c9a84a9cc28f9170ce7cbe1a9  vbmeta_a.img
+45320eae7815fa043f0e4034cd4ae33cf423ed8d546a7815ff439c7a7b86a040  vendor_boot_a.img
+
+== 与任务书基线比对 ==
+PASS boot_a.img
+PASS init_boot_a.img
+PASS vendor_boot_a.img
+PASS dtbo_a.img
+PASS vbmeta_a.img
+RESULT=ALL_PASS

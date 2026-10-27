@@ -1,0 +1,36 @@
+== 关键属性 ==
+ro.product.model                 = 23113RKC6C
+ro.product.device                = vermeer
+ro.product.name                  = vermeer
+ro.build.version.release         = 16
+ro.build.version.sdk             = 36
+ro.build.display.id              = BP2A.250605.031.A3
+ro.build.fingerprint             = Redmi/vermeer/vermeer:16/BP2A.250605.031.A3/OS3.0.302.0.WNKCNXM:user/release-keys
+ro.build.date                    = Fri Apr  3 18:50:24 CST 2026
+ro.boot.slot_suffix              = _a
+ro.boot.verifiedbootstate        = orange
+ro.boot.flash.locked             = 0
+ro.boot.vbmeta.device_state      = 
+ro.boot.veritymode               = 
+ro.boot.hardware                 = qcom
+ro.boot.bootloader               = 
+ro.boot.hwc                      = CN
+ro.board.platform                = kalama
+ro.soc.model                     = SM8550
+ro.product.cpu.abi               = arm64-v8a
+ro.config.low_ram                = 
+ro.crypto.state                  = encrypted
+ro.build.type                    = user
+ro.build.tags                    = release-keys
+ro.kernel.version                = 5.15
+ro.zygote                        = zygote64_32
+persist.sys.timezone             = Asia/Shanghai
+
+== uname ==
+Linux localhost 5.15.178-android13-8-g362d545d31a5 #1 SMP PREEMPT Sun Dec 01 08:10:00 UTC 2024 aarch64 Android
+
+== /proc/version ==
+cat: /proc/version: Permission denied
+
+== 电池/温度 (可能不可读) ==
+scripts/collect_evidence_noroot.sh: line 48: dumpsys: command not found

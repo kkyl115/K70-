@@ -1,0 +1,128 @@
+== thermal zones ==
+thermal_zone0                            type=pa                     temp=43958
+thermal_zone1                            type=pa1                    temp=27000
+thermal_zone10                           type=mmw3                   temp=27000
+thermal_zone100                          type=pmic_therm             temp=35692
+thermal_zone101                          type=vbat                   temp=3737
+thermal_zone102                          type=battery                temp=30700
+thermal_zone103                          type=usb                    temp=31000
+thermal_zone104                          type=wireless               temp=34000
+thermal_zone11                           type=mmw_pa1                temp=27000
+thermal_zone12                           type=mmw_pa2                temp=27000
+thermal_zone13                           type=mmw_pa3                temp=27000
+thermal_zone14                           type=mmw_ific0              temp=27000
+thermal_zone15                           type=epm0                   temp=-273000
+thermal_zone16                           type=epm1                   temp=-273000
+thermal_zone17                           type=epm2                   temp=-273000
+thermal_zone18                           type=epm3                   temp=-273000
+thermal_zone19                           type=epm4                   temp=-273000
+thermal_zone2                            type=bcl_warn               temp=-273000
+thermal_zone20                           type=epm5                   temp=-273000
+thermal_zone21                           type=epm6                   temp=-273000
+thermal_zone22                           type=epm7                   temp=-273000
+thermal_zone23                           type=sdr_mmw_therm          temp=27000
+thermal_zone24                           type=sub1_modem_cfg         temp=-273000
+thermal_zone25                           type=sub1_lte_cc            temp=-273000
+thermal_zone26                           type=sub1_mcg_fr1_cc        temp=-273000
+thermal_zone27                           type=sub1_mcg_fr2_cc        temp=-273000
+thermal_zone28                           type=sub1_scg_fr1_cc        temp=-273000
+thermal_zone29                           type=sub1_scg_fr2_cc        temp=-273000
+thermal_zone3                            type=sdr0_pa                temp=27000
+thermal_zone30                           type=aoss-0                 temp=37600
+thermal_zone31                           type=cpuss-0                temp=41700
+thermal_zone32                           type=cpuss-1                temp=40500
+thermal_zone33                           type=cpuss-2                temp=41700
+thermal_zone34                           type=cpuss-3                temp=41700
+thermal_zone35                           type=cpu-1-0                temp=44100
+thermal_zone36                           type=cpu-1-1                temp=39700
+thermal_zone37                           type=cpu-1-2                temp=44500
+thermal_zone38                           type=cpu-1-3                temp=47400
+thermal_zone39                           type=cpu-1-4                temp=43700
+thermal_zone4                            type=sdr0                   temp=27000
+thermal_zone40                           type=cpu-1-5                temp=42100
+thermal_zone41                           type=cpu-1-6                temp=41700
+thermal_zone42                           type=cpu-1-7                temp=42500
+thermal_zone43                           type=cpu-1-8                temp=40900
+thermal_zone44                           type=cpu-1-9                temp=39700
+thermal_zone45                           type=cpu-1-10               temp=40500
+thermal_zone46                           type=aoss-1                 temp=39000
+thermal_zone47                           type=cpu-0-0                temp=45700
+thermal_zone48                           type=cpu-0-1                temp=43800
+thermal_zone49                           type=cpu-0-2                temp=46900
+thermal_zone5                            type=sdr1_pa                temp=27000
+thermal_zone50                           type=nspss-0                temp=39000
+thermal_zone51                           type=nspss-1                temp=39000
+thermal_zone52                           type=nspss-2                temp=38200
+thermal_zone53                           type=nspss-3                temp=38200
+thermal_zone54                           type=video                  temp=42200
+thermal_zone55                           type=ddr                    temp=40600
+thermal_zone56                           type=mdmss-0                temp=38600
+thermal_zone57                           type=mdmss-1                temp=37800
+thermal_zone58                           type=mdmss-2                temp=37800
+thermal_zone59                           type=mdmss-3                temp=38200
+thermal_zone6                            type=sdr1                   temp=27000
+thermal_zone60                           type=camera-0               temp=37800
+thermal_zone61                           type=camera-1               temp=38200
+thermal_zone62                           type=aoss-2                 temp=37200
+thermal_zone63                           type=gpuss-0                temp=36000
+thermal_zone64                           type=gpuss-1                temp=36000
+thermal_zone65                           type=gpuss-2                temp=35600
+thermal_zone66                           type=gpuss-3                temp=35600
+thermal_zone67                           type=gpuss-4                temp=37200
+thermal_zone68                           type=gpuss-5                temp=36800
+thermal_zone69                           type=gpuss-6                temp=36400
+thermal_zone7                            type=mmw0                   temp=27000
+thermal_zone70                           type=gpuss-7                temp=36400
+thermal_zone71                           type=pm8550_tz              temp=36903
+thermal_zone72                           type=pm8550-bcl-lvl0        temp=0
+thermal_zone73                           type=pm8550-bcl-lvl1        temp=0
+thermal_zone74                           type=pm8550-bcl-lvl2        temp=0
+thermal_zone75                           type=pm8550b_tz             temp=32623
+thermal_zone76                           type=pm8550b_lite_tz        temp=49997
+thermal_zone77                           type=pm8550b-ibat-lvl0      temp=562
+thermal_zone78                           type=pm8550b-ibat-lvl1      temp=562
+thermal_zone79                           type=pm8550b-bcl-lvl0       temp=0
+thermal_zone8                            type=mmw1                   temp=27000
+thermal_zone80                           type=pm8550b-bcl-lvl1       temp=0
+thermal_zone81                           type=pm8550b-bcl-lvl2       temp=0
+thermal_zone82                           type=socd                   temp=
+thermal_zone83                           type=pm8550ve_f_tz          temp=34361
+thermal_zone84                           type=pm8550vs_c_tz          temp=36836
+thermal_zone85                           type=pm8550vs_d_tz          temp=34595
+thermal_zone86                           type=pm8550vs_e_tz          temp=34963
+thermal_zone87                           type=pm8550vs_g_tz          temp=34896
+thermal_zone88                           type=pmr735d_k_tz           temp=37000
+thermal_zone89                           type=pmr735d_l_tz           temp=
+thermal_zone9                            type=mmw2                   temp=27000
+thermal_zone90                           type=pm8010m_tz             temp=
+thermal_zone91                           type=pm8010n_tz             temp=
+thermal_zone92                           type=xo-therm               temp=34147
+thermal_zone93                           type=quiet_therm            temp=33780
+thermal_zone94                           type=flash_therm            temp=33943
+thermal_zone95                           type=cpu_therm              temp=36858
+thermal_zone96                           type=pa_therm0              temp=36046
+thermal_zone97                           type=pa_therm1              temp=36010
+thermal_zone98                           type=charger_therm0         temp=35801
+thermal_zone99                           type=wifi_therm             temp=35512
+
+== cooling devices (前20) ==
+cooling_device0              type=cpufreq-cpu0             cur=0 max=15
+cooling_device1              type=cpufreq-cpu3             cur=0 max=19
+cooling_device10             type=thermal-pause-10         cur=0 max=1
+cooling_device11             type=thermal-pause-F8         cur=0 max=1
+cooling_device12             type=thermal-pause-8          cur=0 max=1
+cooling_device13             type=pause-cpu5               cur=0 max=1
+cooling_device14             type=thermal-pause-20         cur=0 max=1
+cooling_device15             type=pause-cpu7               cur=0 max=1
+cooling_device16             type=thermal-pause-80         cur=0 max=1
+cooling_device17             type=pause-cpu6               cur=0 max=1
+cooling_device18             type=thermal-pause-C0         cur=0 max=1
+cooling_device19             type=thermal-pause-40         cur=0 max=1
+cooling_device2              type=cpufreq-cpu7             cur=0 max=20
+cooling_device20             type=cpu-hotplug1             cur=0 max=1
+cooling_device21             type=cpu-hotplug2             cur=0 max=1
+cooling_device22             type=cpu-hotplug3             cur=0 max=1
+cooling_device23             type=cpu-hotplug4             cur=0 max=1
+cooling_device24             type=cpu-hotplug5             cur=0 max=1
+cooling_device25             type=cpu-hotplug6             cur=0 max=1
+cooling_device26             type=cpu-hotplug7             cur=0 max=1

@@ -1,0 +1,14 @@
+采集时间: 2026-10-27T22:17:52+08:00
+工具版本: collect_evidence_noroot.sh v1.0
+root 使用: 无 (全部为 app 权限可读)
+采集完成: 2026-10-27T22:17:57+08:00
+输出文件:
+  00_meta.txt                       186
+  01_device.txt                    1493
+  02_cpu_topology.txt              3864
+  03_memory.txt                    1484
+  04_thermal.txt                   9855
+  05_storage.txt                   5116
+  06_security.txt                   605
+  07_root_facts.txt                 676
+  08_bootguard_baseline.txt        1196

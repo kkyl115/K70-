@@ -1,0 +1,25 @@
+== su 候选路径 ==
+MISS  /debug_ramdisk/su
+MISS  /sbin/su
+MISS  /system/sbin/su
+MISS  /system/bin/su
+MISS  /system/xbin/su
+MISS  /su/bin/su
+MISS  /data/adb/ksu/bin/su
+MISS  /data/adb/magisk/su
+
+== PATH 里的 su ==
+/data/data/com.termux/files/usr/bin/su
+(termux-tools 的占位脚本不算真 su)
+
+== 需要 root 的接口是否可读 ==
+拒读   /proc/config.gz
+拒读   /proc/modules
+拒读   /proc/cmdline
+拒读   /proc/kallsyms
+拒读   /data/adb
+
+== 内核模块目录 ==
+ls: cannot open directory '/sys/module': Permission denied 
+ls: cannot access '/sys/module/*ksu*': No such file or directory
+ls: cannot access '/sys/module/*kernelsu*': No such file or directory

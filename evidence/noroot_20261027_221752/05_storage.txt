@@ -1,0 +1,52 @@
+== /proc/partitions ==
+cat: /proc/partitions: Permission denied
+
+== /sys/block 队列调度器 ==
+
+== mount (关键) ==
+/dev/block/dm-2 / erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/by-name/metadata /metadata f2fs rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,alloc_mode=reuse,checkpoint_merge,fsync_mode=posix,discard_unit=block,memory=normal 0 0
+/dev/block/dm-5 /vendor erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-48 /data f2fs rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,gc_merge,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,reserve_node=0,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,atgc,discard_unit=block,memory=normal 0 0
+
+== 分区挂载 ro/rw 概览 ==
+/dev/block/dm-2 / ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround
+tmpfs /dev rw,seclabel,nosuid,relatime,size=7757792k,nr_inodes=1939448,mode=755
+devpts /dev/pts rw,seclabel,relatime,mode=600,ptmxmode=000
+none /dev/blkio rw,nosuid,nodev,noexec,relatime,blkio
+none /dev/cpuctl rw,nosuid,nodev,noexec,relatime,cpu
+none /dev/cpuset rw,nosuid,nodev,noexec,relatime,cpuset,noprefix,cpuset_v2_mode
+none /dev/memcg rw,nosuid,nodev,noexec,relatime,memory
+binder /dev/binderfs rw,relatime,max=1048576,stats=global
+/dev/block/bootdevice/by-name/logfs /dev/logfs rw,noatime,uid=1000,gid=1000,fmask=0006,dmask=0006,allow_utime=0020,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+adb /dev/usb-ffs/adb rw,relatime
+diag /dev/ffs-diag rw,relatime
+diag_mdm /dev/ffs-diag-1 rw,relatime
+diag_mdm2 /dev/ffs-diag-2 rw,relatime
+mtp /dev/usb-ffs/mtp rw,relatime
+ptp /dev/usb-ffs/ptp rw,relatime
+proc /proc rw,relatime,gid=3009,hidepid=invisible
+sysfs /sys rw,seclabel,relatime
+selinuxfs /sys/fs/selinux rw,relatime
+none /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime,memory_recursiveprot
+tracefs /sys/kernel/tracing rw,seclabel,relatime,gid=3012
+none /sys/fs/fuse/connections rw,relatime
+bpf /sys/fs/bpf rw,nosuid,nodev,noexec,relatime
+pstore /sys/fs/pstore rw,seclabel,nosuid,nodev,noexec,relatime
+tmpfs /mnt rw,seclabel,nosuid,nodev,noexec,relatime,size=7757792k,nr_inodes=1939448,mode=755,gid=1000
+/dev/block/dm-7 /mnt/vendor/mi_ext ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround
+tmpfs /mnt/installer rw,seclabel,nosuid,nodev,noexec,relatime,size=7757792k,nr_inodes=1939448,mode=755,gid=1000
+/dev/fuse /mnt/installer/0/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+/dev/fuse /mnt/installer/999/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+tmpfs /mnt/androidwritable rw,seclabel,nosuid,nodev,noexec,relatime,size=7757792k,nr_inodes=1939448,mode=755,gid=1000
+/dev/fuse /mnt/androidwritable/0/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+/dev/fuse /mnt/androidwritable/999/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+tmpfs /mnt/vm rw,seclabel,nosuid,nodev,noexec,relatime,size=7757792k,nr_inodes=1939448
+/dev/block/sdf7 /mnt/vendor/persist rw,seclabel,nosuid,nodev,noatime
+/dev/block/sde25 /mnt/vendor/qmcs rw,context=u:object_r:vendor_qmcs_file:s0,nosuid,nodev,noatime,fmask=0000,dmask=0000,allow_utime=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+/dev/block/bootdevice/by-name/rescue /mnt/rescue rw,seclabel,noatime
+/dev/fuse /mnt/user/0/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+/dev/block/dm-48 /mnt/pass_through/0/emulated rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,gc_merge,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,reserve_node=0,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,atgc,discard_unit=block,memory=normal
+/dev/block/dm-48 /mnt/pass_through/0/emulated/0/Android/data/com.xiaomi.market/files/.siexternal rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,gc_merge,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,reserve_node=0,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,atgc,discard_unit=block,memory=normal
+/dev/fuse /mnt/user/999/emulated rw,lazytime,nosuid,nodev,noexec,noatime,user_id=0,group_id=0,allow_other
+/dev/block/dm-48 /mnt/pass_through/999/emulated rw,lazytime,seclabel,nosuid,nodev,noatime,background_gc=on,gc_merge,discard,no_heap,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,reserve_node=0,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,atgc,discard_unit=block,memory=normal

@@ -1,0 +1,18 @@
+== boot state ==
+ro.boot.verifiedbootstate          = orange
+ro.boot.flash.locked               = 0
+ro.boot.vbmeta.device_state        = 
+ro.boot.veritymode                 = 
+ro.boot.warranty_bit               = 
+ro.boot.secureboot                 = 1
+
+== 内核锁定 ==
+cat: /sys/kernel/security/lockdown: No such file or directory
+
+== SELinux ==
+
+
+cat: /sys/fs/selinux/enforce: Permission denied
+
+== 当前身份 ==
+uid=10369(u0_a369) gid=10369(u0_a369) groups=10369(u0_a369),3003(inet),9997(everybody),20369(u0_a369_cache),50369(all_a369),99909997 context=u:r:untrusted_app_27:s0:c113,c257,c512,c768

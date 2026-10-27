@@ -1,0 +1,53 @@
+== meminfo ==
+MemTotal:       15559616 kB
+MemFree:          210776 kB
+MemAvailable:    4714008 kB
+Buffers:            1916 kB
+Cached:          3909852 kB
+SwapCached:       537056 kB
+Active:          2805968 kB
+Inactive:        5326380 kB
+Active(anon):    1287184 kB
+Inactive(anon):  3067500 kB
+Active(file):    1518784 kB
+Inactive(file):  2258880 kB
+Unevictable:      110412 kB
+Mlocked:          109008 kB
+SwapTotal:      16777212 kB
+SwapFree:       10601808 kB
+Dirty:              1304 kB
+Writeback:             0 kB
+AnonPages:       4303836 kB
+Mapped:          2172952 kB
+Shmem:             42416 kB
+KReclaimable:    1046608 kB
+Slab:            1014920 kB
+SReclaimable:     332688 kB
+SUnreclaim:       682232 kB
+KernelStack:      190800 kB
+ShadowCallStack:   47760 kB
+PageTables:       337840 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+
+== MGLRU ==
+不存在 /sys/kernel/mm/lru_gen/enabled  → 该内核未启用 MGLRU
+
+== PSI ==
+/proc/pressure/cpu 不可读/不存在
+/proc/pressure/io 不可读/不存在
+/proc/pressure/memory 不可读/不存在
+
+== ZRAM ==
+cat: /proc/swaps: Permission denied
+
+== zram 可用压缩算法 ==
+
+== LMKD 现状 ==
+[init.svc.lmkd]: [running]
+[init.svc.swap-installd]: [stopped]
+[persist.device_config.aconfig_flags.lmkd_native.thrashing_limit_critical]: []
+[persist.lm.em.flush_zram_usedrate]: [30]
+[persist.sys.mmms.lowmem.wmark.boost.factor]: [1]
+[persist.sys.stability.swapEnable]: [false]
+[persist.sys.swapservice.ctrl]: [false]

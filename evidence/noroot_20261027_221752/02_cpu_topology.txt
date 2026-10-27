@@ -1,0 +1,129 @@
+== online / possible ==
+online:   0-7
+possible: 0-7
+present:  0-7
+
+== cpu0 ==
+  physical_package_id    0
+  core_id                0
+  core_cpus_list         0
+  thread_siblings_list   0
+  cpu_capacity           280
+  cpufreq_policy         policy0
+    cpuinfo_max_freq     2016000
+    cpuinfo_min_freq     307200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu1 ==
+  physical_package_id    0
+  core_id                1
+  core_cpus_list         1
+  thread_siblings_list   1
+  cpu_capacity           280
+  cpufreq_policy         policy0
+    cpuinfo_max_freq     2016000
+    cpuinfo_min_freq     307200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu2 ==
+  physical_package_id    0
+  core_id                2
+  core_cpus_list         2
+  thread_siblings_list   2
+  cpu_capacity           280
+  cpufreq_policy         policy0
+    cpuinfo_max_freq     2016000
+    cpuinfo_min_freq     307200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu3 ==
+  physical_package_id    1
+  core_id                0
+  core_cpus_list         3
+  thread_siblings_list   3
+  cpu_capacity           855
+  cpufreq_policy         policy3
+    cpuinfo_max_freq     2803200
+    cpuinfo_min_freq     499200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu4 ==
+  physical_package_id    1
+  core_id                1
+  core_cpus_list         4
+  thread_siblings_list   4
+  cpu_capacity           855
+  cpufreq_policy         policy3
+    cpuinfo_max_freq     2803200
+    cpuinfo_min_freq     499200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu5 ==
+  physical_package_id    1
+  core_id                2
+  core_cpus_list         5
+  thread_siblings_list   5
+  cpu_capacity           855
+  cpufreq_policy         policy3
+    cpuinfo_max_freq     2803200
+    cpuinfo_min_freq     499200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu6 ==
+  physical_package_id    1
+  core_id                3
+  core_cpus_list         6
+  thread_siblings_list   6
+  cpu_capacity           855
+  cpufreq_policy         policy3
+    cpuinfo_max_freq     2803200
+    cpuinfo_min_freq     499200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+== cpu7 ==
+  physical_package_id    2
+  core_id                0
+  core_cpus_list         7
+  thread_siblings_list   7
+  cpu_capacity           1024
+  cpufreq_policy         policy7
+    cpuinfo_max_freq     3187200
+    cpuinfo_min_freq     595200
+    scaling_governor     walt
+    scaling_available_gov walt conservative powersave performance schedutil 
+
+== 所有 cpufreq policy ==
+--- policy0 ---
+related_cpus     : 0 1 2
+affected_cpus    : 0 1 2
+max_freq         : 2016000
+min_freq         : 307200
+governor         : walt
+available_gov    : walt conservative powersave performance schedutil 
+available_freq_n : 16
+cur_freq         : 1017600
+--- policy3 ---
+related_cpus     : 3 4 5 6
+affected_cpus    : 3 4 5 6
+max_freq         : 2803200
+min_freq         : 499200
+governor         : walt
+available_gov    : walt conservative powersave performance schedutil 
+available_freq_n : 19
+cur_freq         : 2323200
+--- policy7 ---
+related_cpus     : 7
+affected_cpus    : 7
+max_freq         : 3187200
+min_freq         : 595200
+governor         : walt
+available_gov    : walt conservative powersave performance schedutil 
+available_freq_n : 20
+cur_freq         : 864000
+
+== uclamp (内核 5.15 若启用) ==
+
+== sched 特性开关 ==
+
+== 是否 WALT (高通专属) ==
+ls: cannot access '/sys/kernel/walt': No such file or directory
