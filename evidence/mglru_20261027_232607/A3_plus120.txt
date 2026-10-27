@@ -1,0 +1,65 @@
+===== A3_plus120 @ 2026-10-27 23:28:08 =====
+-- lru_gen/enabled --
+0x0003
+-- lru_gen/min_ttl_ms --
+0
+-- PSI --
+[cpu]
+some avg10=17.69 avg60=19.16 avg300=17.17 total=1836468969
+full avg10=0.00 avg60=0.00 avg300=0.00 total=0
+[io]
+some avg10=0.10 avg60=0.45 avg300=0.23 total=38850601
+full avg10=0.03 avg60=0.11 avg300=0.03 total=19718684
+[memory]
+some avg10=0.18 avg60=0.83 avg300=0.38 total=30871150
+full avg10=0.05 avg60=0.60 avg300=0.26 total=21726103
+-- meminfo --
+MemTotal:       15559616 kB
+MemFree:          656648 kB
+MemAvailable:    5572340 kB
+Buffers:            5044 kB
+Cached:          4319464 kB
+Active(anon):    1329732 kB
+Inactive(anon):  1182032 kB
+Active(file):    1670376 kB
+Inactive(file):  2508300 kB
+Unevictable:      122372 kB
+Mlocked:          120968 kB
+SwapTotal:      16777212 kB
+SwapFree:        8608592 kB
+AnonPages:       2449912 kB
+KReclaimable:    1058056 kB
+-- vmstat --
+nr_free_pages 164043
+nr_inactive_anon 295506
+nr_active_anon 332485
+nr_inactive_file 627077
+nr_active_file 417594
+workingset_refault_anon 1840060
+workingset_refault_file 6965060
+workingset_activate_anon 953979
+workingset_activate_file 2617093
+pgmajfault 1064989
+pgrefill 8881347
+pgreuse 4389000
+pgsteal_kswapd 18825408
+pgsteal_direct 2282381
+pgdemote_kswapd 0
+pgdemote_direct 0
+pgscan_kswapd 26579297
+pgscan_direct 4053323
+pgscan_direct_throttle 0
+pgscan_anon 10613491
+pgscan_file 20019129
+pgsteal_anon 3500815
+pgsteal_file 17606974
+thp_fault_alloc 0
+thp_fault_fallback 0
+thp_fault_fallback_charge 0
+-- zram mm_stat --
+8363438080 2747231356 2887270400        0 2949935104    81852   145052    82114   157192  1298779        0        0
+-- loadavg --
+3.82 3.40 4.12 5/12198 21426
+-- uptime --
+ 23:28:08 up  3:06,  0 users,  load average: 3.81, 3.39, 4.11
+

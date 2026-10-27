@@ -1,0 +1,98 @@
+== 输出目录: /sdcard/Download/vermeer-ultimate-kernel/evidence/kmi_20261027_232516 ==
+
+===== 1 UTS_RELEASE（内核侧基准）=====
+5.15.178-android13-8-g362d545d31a5
+--- /proc/version ---
+Linux version 5.15.178-android13-8-g362d545d31a5 (build-user@build-host) (Android (8508608, based on r450784e) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6), LLD 14.0.7) #1 SMP PREEMPT Sun Dec 01 08:10:00 UTC 2024
+--- /sys/kernel/osrelease ---
+cat: /sys/kernel/osrelease: No such file or directory
+--- /sys/kernel/version ---
+cat: /sys/kernel/version: No such file or directory
+
+===== 2 模块加载策略相关 config =====
+CONFIG_LOCALVERSION=""
+CONFIG_LOCALVERSION_AUTO=y
+CONFIG_MODULES_USE_ELF_RELA=y
+CONFIG_MODULE_SIG_FORMAT=y
+CONFIG_MODULES=y
+# CONFIG_MODULE_FORCE_LOAD is not set
+CONFIG_MODULE_UNLOAD=y
+# CONFIG_MODULE_FORCE_UNLOAD is not set
+CONFIG_MODVERSIONS=y
+CONFIG_MODULE_SIG=y
+# CONFIG_MODULE_SIG_FORCE is not set
+CONFIG_MODULE_SIG_PROTECT=y
+CONFIG_MODULE_SIG_ALL=y
+CONFIG_MODULE_SIG_SHA1=y
+# CONFIG_MODULE_SIG_SHA224 is not set
+# CONFIG_MODULE_SIG_SHA256 is not set
+# CONFIG_MODULE_SIG_SHA384 is not set
+# CONFIG_MODULE_SIG_SHA512 is not set
+CONFIG_MODULE_SIG_HASH="sha1"
+CONFIG_MODULE_COMPRESS_NONE=y
+# CONFIG_MODULE_COMPRESS_GZIP is not set
+# CONFIG_MODULE_COMPRESS_XZ is not set
+# CONFIG_MODULE_COMPRESS_ZSTD is not set
+CONFIG_MODULES_TREE_LOOKUP=y
+CONFIG_STAGING=y
+# CONFIG_STAGING_MEDIA is not set
+# CONFIG_STAGING_BOARD is not set
+CONFIG_MODULE_SIG_KEY="certs/signing_key.pem"
+CONFIG_MODULE_SIG_KEY_TYPE_RSA=y
+# CONFIG_MODULE_SIG_KEY_TYPE_ECDSA is not set
+
+===== 3 各分区实际挂载与模块目录 =====
+/vendor/lib/modules              -> /vendor_dlkm/lib/modules
+/vendor_dlkm/lib/modules         -> /vendor_dlkm/lib/modules
+/system/lib/modules              -> /system_dlkm/lib/modules
+/system_dlkm/lib/modules         -> /system_dlkm/lib/modules
+--- mount（dlkm / vendor / system）---
+/dev/block/dm-5 on /vendor type erofs (ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround)
+/dev/block/dm-6 on /vendor_dlkm type erofs (ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround)
+/dev/block/dm-3 on /system_dlkm type erofs (ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround)
+
+===== 4 模块数量 =====
+/vendor_dlkm/lib/modules : 293 个 .ko
+/system_dlkm/lib/modules : 0 个 .ko
+
+===== 5 vermagic 全量统计（关键）=====
+(使用 Termux strings)
+--- /vendor_dlkm/lib/modules 的 vermagic 分布 ---
+    293 vermagic=5.15.78 SMP preempt mod_unload modversions aarch64
+--- /system_dlkm/lib/modules 的 vermagic 分布 ---
+
+===== 6 已加载模块数 vs 分区模块数 =====
+--- /proc/modules 行数 ---
+406
+--- 已加载模块中带 vermagic 冲突迹象的（看 /proc/modules 是否有 - 标记）---
+
+===== 7 分区构建日期（判断 5.15.178 是否真属本 ROM）=====
+ro.build.date                            = Fri Apr  3 18:50:24 CST 2026
+ro.build.date.utc                        = 1775213424
+ro.vendor.build.date                     = Fri Apr  3 11:52:33 UTC 2026
+ro.vendor_dlkm.build.date                = Fri Apr  3 11:52:43 UTC 2026
+ro.system_dlkm.build.date                = Fri Apr  3 11:52:43 UTC 2026
+ro.bootimage.build.date                  = Fri Apr  3 11:52:43 UTC 2026
+ro.vendor.build.fingerprint              = Redmi/vermeer/vermeer:13/TKQ1.221114.001/OS3.0.302.0.WNKCNXM:user/release-keys
+ro.vendor_dlkm.build.fingerprint         = Redmi/vermeer/vermeer:13/TKQ1.221114.001/OS3.0.302.0.WNKCNXM:user/release-keys
+ro.system_dlkm.build.fingerprint         = Redmi/vermeer/vermeer:13/TKQ1.221114.001/OS3.0.302.0.WNKCNXM:user/release-keys
+ro.bootimage.build.fingerprint           = Redmi/vermeer/vermeer:13/TKQ1.221114.001/OS3.0.302.0.WNKCNXM:user/release-keys
+ro.build.version.incremental             = OS3.0.302.0.WNKCNXM
+ro.vendor.build.version.incremental      = OS3.0.302.0.WNKCNXM
+
+===== 8 dmesg 相关（vermagic / module / kmi）=====
+--- dmesg_restrict ---
+0
+--- 关键词检索 ---
+--- dmesg 首行（启动头）---
+[ 8225.378235] [ T4961] millet_kernel calleruid:1000 callerPid:-1 targetUid:-1 targetPid:-1 Frozen_Trans_Proc need_reply:0
+[ 8225.378244] [ T4961] millet_kernel calleruid:1047 callerPid:-1 targetUid:-1 targetPid:-1 Frozen_Trans_Proc need_reply:0
+[ 8225.850103] [ T1425] type=1400 audit(1793112030.691:152369): avc:  denied  { search } for  comm="perf-hal-servic" name="3127" dev="proc" ino=2790622 scontext=u:r:vendor_hal_perf_default:s0 tcontext=u:r:vendor_shsusrd:s0 tclass=dir permissive=0
+
+===== 9 已加载模块中，抽样比对分区文件大小是否一致 =====
+camera         /vendor_dlkm/lib/modules         7017184 bytes Jan 1 2009
+msm_drm        /vendor_dlkm/lib/modules         5936032 bytes Jan 1 2009
+ipam           /vendor_dlkm/lib/modules         5482064 bytes Jan 1 2009
+goodix_core    /vendor_dlkm/lib/modules         673576 bytes Jan 1 2009
+
+===== DONE: /sdcard/Download/vermeer-ultimate-kernel/evidence/kmi_20261027_232516 =====
