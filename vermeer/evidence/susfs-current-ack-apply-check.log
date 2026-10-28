@@ -1,0 +1,4 @@
+error: patch failed: fs/namespace.c:32
+error: fs/namespace.c: patch does not apply
+error: patch failed: fs/proc/task_mmu.c:22
+error: fs/proc/task_mmu.c: patch does not apply

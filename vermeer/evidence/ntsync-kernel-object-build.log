@@ -1,0 +1,3 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+  CC [M]  /home/administrator/vermeer-build/ntsync-probe/ntsync.o
+make: Leaving directory '/home/administrator/vermeer-build/common'

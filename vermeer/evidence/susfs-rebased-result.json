@@ -1,0 +1,6 @@
+{
+  "abi_verified": false,
+  "compiled": false,
+  "scope": "context-only git apply --check",
+  "exit_code": 1
+}

@@ -1,0 +1,386 @@
+{
+  "CONFIG_CIFS": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_CIFS_ALLOW_INSECURE_LEGACY": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_CIFS_DEBUG": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_CIFS_DEBUG2": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_CIFS_DEBUG_DUMP_KEYS": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_CIFS_DFS_UPCALL": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_CIFS_POSIX": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_CIFS_STATS2": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_CIFS_SWN_UPCALL": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_CIFS_UPCALL": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_CIFS_XATTR": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_DEFAULT_BBR": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DEFAULT_BBR3": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_DEFAULT_BIC": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DEFAULT_CUBIC": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DEFAULT_HTCP": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DEFAULT_RENO": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DEFAULT_TCP_CONG": {
+    "before": "\"cubic\"",
+    "after": "\"bbr3\""
+  },
+  "CONFIG_DEFAULT_WESTWOOD": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_DNS_RESOLVER": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP6_NF_MATCH_HL": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP6_NF_NAT": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP6_NF_TARGET_HL": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP6_NF_TARGET_MASQUERADE": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP6_NF_TARGET_NPT": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_IP_NF_TARGET_TTL": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP_SET": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_IP_SET_BITMAP_IP": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_BITMAP_IPMAC": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_BITMAP_PORT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IP": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IPMAC": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IPMARK": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IPPORT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IPPORTIP": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_IPPORTNET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_MAC": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_NET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_NETIFACE": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_NETNET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_NETPORT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_HASH_NETPORTNET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_LIST_SET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_IP_SET_MAX": {
+    "before": null,
+    "after": "65534"
+  },
+  "CONFIG_KSU": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_DEBUG": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_KSU_DISABLE_MANAGER": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_KSU_DISABLE_POLICY": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_KSU_FULL_NAME_FORMAT": {
+    "before": null,
+    "after": "\"%TAG_NAME%-%COMMIT_SHA%\""
+  },
+  "CONFIG_KSU_MANUAL_HOOK": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_KSU_MULTI_MANAGER_SUPPORT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_ENABLE_LOG": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_HIDE_KSU_SUSFS_SYMBOLS": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_OPEN_REDIRECT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SPOOF_UNAME": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SUS_KSTAT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SUS_MAP": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SUS_MOUNT": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_SUSFS_SUS_PATH": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_KSU_TOOLKIT_SUPPORT": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_KSU_TRACEPOINT_HOOK": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_LTO_CLANG_FULL": {
+    "before": "y",
+    "after": "n"
+  },
+  "CONFIG_LTO_CLANG_THIN": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NETFILTER_XT_MATCH_ADDRTYPE": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NETFILTER_XT_MATCH_RECENT": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NETFILTER_XT_SET": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_NETFILTER_XT_TARGET_HL": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NETFILTER_XT_TARGET_LOG": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NET_ACT_CONNMARK": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NET_EMATCH_IPSET": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_NET_SCH_CAKE": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NF_LOG_IPV6": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_NF_LOG_SYSLOG": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_SMBFS_COMMON": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_ADVANCED": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_BBR": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_BBR3": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_BIC": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_CDG": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_DCTCP": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_HSTCP": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_HTCP": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_HYBLA": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_ILLINOIS": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_LP": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_NV": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_SCALABLE": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_VEGAS": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_VENO": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TCP_CONG_WESTWOOD": {
+    "before": null,
+    "after": "y"
+  },
+  "CONFIG_TCP_CONG_YEAH": {
+    "before": null,
+    "after": "n"
+  },
+  "CONFIG_TMPFS_POSIX_ACL": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_TMPFS_XATTR": {
+    "before": "n",
+    "after": "y"
+  },
+  "CONFIG_UNUSED_KSYMS_WHITELIST": {
+    "before": "\"/mnt/disks/build-disk/src/android/common-android13-5.15-2025-03/out/android13-5.15/common/abi_symbollist.raw\"",
+    "after": "\"/home/runner/work/GKI_KernelSU_SUSFS/GKI_KernelSU_SUSFS/android13-5.15-178/out/android13-5.15/common/abi_symbollist.raw\""
+  }
+}

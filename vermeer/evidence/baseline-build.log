@@ -1,0 +1,21 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+  GEN     Makefile
+#
+# configuration written to .config
+#
+make: Leaving directory '/home/administrator/vermeer-build/common'
+make: Entering directory '/home/administrator/vermeer-build/common'
+  SYNC    include/config/auto.conf
+  GEN     Makefile
+  GEN     Makefile
+  DESCEND bpf/resolve_btfids
+  CALL    /home/administrator/vermeer-build/common/scripts/atomic/check-atomics.sh
+  CALL    /home/administrator/vermeer-build/common/scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/kheaders_data.tar.xz
+  CHK     include/generated/autoksyms.h
+  GEN     .version
+  CHK     include/generated/compile.h
+  GEN     .tmp_initcalls.lds
+  GEN     .tmp_symversions.lds
+  LTO     vmlinux.o

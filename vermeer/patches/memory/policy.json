@@ -1,0 +1,10 @@
+{
+  "scope": "preserve extracted historical baseline until current runtime is verified",
+  "changes_applied": false,
+  "zram_algorithm": "retain current runtime choice; baseline config default is lzo-rle",
+  "mglru_runtime_enable": "no automatic change",
+  "zram_writeback": false,
+  "lz4kd": "not enabled: no validated target patch",
+  "lmkd": "retain HyperOS userspace policy; kernel config alone cannot configure LMKD",
+  "required_measurements": ["PSI some/full", "pgscan/pgsteal", "workingset_refault", "zram mm_stat", "swap latency", "app reloads", "energy", "storage writes"]
+}

@@ -1,0 +1,1 @@
+Build outputs are deliberately excluded from Git and the source devkit. A successful lab Image is not a certified phone kernel. The build log and explicit build_complete result in evidence must be checked together with actual artifact presence and hashes.

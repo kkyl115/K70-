@@ -1,0 +1,72 @@
+{
+  "bbg": {
+    "repository": "https://github.com/vc-teahouse/Baseband-guard",
+    "ref": "main",
+    "commit": "028ff7fd509e2104596da7cc1ef8e6ce2a0c9082",
+    "committer_date": "2026-10-26T06:31:16Z",
+    "status": "source_review_only",
+    "tree_truncated": false,
+    "files": [
+      "Kconfig",
+      "LICENSE",
+      "Makefile",
+      "baseband_guard.c",
+      "baseband_guard.h",
+      "blkdev_helper.c",
+      "blkdev_helper.h",
+      "docs/README-en.md",
+      "docs/README.md",
+      "kernel_compat.h",
+      "tracing/Makefile",
+      "tracing/kernel_compat.h",
+      "tracing/tracing.c",
+      "tracing/tracing.h"
+    ],
+    "fetch_errors": [
+      {
+        "path": "README.md",
+        "error": "HTTP Error 404: Not Found"
+      }
+    ]
+  },
+  "droidspaces": {
+    "repository": "https://github.com/ravindu644/Droidspaces-OSS",
+    "ref": "main",
+    "commit": "4344dc5fc4ab981f1cf2df54c93bf32a6ebbdc85",
+    "committer_date": "2026-10-27T12:24:45Z",
+    "status": "source_review_only",
+    "tree_truncated": false,
+    "files": [
+      "Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_1_2_3.patch",
+      "Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_3_4_5.patch",
+      "Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch",
+      "Documentation/resources/kernel-patches/GKI/below-kernel-6.12/002.5.10_or_lower_use_android_abi_padding_for_posix_mqueue.patch",
+      "LICENSE",
+      "README.md"
+    ]
+  },
+  "bbr3": {
+    "repository": "https://github.com/google/bbr",
+    "ref": "v3",
+    "commit": "90210de4b779d40496dee0b89081780eeddf2a60",
+    "committer_date": "2025-03-18T12:52:13Z",
+    "status": "source_review_only",
+    "files": [
+      "README.md",
+      "Makefile",
+      "net/ipv4/tcp_bbr.c"
+    ]
+  },
+  "ntsync": {
+    "repository": "https://github.com/torvalds/linux",
+    "ref": "v6.14",
+    "commit": "38fec10eb60d687e30c8c6b5420d86e8149f7557",
+    "committer_date": "2025-03-24T14:02:41Z",
+    "status": "source_review_only",
+    "files": [
+      "drivers/misc/ntsync.c",
+      "include/uapi/linux/ntsync.h",
+      "tools/testing/selftests/drivers/ntsync/ntsync.c"
+    ]
+  }
+}

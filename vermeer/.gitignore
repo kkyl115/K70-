@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+build/*
+!build/README.md
+toolchains/*
+!toolchains/README.md
+!toolchains/lock.json
+release/*
+!release/README.md
+sources/downloads/
+.venv/

@@ -1,0 +1,1020 @@
+{
+  "source_commit": "fa822131f79ac8520066643529c24078c126f6c4",
+  "source_worktree_snapshot": true,
+  "branch": "codex/vermeer-engineering",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "004e8981d38f9f589e38fb6201f40d15220aba78aa7774761b3d3fc0e017512a"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "65ce525ef938b1550abfe63863facdc52ce3b163bc4ed14650f37b14a46f8995"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "53e0ad02a2740ff0f77b29e1a7512daec72247e49001b5113eb00ee29c439746"
+    },
+    {
+      "path": "README.md",
+      "sha256": "631c5fac948e2b896f211d1a7155a6a03607a705256f1904c20ec474ce445927"
+    },
+    {
+      "path": "bootguard/bootguard.py",
+      "sha256": "8743895a51ad412057c56dc1a8e8b26dde1cb22292351f1fe3a8e1dc7987f048"
+    },
+    {
+      "path": "bootguard/preflight/collect-readonly.sh",
+      "sha256": "3dcec9f3972c4abfe69522288695213b8f1880e67be593eb52610d0cc774d7f6"
+    },
+    {
+      "path": "bootguard/recovery/update-binary",
+      "sha256": "bf2e9204e5af78257e8d688d9e47bdeff00efca20b3465047922fa5b329324e1"
+    },
+    {
+      "path": "build.ps1",
+      "sha256": "b9c11fd7517fa1c737081938650b61e86ddb60d858364606ceaa849a939e204a"
+    },
+    {
+      "path": "build/README.md",
+      "sha256": "09b5ca21c1a4e3eb22f3bfe60891399d0ba4b28f952a6a4eb6bb441f00ba11fc"
+    },
+    {
+      "path": "ci/vermeer-offline.yml",
+      "sha256": "792b2b1acd138f9d095ec2a9a9e1c2ac9b7498d77e9229f85687ac95e73db2be"
+    },
+    {
+      "path": "configs/balanced/vas.json",
+      "sha256": "a9fa661c7104761d150ebe6300a8d499e876c89765248a6c5a77692826608c39"
+    },
+    {
+      "path": "configs/baseline/historical-5.15.178.config",
+      "sha256": "fe494eff425a5b7b39db09a4959d2e98b97cd5086bd0b6a4554b5ad7d1387fb6"
+    },
+    {
+      "path": "configs/baseline/user-supplied-5.15.178.config",
+      "sha256": "71ebdb121e6cdcb647b2a2be0235f1bf6f6dbce5e10bf824da1ad4350e4b4289"
+    },
+    {
+      "path": "configs/efficiency/vas.json",
+      "sha256": "2c73ee58f75f8a3c6178d54e90604ff6e611b3dfe89a8b318ef7215002263e47"
+    },
+    {
+      "path": "configs/performance/vas.json",
+      "sha256": "cff92aa9e729225c3ec68cc412afb322954fedd081050b900882c99456c50c7f"
+    },
+    {
+      "path": "docs/BootGuard.md",
+      "sha256": "b9fdd81d1f868b9e3116e6369958242fb7c2ffb82ae46ed60ea52a40fd9d35a2"
+    },
+    {
+      "path": "docs/VAS.md",
+      "sha256": "f0e90f9961a8b7121ad875de4bdd2138e6e7e2b870a82597a91527fa8ba1891b"
+    },
+    {
+      "path": "docs/\u4e0a\u6e38\u4e0eRoot\u96c6\u6210.md",
+      "sha256": "2c6bd45ff6c2676b9f7279346f074a64e77302bb311f4e965b58e6ac2e1b1340"
+    },
+    {
+      "path": "docs/\u4ea4\u4ed8\u4ed3\u5e93\u5ba1\u67e5.md",
+      "sha256": "007fd28918bd926cc8f3dc6913b3fb33bc8021e0ac70e235c97f8e89cf358098"
+    },
+    {
+      "path": "docs/\u5185\u5b58\u7f51\u7edc\u5b58\u50a8\u5b89\u5168.md",
+      "sha256": "32fd71d95cd96aeedf68c03401f648d80cbadd5bbddb236c30a6d758c9c5b749"
+    },
+    {
+      "path": "docs/\u6280\u672f\u8def\u7ebf\u4e0e\u65b0\u60f3\u6cd5.md",
+      "sha256": "440ba882264dbeac7673f74d6ed51514e770554e0a370c160460c8a191117d08"
+    },
+    {
+      "path": "docs/\u6784\u5efa\u4e0e\u64cd\u4f5c\u6307\u5357.md",
+      "sha256": "a02e6e4eba730260b873bdaeb09aade51b31338f33ac373d4631aa03d28d5c60"
+    },
+    {
+      "path": "docs/\u8d44\u6599\u6838\u5bf9\u4e0eABI.md",
+      "sha256": "54f82c2235601403ecd45269d74578422c4f9a114bc9c00c843c1f50eb36420c"
+    },
+    {
+      "path": "docs/\u9a8c\u6536\u62a5\u544a.md",
+      "sha256": "2f073d17d9938c020a30255d4e5f29219f4e41f61019706e11f29b24faf0f52b"
+    },
+    {
+      "path": "evidence/abi-tool-install.log",
+      "sha256": "2d62aa375955e94b74418e67811569f33d50d9ea5b56a435b5264e2a7933ce76"
+    },
+    {
+      "path": "evidence/ack-alternate-commit.json",
+      "sha256": "a933a009974e94913f45bd542bd9392beac696f96772372dc8e06063554ab54c"
+    },
+    {
+      "path": "evidence/ack-baselines-diff-and-initcall.txt",
+      "sha256": "976ea44df1a4abd4332ee5e7837b0650e515a91592590b7341dfa93b8b965f85"
+    },
+    {
+      "path": "evidence/ack-current-commit.json",
+      "sha256": "b515f5ab825cd5e3e2fdcd6c5da47380451f27c094dc0439acd5cd672b4c4400"
+    },
+    {
+      "path": "evidence/ack-source-fetch.log",
+      "sha256": "ac574a0095bc0d37cfdfd18597ea1173ed3fb3e27ddf0c4593187d160270a8e5"
+    },
+    {
+      "path": "evidence/automated-tests.log",
+      "sha256": "c37b8e28759bf4cfa9335682247765ff4c1270c2e934a7ef4be7c0f71256486f"
+    },
+    {
+      "path": "evidence/baseline-attempt1-unreliable-shell-exit.json",
+      "sha256": "a1ea794efbd639379dbbf4138b37f4f8c48776169a6e9e09250e1399ebb2de76"
+    },
+    {
+      "path": "evidence/baseline-build-attempt1-resource-pressure.log",
+      "sha256": "879719ddc81e28e1500004f1dfaccc0266cac863d00fa31f2fec53e9c3236229"
+    },
+    {
+      "path": "evidence/baseline-build-attempt2-interrupted.log",
+      "sha256": "1dfdf9a6b71355431b9535e68f1dfc5a8d4254b9b63acece30fef8d2fc6a1bb3"
+    },
+    {
+      "path": "evidence/baseline-build-exit.json",
+      "sha256": "8a13f60f5e5cf7527f6fa4d79e0477bba089a4a3a509dae1ab18b4c26d68c0e0"
+    },
+    {
+      "path": "evidence/baseline-build.log",
+      "sha256": "1dfdf9a6b71355431b9535e68f1dfc5a8d4254b9b63acece30fef8d2fc6a1bb3"
+    },
+    {
+      "path": "evidence/baseline-config-diff.json",
+      "sha256": "153bb0121908969ef026d21edf1833a9bdda490c26ab45c5335b2029a0b6f3bd"
+    },
+    {
+      "path": "evidence/build-dependencies.txt",
+      "sha256": "4ec7f2e434d16b9fa203ef881fff33dcb0094d57f88b958cb56cf730ab1bb184"
+    },
+    {
+      "path": "evidence/build-resource-stop.json",
+      "sha256": "8e96dba18c77a399491a39fe2677a7b959fae29e52f2d723281716871f70efe4"
+    },
+    {
+      "path": "evidence/build-swap-retry.log",
+      "sha256": "fd752a362742ac08499b68a6d47692302385fef8d55d3f58823a029438b7dfaa"
+    },
+    {
+      "path": "evidence/build-swap.log",
+      "sha256": "2fecf1208ca46f1f8ef69007ca8bf4f4e712c5f8af4a31adc837c74f910c671e"
+    },
+    {
+      "path": "evidence/clang-download.log",
+      "sha256": "a31a344a792e8a2c02076e1790fee61358b755d9d24d4dd44c511bab062d96ca"
+    },
+    {
+      "path": "evidence/clang-ls-remote.txt",
+      "sha256": "182d21897a097de1a9c9b22fd049bb16d682dd2b4c1214654946f5ef9ecd9db4"
+    },
+    {
+      "path": "evidence/clang-tree.json",
+      "sha256": "1fe37337b7e2252adb85ea1c18fadc653532babe181f68a741b0b11a67a7f0cc"
+    },
+    {
+      "path": "evidence/current-ack-fetch.log",
+      "sha256": "ec186bb257c7d1020d08b732549671f2bd7a9412d327f8961f237bfae293d5d5"
+    },
+    {
+      "path": "evidence/dependency-install-retry.log",
+      "sha256": "c42242abf2c8effeec69d111eb6d25a718748665b70bf2b3f4ea0d09e7f897ea"
+    },
+    {
+      "path": "evidence/dependency-install.log",
+      "sha256": "eb607e6c33f0dedfffedd174ce2b316358a4269958f4d4a5ab58f49997a76816"
+    },
+    {
+      "path": "evidence/feature-audit-current-config.json",
+      "sha256": "afa3e222b96e770e9a43e364ef14f5cebbfb393a25129ccaa55db089a3df06bc"
+    },
+    {
+      "path": "evidence/historical-boot-inspection.json",
+      "sha256": "77729afb0b50af573ae358f1286e12f49f5259e9e60983163bda0d80cbf7b7e9"
+    },
+    {
+      "path": "evidence/initstub-source-proof.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/local-packages-rechecked.json",
+      "sha256": "a4bef1ec920eb2a522b90a84da742579edfb3ff87c6421fd324d189e66e5b32a"
+    },
+    {
+      "path": "evidence/manifest-default.xml",
+      "sha256": "a91d9ddf3e052c3a5578778d2d8910d55d1272ce112643325ee5c909dfb823c4"
+    },
+    {
+      "path": "evidence/manifest-head.json",
+      "sha256": "240646b32ebd3ab9352599d7cb979f72545e77881fec933b52d8d8d2e9038d31"
+    },
+    {
+      "path": "evidence/ntsync-kernel-object-build.log",
+      "sha256": "8803735f8d59c648487b2b590fa7cb215091cec4fccac264b50f78c844cc828a"
+    },
+    {
+      "path": "evidence/object-probes-prepare.log",
+      "sha256": "50c5b6d1b4a79139df171e7af3537f6f7eb83d1d19d07fef3c7ba563e3111cf7"
+    },
+    {
+      "path": "evidence/object-probes-result.json",
+      "sha256": "4e9e2f0f953ccb67c8eec552a5ec002094a96cff23a595468789420f938ad65f"
+    },
+    {
+      "path": "evidence/packaging-result.json",
+      "sha256": "6db267aeb9da409acd137d84d43f0df512f0060168a75f4f0e54c2c1f9f5264a"
+    },
+    {
+      "path": "evidence/root-manager-lock.json",
+      "sha256": "7a031e40b45c96fd49ec039e725bd563d5905139edd5409cbbeab1233f31b180"
+    },
+    {
+      "path": "evidence/root-object-attempt1-missing-flask.log",
+      "sha256": "7fbe455c29a3626cc87369b938b94b7b8a669af0e8bbe26fd8ecee9cec88586c"
+    },
+    {
+      "path": "evidence/root-object-build.log",
+      "sha256": "9f9303be8d9f863b63b8065a7f4838a61193ee302ea531d8c5a522d0a00d614f"
+    },
+    {
+      "path": "evidence/root-object-result.json",
+      "sha256": "f6702a60832c16c6651ea0513f71032a1f026489a5d1366904b2d84470422ede"
+    },
+    {
+      "path": "evidence/root-object-selinux-prerequisite.log",
+      "sha256": "e3f6239670268a8a83b663700808a042dca9322b16f5976bd220c032791dbbb7"
+    },
+    {
+      "path": "evidence/susfs-ack-apply-check.log",
+      "sha256": "57dc51c6e8a305ef3d11fd1f4af00e6000a2146fd5ae37fe5e8ed5e982301c71"
+    },
+    {
+      "path": "evidence/susfs-current-ack-apply-check.log",
+      "sha256": "57dc51c6e8a305ef3d11fd1f4af00e6000a2146fd5ae37fe5e8ed5e982301c71"
+    },
+    {
+      "path": "evidence/susfs-rebase-attempt1.json",
+      "sha256": "c824f9b6ce5cf6ea3d82453f8ff9115f207be15129cf9db8f0c659ae1813d901"
+    },
+    {
+      "path": "evidence/susfs-rebase-attempt2-crlf.log",
+      "sha256": "012e72bb8fb08764d8040c516375f223a7abc8b49cc24563b2642af4ca7844e2"
+    },
+    {
+      "path": "evidence/susfs-rebased-current-apply-check.log",
+      "sha256": "7a6ce450d89132e6ab75114e206e8c7beaa664471dd31996acd87f0f1e0612c7"
+    },
+    {
+      "path": "evidence/susfs-rebased-historical-apply-check.log",
+      "sha256": "7a6ce450d89132e6ab75114e206e8c7beaa664471dd31996acd87f0f1e0612c7"
+    },
+    {
+      "path": "evidence/susfs-rebased-historical-result.json",
+      "sha256": "929e59b49bd3adb22d892bf4dd9622551bc1858db8bae0ec73c581e2b443f064"
+    },
+    {
+      "path": "evidence/susfs-rebased-result.json",
+      "sha256": "da8122c3736cb02f7a5bc0cfd2f32b43579a5ce091480e17f8a3d8d784c4b770"
+    },
+    {
+      "path": "evidence/upstream-research/SukiSU_KernelPatch_patch-commit.json",
+      "sha256": "d34483b0e858aa1c33821a53dfed4c63028a3faa55b9a915e4be7d831a1264b3"
+    },
+    {
+      "path": "evidence/upstream-research/SukiSU_KernelPatch_patch-commit.json.provenance.json",
+      "sha256": "8f499bed8f294dded601e643354e62f1b80117d4772667fc9b618303acf88acc"
+    },
+    {
+      "path": "evidence/upstream-research/SukiSU_patch-commit.json",
+      "sha256": "c73e225d11133dce68e91010573c393b1faa70fc9469fbb078198caba338a8bc"
+    },
+    {
+      "path": "evidence/upstream-research/SukiSU_patch-commit.json.provenance.json",
+      "sha256": "405aa05d0f6aaa0d9b3af7632c1d074daa10c3cbc595c299f53ca51289dd8ecd"
+    },
+    {
+      "path": "evidence/upstream-research/ack-commit.json",
+      "sha256": "b515f5ab825cd5e3e2fdcd6c5da47380451f27c094dc0439acd5cd672b4c4400"
+    },
+    {
+      "path": "evidence/upstream-research/ack-commit.json.provenance.json",
+      "sha256": "c8f774703905a3b0ad4092af18e54e654afea20cb4c6e061e8c3ac35a5abad72"
+    },
+    {
+      "path": "evidence/upstream-research/alternate-Makefile",
+      "sha256": "d1d0502612c2cddf9599144058d485495ca9361bbbd10f35de1f71e207b6a02f"
+    },
+    {
+      "path": "evidence/upstream-research/alternate-Makefile.provenance.json",
+      "sha256": "6af5b069b2aef68f8c462d2830e15b5fd18c952dc234b386116a363fdb336311"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/Kconfig",
+      "sha256": "ed413c4d12e76fb6eec3b3d6b27f6fb0cd70838514c64c4038bc958fd6fdf77f"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/Kconfig.provenance.json",
+      "sha256": "2778e95af80fe0f6747be428594d18920cf788143ff57353642ec8a4fc1a13d9"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/LICENSE",
+      "sha256": "edaef632cbb643e4e7a221717a6c441a4c1a7c918e6e4d56debc3d8739b233f6"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/LICENSE.provenance.json",
+      "sha256": "5b5f470643c9aff5e29519f933f7ca0fefb32ca637b9e5a904c554e75f63957b"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/Makefile",
+      "sha256": "ed284bca17554761cbd6126b70937e4e69eec6c4a3f524cdd9b38016acd1ff4b"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/Makefile.provenance.json",
+      "sha256": "afc73cd20bb8992aa5774d9963ff684f875ef3f36cb56cc21b79c98df757fdf2"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/baseband_guard.c",
+      "sha256": "07f45991d2233522d24a3e2297fef89e64f99a2aa1c0249284b2e15f5c5ff53e"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/baseband_guard.c.provenance.json",
+      "sha256": "fd7365c9ca936f50ba77ff76d30861f8bc71f15405d177102b1098c9af16c558"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/baseband_guard.h",
+      "sha256": "881d0f418d72669e0d0a1e14ee3cfc2b73ff402d0c46fae3f3b88e4bd71e1ac9"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/baseband_guard.h.provenance.json",
+      "sha256": "261ca8b52fe523c0be002d33a1d30cbcfc70b1a8cf77f7227c571622ddcf3b72"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/blkdev_helper.c",
+      "sha256": "3d0664de564ae14177b9e4155970c297e49e4ba3f85e647065c778a4f2f4802f"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/blkdev_helper.c.provenance.json",
+      "sha256": "ecea11ca2fa49d2b337425a6808da17ac03c340c40be1f43ca94419706854ddb"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/blkdev_helper.h",
+      "sha256": "113345042edd80055cf5ab4497af73815b1671b3c683500089e51c55514c93a1"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/blkdev_helper.h.provenance.json",
+      "sha256": "45a332b6ba554592e5db9e87b1a29fd229afec5457b85ddc3d6d0e105a39ee87"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/commit.json",
+      "sha256": "72b806df6a4276c4845cf062d9df078252cac00327eb52a15d99ab25ec5edeb9"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/commit.json.provenance.json",
+      "sha256": "25a7d184313d6def0aa68752716bc1f2cffe94360e7d36f1463e08f4733b24f5"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/docs/README-en.md",
+      "sha256": "877f837c9db2391e06e1d638a269b3d5cb08042a15489a40f75f7ec3a783593f"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/docs/README-en.md.provenance.json",
+      "sha256": "c13c436642ee3db28b023746e2872ea7a970786a0c1b6fe8dc7fb0ae771c1dec"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/docs/README.md",
+      "sha256": "ceedfe6d6e1de733e41221cc6c75911d5c595c12f34d40e79e66d4d83a0be6c6"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/docs/README.md.provenance.json",
+      "sha256": "4da999cac3c3b33e4e8b497356bbfe4fe512a19c637007a47acc23f711fc0631"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/kernel_compat.h",
+      "sha256": "deb698515d2c2551a061c904beeb4874f0114d893715d67d8370da50041348c3"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/kernel_compat.h.provenance.json",
+      "sha256": "40b7809d2a45047c85e3b65e906791ed38d9dd5be9517a47fb562410bbe7c567"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/Makefile",
+      "sha256": "9da4290e300c49fd8900d7e515e1eb753aaaba6218e3ec0920c22503d9854ff4"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/Makefile.provenance.json",
+      "sha256": "e443e3fb35c8e4a0ed0912f39e011e2100f039a5cde81d074e74605b594485f8"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/kernel_compat.h",
+      "sha256": "0d1d2d32c2b2d3ed989c4bfb2bbb5b2179b749dec5d870698fe4ade4d3a99b12"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/kernel_compat.h.provenance.json",
+      "sha256": "80e2d18154c26251ab716887c81ffbec5cb0a351c486e82c5fbeea46c2dfaf56"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/tracing.c",
+      "sha256": "6e41db600ed80e207b34455678be6fc9c47d47be9319ae9fcc5ce53a2f660da2"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/tracing.c.provenance.json",
+      "sha256": "5d9501fdd14d30b92ff104cebb398bb10eec39df4d1f00817d23727a460d5e5b"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/tracing.h",
+      "sha256": "171c535b3a20fa8fd73c57c5d939c583239f558fe36fea95238e772d55af1373"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tracing/tracing.h.provenance.json",
+      "sha256": "276c9d7473a8e5959338d4d57420fb87517d9766a5b269233b9ed798c4fd96c9"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tree.json",
+      "sha256": "f3e039bda4a7ce6560ff23e9f4f0644870cc8b0ff3146c210f5c92f81428ae45"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbg/tree.json.provenance.json",
+      "sha256": "02804861bb6ac85b4674e2e3030dfb1acd576376df7a4c79c76de49d448d2fd0"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/Makefile",
+      "sha256": "ee8515d99f735fff11819fe28ce780280bad0808d18895db8fa947cc40e3c09d"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/Makefile.provenance.json",
+      "sha256": "d52b4ce683327b6d832630c23060a93ea5ecd6e5369dc7b7c23938d465b778df"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/README.md",
+      "sha256": "95330bb2ca66e6708da192106100be083d66e09f79a6a7941c1be3fd7fdd8902"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/README.md.provenance.json",
+      "sha256": "39e6c0cdd71f183420dff807251316fad76f3c664f768d5592dbd9e01864d65b"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/commit.json",
+      "sha256": "48a81c760ef641117ff7f5047755c83d19ae3033d2f767d454be1d6d09bab3dd"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/commit.json.provenance.json",
+      "sha256": "2cde75107963d166cc4c2fb86f7267631c79ed6cfff68805e51b9b11cc4fb0b7"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/net/ipv4/tcp_bbr.c",
+      "sha256": "04ba1e8b436b88eb0716f3d2a64a9be5a5d946ba3169a590d7bb533c320bdc51"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/bbr3/net/ipv4/tcp_bbr.c.provenance.json",
+      "sha256": "cd32aa1c5c4f4507ec31ca2a7f9f8bdd74af5e6aa4090d56e7683d15eb826979"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_1_2_3.patch",
+      "sha256": "bc3c1e8525fd232224211d5a0d0f216c4408d4042029a42d66131bd53174dfa3"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_1_2_3.patch.provenance.json",
+      "sha256": "bfca26c40d05b710c6cc75857e626e96c8dd25a205c51529d8830f5a351a5d0b"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_3_4_5.patch",
+      "sha256": "c47ff9ebb015430913058b3a08182b8c379812731613e1b23804eb6fa4e29ea4"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_3_4_5.patch.provenance.json",
+      "sha256": "d5e4a91d414f92089e9d93cd8884bf879d293b4b769b179fc4684c030f2b078f"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch",
+      "sha256": "47fc945b2d73d9737d56c0f1c3a74cda0a95c30f9dc1b1abe546fa48940c4460"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch.provenance.json",
+      "sha256": "86130cf4280ae6cabe0d10a029e59d2a62c5f024070bb92bb4fee33b7dbdab1e"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/002.5.10_or_lower_use_android_abi_padding_for_posix_mqueue.patch",
+      "sha256": "31982c85f4a65ca3ec71d27903626fb0234a39c4d3e99667bc849918e42693b7"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/002.5.10_or_lower_use_android_abi_padding_for_posix_mqueue.patch.provenance.json",
+      "sha256": "df763ce5c1815302e4aa8d9c41c4e175b2c4af28bf60beeffa5492ce2da6374d"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/LICENSE.provenance.json",
+      "sha256": "9f3b61ee83758e5cf6e7ebe61ee51ab1be9ea96370c6633111956cec0557a50c"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/README.md",
+      "sha256": "a382da14fb555652653a440b7d0a23fcaa5d88bcf80c0bb46f0cb9ac761f7498"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/README.md.provenance.json",
+      "sha256": "8f498fb230b00374eb794c4a25aa394b2c00a9cd408d84f6f8965d2f2d4c8ad7"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/commit.json",
+      "sha256": "30242efca71663e35688398573eb830cbb0e266014d1dcd87e160d0274babe61"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/commit.json.provenance.json",
+      "sha256": "3b0045c0b43d2ab66123d6fe6c1a16c0e3e4750d943dea8990539bd16da9b0a2"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/tree.json",
+      "sha256": "013f1e879abc5a03960acaff8c4098b12fc7fb61f98968c6d2f31ee30f2e601d"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/droidspaces/tree.json.provenance.json",
+      "sha256": "b2b4509d4fc2c026cca00f01bfa6be261a32b19fc119b6cfc381690f753e7eba"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/lock.json",
+      "sha256": "d084d3fca97052c819eb68e427fb2c72840506282dcd3b2d1ba26747c0e7a340"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/commit.json",
+      "sha256": "1ee4dc6999e2aec1d539a7f35fba272f0620fe92d432f2e90b30734277f94171"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/commit.json.provenance.json",
+      "sha256": "ce9049e6633bd1425a7038b385f9d85cc2f189294d710ea82f61122232a33888"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/drivers/misc/ntsync.c",
+      "sha256": "2fb92d6befb6a67cfba3ccab51bd65bc313994fe5c20c1223d3b79cb74129e45"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/drivers/misc/ntsync.c.provenance.json",
+      "sha256": "a258def4422ab55d9bdcf62e50255568135acf2a8a33300ba7804c4560e78856"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/include/uapi/linux/ntsync.h",
+      "sha256": "006437ee52a3e04f921df77081eb5c21c44c71f598b10ac534c6ef9e78296262"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/include/uapi/linux/ntsync.h.provenance.json",
+      "sha256": "9758ce94aac46828e1e72c2f98bfcb29764d13f9d4cb03d4c52743b7962427eb"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/tools/testing/selftests/drivers/ntsync/ntsync.c",
+      "sha256": "fe18dff484db066b198250b97f3cf4985d4c6cdbe4e95e44991f102bf1aabc63"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/ntsync/tools/testing/selftests/drivers/ntsync/ntsync.c.provenance.json",
+      "sha256": "555f55d4f919d0a7f9aa47109b0e61521eedd951c6e44c8441dc88464e1dda6f"
+    },
+    {
+      "path": "evidence/upstream-research/kpm-source.tar.gz",
+      "sha256": "b4003386f9d1a0e3a9755464be3f8d82e44da42b050f27a85d67c95a139cc32f"
+    },
+    {
+      "path": "evidence/upstream-research/kpm-source.tar.gz.provenance.json",
+      "sha256": "e6d3f79973fd4b8638979b441b8824e401877e23bea214bd58a0ce319d5befb6"
+    },
+    {
+      "path": "evidence/upstream-research/micode-README.md",
+      "sha256": "391913c40858f617adb4eefdf7960cee5d37d74d5fc44930e73b5d6b1318b67e"
+    },
+    {
+      "path": "evidence/upstream-research/micode-README.md.provenance.json",
+      "sha256": "2efd033e3bf325990290fe082f3a38dc3576a1b8f5113489a5b64db3656ced26"
+    },
+    {
+      "path": "evidence/upstream-research/micode-branch.json",
+      "sha256": "1edd49d174e80adacd0fb7be382a2acf3e46203e601e7d7b222d92b3452f5c40"
+    },
+    {
+      "path": "evidence/upstream-research/micode-branch.json.provenance.json",
+      "sha256": "c87efa3826efed4f0c89e6ad5bba581902ad388c8b021b6b955579bb570af90c"
+    },
+    {
+      "path": "evidence/upstream-research/micode-tree.json",
+      "sha256": "b85fd5796d2bacd2028bbf9e36ac1e23217c740e3f9fe05f8ade3a8715cde104"
+    },
+    {
+      "path": "evidence/upstream-research/micode-tree.json.provenance.json",
+      "sha256": "04a2b7d2e0613db21c54f252bd726d322f7ddede2aeb636ce7da4ddb3cbf64a1"
+    },
+    {
+      "path": "evidence/upstream-research/micode/COPYING",
+      "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0"
+    },
+    {
+      "path": "evidence/upstream-research/micode/COPYING.provenance.json",
+      "sha256": "3af8f8c6b0cf42346fa0a4bf2a6fd7ba0cf60cec49d1171950fc82389817040b"
+    },
+    {
+      "path": "evidence/upstream-research/micode/Makefile",
+      "sha256": "da1ee898b76652ea765566d1c3604478b57892d1ea0969628c958090cc313753"
+    },
+    {
+      "path": "evidence/upstream-research/micode/Makefile.provenance.json",
+      "sha256": "cdc3e34b7f03a1bc50c75948ff8fbc1ebaa4421cb51be8e7a9f844bb6f3ed699"
+    },
+    {
+      "path": "evidence/upstream-research/micode/build.config.msm.kalama",
+      "sha256": "5b8ac405d4845f100b7dd2ce8dcbaa2d962753e0d5870e760f3227f4cbbad1f7"
+    },
+    {
+      "path": "evidence/upstream-research/micode/build.config.msm.kalama.provenance.json",
+      "sha256": "211c6105d79c75eecf092c00fc47c47f9dba948077bfd3175df688b728cfca99"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/cpufreq_walt.c",
+      "sha256": "900d84960cf5932efb2ba840d88f1ed29afc82504e87ed5dede07a19c075143e"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/cpufreq_walt.c.provenance.json",
+      "sha256": "17f799a24c90e35cc7de4d2e79739c8441244873d8441acf730608d6ec444150"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/walt.c",
+      "sha256": "30d6b38e7fb6008c02eb1fb121c77b6462d999365ed73055fe11224b01be75c6"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/walt.c.provenance.json",
+      "sha256": "a4215778d2dce945164daec5feda3bfd34f85e2f580cce0a47d915f46cd14d73"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/walt.h",
+      "sha256": "ec521b936462e24a4d6b0c888a48ac4b8bbcb9418b014ec17e533cbf36c726e9"
+    },
+    {
+      "path": "evidence/upstream-research/micode/kernel/sched/walt/walt.h.provenance.json",
+      "sha256": "9067720b55ae7203a3fe61dd30deba033c11467a0e1d8226e47af3ab6384e485"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-commit.json",
+      "sha256": "6f73832ff3c8851ac55e516c34825a1aa6f113218091b13373eb7761ca6ad6c7"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-commit.json.provenance.json",
+      "sha256": "e543fc765ad63ac5f0f46b54f5357044b0c51fa70c1a74894fdcccbce782bf75"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-release.json",
+      "sha256": "48bc3dac946ffbde32766994c7efb9126304cf0e800db278acc99ad0ac4be59d"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-release.json.provenance.json",
+      "sha256": "593ccaa4a309fbdebaf40bad52f7e7a6fb31783cb5ef636510731916edaeea7a"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-source.tar.gz",
+      "sha256": "496112bf187f19447a3f4e94fc19273977ac7701e9f21bb4134e4ca175a963f2"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-source.tar.gz.provenance.json",
+      "sha256": "4f636c75cbb3b66727b082a7b2b7e24e21d22bf0f63e86d9a49ce14abfe48f00"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-tree.json",
+      "sha256": "ff9bfec6645e7192e6ad848596d8277c1445b9d871a6e6806483cba131d2f354"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu-tree.json.provenance.json",
+      "sha256": "209db99075cb787cb994ae7da07584672d87821c9c0922a84da848783c0db165"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/Kconfig",
+      "sha256": "5ba6f691f8f5739cf988845103165a9f2941a4e5ac0cbe661c8cc711005a00b6"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/Kconfig.provenance.json",
+      "sha256": "b4ab9f18e101e7f008c6802e57f9d5fdd2ddfa766ae5903469ee1ac61239ca79"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/LICENSE.provenance.json",
+      "sha256": "91bb4b6303df4a4d07f9859287727d62c1555704fd3fb4acb70876d6297a6eab"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/kernel-LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "evidence/upstream-research/sukisu/kernel-LICENSE.provenance.json",
+      "sha256": "ee11c5ec652f2ffba6203c433145e8bcb2fe7df8cf3eaac7f2cbad082eb5898f"
+    },
+    {
+      "path": "evidence/upstream-research/susfs-branch.json",
+      "sha256": "be8321f148ca3baca20a7702f791af56b073eca928bf19a9097b642518199e70"
+    },
+    {
+      "path": "evidence/upstream-research/susfs-branch.json.provenance.json",
+      "sha256": "5cb55bac0707abf1f45f8e42aefaefa282c0eafa99fe968d25c8548afbdb42ee"
+    },
+    {
+      "path": "evidence/upstream-research/susfs-tree.json",
+      "sha256": "c97d17da25519067cff557b82374d8a8ee369c0f72320907f24502bb237b3ce1"
+    },
+    {
+      "path": "evidence/upstream-research/susfs-tree.json.provenance.json",
+      "sha256": "c46f3f28c424c6173a895778fefc4cb3050f32e2b604a8ae401da1fc5428991e"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/LICENSE",
+      "sha256": "3da27bc7c6a063f498b4278372d48e113453f93aecc709f44276e278fc0cac12"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/LICENSE.provenance.json",
+      "sha256": "1ff804efdc81d278a6c7e0899664ccaeed0808f923f9b403f30ed7ca2d100566"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/README.md",
+      "sha256": "e5b8c8a2cdeefb99a075a863b9cb33236e33dd50a357caa85e0b3960d5047a57"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/README.md.provenance.json",
+      "sha256": "9603f46716acdb4597d61350c8dc3e737276df1aba670f52e11e387face02e06"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/50_add_susfs_in_gki-android13-5.15.patch",
+      "sha256": "ea999167ae9e69155c437396efa1a60c1fd507942f4059dd3609cdeeb13b4fef"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/50_add_susfs_in_gki-android13-5.15.patch.provenance.json",
+      "sha256": "7dd325444f4146b77e4efacf5bf59ac6191b707256b2cab4f7bef271ce48108a"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch",
+      "sha256": "64d32baa5a543a6f9988c1489e2021c467b84606570a388f4cbd44ff3ad77ed6"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch.provenance.json",
+      "sha256": "4aa42df61bf088c9962ad5d22dfcf0963254000a6837f2334b473ec274508c9b"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/fs/susfs.c",
+      "sha256": "5d1b17dd7d20e4893b82b82a9f36e791558e3ddd735666b2b71f7839001dcb24"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/fs/susfs.c.provenance.json",
+      "sha256": "47625f1bf4d8aa62399920b481d74c856447927428bb8ef3b2a09dbf4a779ab6"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/include/linux/susfs.h",
+      "sha256": "e06f190fe480ab6725851780b022b472b9b28c56132a54656495388ff8437c50"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/include/linux/susfs.h.provenance.json",
+      "sha256": "d0c2b45e12d88d9ce1cee38ef1214dd15f21d04541025f6fb62b8b717992f21d"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/include/linux/susfs_def.h",
+      "sha256": "c515e11107088161b70e3bb7d4c49cdd3b882808c2e374a9a5237e5b8f19844b"
+    },
+    {
+      "path": "evidence/upstream-research/susfs/kernel_patches/include/linux/susfs_def.h.provenance.json",
+      "sha256": "91579e3d19359b9e466890dfa5e83324784aec27084dd6e3b6d51f09b5af5042"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-commit.json",
+      "sha256": "608604f5c6da026f1728d6282d370b39df6b5e978c961d27e459b4feeb85b8ec"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-commit.json.provenance.json",
+      "sha256": "d7c168d5bf734a868a91349820e1ea6528f49922c43f9477895066386493b3cd"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-main.yml",
+      "sha256": "c3cf015e84e3e31be73b3e8a7ecca1174da81231c8cc5140d3d69623004b4228"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-main.yml.provenance.json",
+      "sha256": "66ee01b72d0bf1fb8c9efb9c0f8e5c5f0ad81be522decd53606c7721bef34077"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-tree.json",
+      "sha256": "8d3da011762a2fb7f502f7ee8a4339d8961ecba59639ed530c4baa52c7767185"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels-tree.json.provenance.json",
+      "sha256": "13dddfa334df28a9ee142d128f781d430c230e9575f0f2dff7e592eb6b2726c9"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels/.github/actions/build-kernel/action.yml",
+      "sha256": "adff39e47cafafc618dca3eabd3c1a7d7860b538c2cf5ed0d711139e3e8fd83f"
+    },
+    {
+      "path": "evidence/upstream-research/wildkernels/.github/actions/build-kernel/action.yml.provenance.json",
+      "sha256": "f2bdfc7aff85d6a64cfda1da027e19aa3a29ba756dfb616af7f3bad46af68bd9"
+    },
+    {
+      "path": "evidence/user-config-diff.json",
+      "sha256": "d59f35d99d069ad1063ab8cce6182fb47cedeeef1382f80983c0c6e3d579b2dd"
+    },
+    {
+      "path": "evidence/user-repository-inventory.json",
+      "sha256": "f27247a742e59c59bda290771424f8f3ac923e55d42d08a0559c78d0183b8709"
+    },
+    {
+      "path": "evidence/vas-kernel-object-build.log",
+      "sha256": "edf4436f656b70f761f1c8502fc1001a298ea844389ce3b4ef407b7964f6e03f"
+    },
+    {
+      "path": "evidence/vas-static-analysis.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/vas-synthetic-replay.json",
+      "sha256": "511067b400049a4a6f46816f67c6b2059a8ed5ab17150f6053536baaf16cda4e"
+    },
+    {
+      "path": "patches/memory/policy.json",
+      "sha256": "297af256e89242ddae89a524db2cb5a734201a00c7778bd144a9173de04fc27d"
+    },
+    {
+      "path": "patches/networking/bbr-research.config",
+      "sha256": "76d3f182c6622b464240f1840f5656079cc67e2830e75de4581dfb02245b71c7"
+    },
+    {
+      "path": "patches/scheduler-vas/Makefile",
+      "sha256": "894b385f011a1667ebad565e1684f6356e8c8de90128faaeefe5c30ec96f27e6"
+    },
+    {
+      "path": "patches/scheduler-vas/vas_core.c",
+      "sha256": "4627e22d51409c749e268336b61eda24bb4ca66343a5ad0c82394bd915bcd911"
+    },
+    {
+      "path": "patches/scheduler-vas/vas_core.h",
+      "sha256": "2b7c2adcba7d46ae64f7f7a7ad3d723a2ffc3f50f15ebf00d01b21617d71a521"
+    },
+    {
+      "path": "patches/scheduler-vas/vas_probe.c",
+      "sha256": "d15be4c56b9d2ce5ce62ff1b1119ad8af0bb6c4af10608d0e98a7927dd629ad2"
+    },
+    {
+      "path": "patches/security/policy.json",
+      "sha256": "694b12263a1ba369b0ab2d39db89488db023cef10d95fb0418553aa1b9e986a9"
+    },
+    {
+      "path": "patches/sukisu/0001-pin-offline-version.patch",
+      "sha256": "7132aa30370df791a28908b93742e27547de8e25d75e222a60f80b846905ef58"
+    },
+    {
+      "path": "patches/susfs/50_add_susfs_in_gki-android13-5.15.patch",
+      "sha256": "ea999167ae9e69155c437396efa1a60c1fd507942f4059dd3609cdeeb13b4fef"
+    },
+    {
+      "path": "patches/susfs/51_susfs_ack_context_rebased.patch",
+      "sha256": "5e6567373020bfb9abe71f7fbbae9cf774da746d98662612bc13e0d63db01623"
+    },
+    {
+      "path": "patches/susfs/KernelSU/10_enable_susfs_for_ksu.patch",
+      "sha256": "64d32baa5a543a6f9988c1489e2021c467b84606570a388f4cbd44ff3ad77ed6"
+    },
+    {
+      "path": "patches/susfs/fs/susfs.c",
+      "sha256": "5d1b17dd7d20e4893b82b82a9f36e791558e3ddd735666b2b71f7839001dcb24"
+    },
+    {
+      "path": "patches/susfs/include/linux/susfs.h",
+      "sha256": "e06f190fe480ab6725851780b022b472b9b28c56132a54656495388ff8437c50"
+    },
+    {
+      "path": "patches/susfs/include/linux/susfs_def.h",
+      "sha256": "c515e11107088161b70e3bb7d4c49cdd3b882808c2e374a9a5237e5b8f19844b"
+    },
+    {
+      "path": "release/README.md",
+      "sha256": "df29ec5b375be24ceb8f22d77ff32d97561499dbbdab7528084277645f95dc3a"
+    },
+    {
+      "path": "scripts/analyze_ab.py",
+      "sha256": "75d1f3ac28fb9c59149305547599b90c95a607fbeb8bf753de508ae2475d5548"
+    },
+    {
+      "path": "scripts/audit-features.py",
+      "sha256": "76a21caab2e3063ed226a16d5b45c59c027ef52562725677880dcaaac0bf644e"
+    },
+    {
+      "path": "scripts/audit-modules.py",
+      "sha256": "4a28893cef6c9c69f448fcc429d5a923143effaab455eec05672b8651dfed75a"
+    },
+    {
+      "path": "scripts/bootstrap.sh",
+      "sha256": "5fb9beee6ecc0e60b9ad4d8b8ed0d8e6bc95d9ceba21f303731de4480e8e49ad"
+    },
+    {
+      "path": "scripts/build-baseline.sh",
+      "sha256": "258e8566904c178d53a99ed637f28a30d7a21858e82b48d6d13561a59891b863"
+    },
+    {
+      "path": "scripts/build-constrained.sh",
+      "sha256": "5db82021b8f927404585bc84c03a78fa476dd37ed5db958af29f90c6e6c009c6"
+    },
+    {
+      "path": "scripts/build-object-probes.sh",
+      "sha256": "60abcebe6b26cc6f7b4defab15f648bc6c1ad034d1eee5f6f07b84d36345a711"
+    },
+    {
+      "path": "scripts/build-root-lkm.sh",
+      "sha256": "e4491fc4b5dfa0517df1a104aaf955d4bd68e6cbb9d278d0b2d84d4a1f388cab"
+    },
+    {
+      "path": "scripts/build-root-object.sh",
+      "sha256": "08f4c8daeb3a713acaf660992d2b31d91a9b2d6f310c3315c66f8d1dc105903a"
+    },
+    {
+      "path": "scripts/control-build.py",
+      "sha256": "53c8c90e2f6ed2e4d7a07c54290f34a9a12ecc752c96cfc4a0c300227a61b574"
+    },
+    {
+      "path": "scripts/enable-build-swap.sh",
+      "sha256": "b57d3477a2c41fb22de93e203beb7637e857687dc2d8db4680dfa849f161c158"
+    },
+    {
+      "path": "scripts/export-delivery.py",
+      "sha256": "fd436566979554935294a2adfbefeab6aabda45ac9dba90ee5873bca9cdf5ef7"
+    },
+    {
+      "path": "scripts/kernel_audit.py",
+      "sha256": "a4d7432f46495fc41bd562f9309d205af00639b6d02fc25fad5d19f99bb6a2dc"
+    },
+    {
+      "path": "scripts/package-devkit.py",
+      "sha256": "9368755b2cbc2e8fdef424037f52f8fe76551557473b1dfbc92241061c9019cd"
+    },
+    {
+      "path": "scripts/prepare-root.py",
+      "sha256": "7b6ff8168b76f640fa04a70bdcfabd28783dd38b9d492adcbb424d484b3467d5"
+    },
+    {
+      "path": "scripts/rebase-susfs-context.py",
+      "sha256": "743c7c3a984c5535c4b4def2e3e8f1f105c16f3469fce021f9017495ad023948"
+    },
+    {
+      "path": "scripts/test.sh",
+      "sha256": "e382faccc3f59ebea3c99c291788585a41b4630deb87c19d84e305f6bac1abc0"
+    },
+    {
+      "path": "sources/research/collect_candidates.py",
+      "sha256": "5e00b07b7a07b18d3f213a08a7c6caf32ebdc701adfb2d261af0b37152ac3916"
+    },
+    {
+      "path": "sources/research/collect_upstream.py",
+      "sha256": "a4fe02e2b5b74263c486a8b7b7cb4b91757df09a3a50de158550201c3ae4074e"
+    },
+    {
+      "path": "sources/upstream-lock.json",
+      "sha256": "ed73a80893f0cdaee4ed69c47a513704d27be926019d23e22697321ede0fc838"
+    },
+    {
+      "path": "tests/test_analyze_ab.py",
+      "sha256": "532ac9f95430955f2e43ba1bf781d50b855f8b9894fd76c854d067f834d8e077"
+    },
+    {
+      "path": "tests/test_bootguard.py",
+      "sha256": "4112575be874e9d20a87fea6fa84870030348b706e6ad313d8a88d30ebccebb0"
+    },
+    {
+      "path": "tests/test_feature_inventory.py",
+      "sha256": "7ad5095059981fa6eab7e356140dee4b9ffc9670f3ec24d9e9be756cd7fba207"
+    },
+    {
+      "path": "tests/test_kernel_audit.py",
+      "sha256": "2ca43b8d4c241ee5794e9ed56495822687c981b20b2ef8648f031906846c3c6a"
+    },
+    {
+      "path": "tests/test_module_inventory.py",
+      "sha256": "5f83fe606b2ee4f74d3e260684757b297513537f056bb3b6a1f2073ff78d6f95"
+    },
+    {
+      "path": "tests/test_recovery_noop.py",
+      "sha256": "4f29f670bf7858ceca5dff8e83b13f60c2e119e570cffd10419de6baf1ca50fd"
+    },
+    {
+      "path": "tests/test_vas.py",
+      "sha256": "2463d0de186ea10875d45d6c20763815eeea2dadf26d1e319d1d097a8666a70f"
+    },
+    {
+      "path": "toolchains/README.md",
+      "sha256": "4e8129b2e9e981e1438d05454713bc0aab654b3380262534bc378165c61dc250"
+    },
+    {
+      "path": "toolchains/lock.json",
+      "sha256": "c3ac911cc46493c1c03cdf786c8dfe473648482c3dbc756021d6bfb08baee22f"
+    }
+  ],
+  "excluded": [
+    "evidence/user-supplied",
+    "untracked build outputs, backups, credentials"
+  ],
+  "pushed": false
+}

@@ -1,0 +1,39 @@
+{
+  "synthetic": true,
+  "device_latency_or_power_measured": false,
+  "results": [
+    {
+      "mode": "balanced",
+      "synthetic_decision_changes": 151,
+      "no_feasible_cpu": 50,
+      "choices": {
+        "0": 42,
+        "3": 0,
+        "5": 433,
+        "7": 75
+      }
+    },
+    {
+      "mode": "performance",
+      "synthetic_decision_changes": 140,
+      "no_feasible_cpu": 50,
+      "choices": {
+        "0": 1,
+        "3": 0,
+        "5": 314,
+        "7": 235
+      }
+    },
+    {
+      "mode": "efficiency",
+      "synthetic_decision_changes": 449,
+      "no_feasible_cpu": 50,
+      "choices": {
+        "0": 201,
+        "3": 0,
+        "5": 299,
+        "7": 50
+      }
+    }
+  ]
+}

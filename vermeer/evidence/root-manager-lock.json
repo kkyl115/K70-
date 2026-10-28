@@ -1,0 +1,13 @@
+{
+  "version": "v4.2.1-r2",
+  "version_code": 41068,
+  "release_published_at": "2026-10-24T10:52:37Z",
+  "source_commit": "d6b36700f3bd0a4c1585549b470dd30bb8774534",
+  "apk_name": "SukiSU_v4.2.1-r2_41068-release.apk",
+  "apk_sha256": "f60ba9fd7c3d8fe3966d7641ab755176f80100bcb8e9fa28d48856ecf931f464",
+  "matches_release_digest": true,
+  "kernel_expected_manager_package": "com.sukisu.ultra",
+  "kernel_expected_certificate_sha256": "947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef",
+  "certificate_extracted_and_verified": false,
+  "device_compatibility_verified": false
+}

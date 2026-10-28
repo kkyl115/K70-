@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/torvalds/linux/38fec10eb60d687e30c8c6b5420d86e8149f7557/tools/testing/selftests/drivers/ntsync/ntsync.c",
+  "sha256": "fe18dff484db066b198250b97f3cf4985d4c6cdbe4e95e44991f102bf1aabc63",
+  "bytes": 31950,
+  "retrieved_utc": "2026-10-28T03:48:41Z",
+  "gitiles_base64_decoded": false
+}

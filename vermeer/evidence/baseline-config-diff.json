@@ -1,0 +1,26 @@
+{
+  "CONFIG_CC_CAN_LINK": {
+    "before": "y",
+    "after": null
+  },
+  "CONFIG_CC_CAN_LINK_STATIC": {
+    "before": "y",
+    "after": null
+  },
+  "CONFIG_LOCALVERSION": {
+    "before": "\"\"",
+    "after": "\"-vermeer-baseline-lab\""
+  },
+  "CONFIG_PAHOLE_VERSION": {
+    "before": "123",
+    "after": "131"
+  },
+  "CONFIG_UAPI_HEADER_TEST": {
+    "before": "y",
+    "after": null
+  },
+  "CONFIG_UNUSED_KSYMS_WHITELIST": {
+    "before": "\"/mnt/disks/build-disk/src/android/common-android13-5.15-2025-03/out/android13-5.15/common/abi_symbollist.raw\"",
+    "after": "\"/home/administrator/vermeer-build/out-baseline/abi_symbollist.raw\""
+  }
+}

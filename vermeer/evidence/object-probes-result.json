@@ -1,0 +1,8 @@
+{
+  "vas_kernel_object_exit": 0,
+  "ntsync_unmodified_v6_14_object_exit": 0,
+  "vas_host_static_analysis_exit": 0,
+  "scope": "compile_only_no_module_link_no_runtime",
+  "abi_verified": false,
+  "device_tested": false
+}

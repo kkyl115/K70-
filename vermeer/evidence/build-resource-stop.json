@@ -1,0 +1,10 @@
+[
+  {
+    "ProcessId": 28596,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -d Ubuntu -- bash /mnt/c/Users/Administrator/Desktop/内核开发/scripts/build-baseline.sh"
+  },
+  {
+    "ProcessId": 16908,
+    "CommandLine": "\"C:\\WINDOWS\\system32\\wsl.exe\" -d Ubuntu -- bash /mnt/c/Users/Administrator/Desktop/内核开发/scripts/build-baseline.sh"
+  }
+]

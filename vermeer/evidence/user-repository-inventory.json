@@ -1,0 +1,169 @@
+{
+  "repo": "https://github.com/kkyl115/K70-",
+  "commit": "814c5c22afbaa707c50a7573ec4edc338e80004a",
+  "date": "2026-08-27T14:16:51Z",
+  "truncated": false,
+  "files": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21f1ebcd2666ffd2473e588a6cd0928bc58a26c5",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/21f1ebcd2666ffd2473e588a6cd0928bc58a26c5"
+    },
+    {
+      "path": ".github/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c0c08eb2323dbbacb6c843ffd28b4d6ea91f1645",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/c0c08eb2323dbbacb6c843ffd28b4d6ea91f1645"
+    },
+    {
+      "path": ".github/actions/cache-restore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d566cf903d1ed89e7631493e8c16ad461f062ee4",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/d566cf903d1ed89e7631493e8c16ad461f062ee4"
+    },
+    {
+      "path": ".github/actions/cache-restore/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6435b0d7d3e7ef13183a5e8346e6cf79ebca521f",
+      "size": 1901,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/6435b0d7d3e7ef13183a5e8346e6cf79ebca521f"
+    },
+    {
+      "path": ".github/actions/cache-save",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3cafe6b18c391590c327d94eee9f4db279ff5fa9",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/3cafe6b18c391590c327d94eee9f4db279ff5fa9"
+    },
+    {
+      "path": ".github/actions/cache-save/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84f17f54aa85fb55006630e6812b2767fcef1c15",
+      "size": 2382,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/84f17f54aa85fb55006630e6812b2767fcef1c15"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d8dcc37f15054115805688c0bc0ddd888e28b68",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/6d8dcc37f15054115805688c0bc0ddd888e28b68"
+    },
+    {
+      "path": ".github/workflows/build-kernels.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbbf2356ec7fe65e2c633e4dd0c8cf8341ca2f0f",
+      "size": 12028,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/cbbf2356ec7fe65e2c633e4dd0c8cf8341ca2f0f"
+    },
+    {
+      "path": ".github/workflows/config",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66e2a94febb27d76c9048b7777792c025e67f726",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/66e2a94febb27d76c9048b7777792c025e67f726"
+    },
+    {
+      "path": ".github/workflows/config/matrix.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94110d21647b28e24ad97cd230eaab0fd8ebbb8b",
+      "size": 1231,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/94110d21647b28e24ad97cd230eaab0fd8ebbb8b"
+    },
+    {
+      "path": ".github/workflows/kernel-build.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b657ff713e6a36a32c7815d4b6806c982f1d6f5",
+      "size": 7055,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/9b657ff713e6a36a32c7815d4b6806c982f1d6f5"
+    },
+    {
+      "path": ".github/workflows/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "871b831470dad3d2adce42581a0fb028208f54a0",
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/trees/871b831470dad3d2adce42581a0fb028208f54a0"
+    },
+    {
+      "path": ".github/workflows/scripts/build.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f7234d75f5fc7703c8e8b9072d26a4abe7f2577",
+      "size": 9901,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/3f7234d75f5fc7703c8e8b9072d26a4abe7f2577"
+    },
+    {
+      "path": ".github/workflows/scripts/config.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9d687efb204198827e47215f34ad93d49427be8",
+      "size": 7137,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/c9d687efb204198827e47215f34ad93d49427be8"
+    },
+    {
+      "path": ".github/workflows/scripts/extract_artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dc5309b2e6a9b7aaeb163849a93e0254987533c",
+      "size": 3385,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/6dc5309b2e6a9b7aaeb163849a93e0254987533c"
+    },
+    {
+      "path": ".github/workflows/scripts/kernel_builder.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69fe3488a1e6f6afe6412873ee2a4649e6fdf3d1",
+      "size": 34729,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/69fe3488a1e6f6afe6412873ee2a4649e6fdf3d1"
+    },
+    {
+      "path": ".github/workflows/scripts/matrix_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a82e826e669dec02373c883994eb0c94dac8b884",
+      "size": 4009,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/a82e826e669dec02373c883994eb0c94dac8b884"
+    },
+    {
+      "path": ".github/workflows/scripts/release_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e24761e84147c2466f09ca18601507683b548658",
+      "size": 2497,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/e24761e84147c2466f09ca18601507683b548658"
+    },
+    {
+      "path": ".github/workflows/scripts/telegram_notify.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aedbd96ad193a6ea84ae3b3c8ce0c631efce89ca",
+      "size": 10314,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/aedbd96ad193a6ea84ae3b3c8ce0c631efce89ca"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b6c8e87015df4b0b414ef705bafb713fedc411d",
+      "size": 7084,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/7b6c8e87015df4b0b414ef705bafb713fedc411d"
+    },
+    {
+      "path": "hmbird_patch.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "624f1311268c4b6af03438f997e1d7c2346b6adc",
+      "size": 2143,
+      "url": "https://api.github.com/repos/kkyl115/K70-/git/blobs/624f1311268c4b6af03438f997e1d7c2346b6adc"
+    }
+  ]
+}

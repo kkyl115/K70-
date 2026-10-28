@@ -1,0 +1,10 @@
+{
+  "selinux": "preserve enforcing",
+  "avb": "preserve verification and descriptors; never disable to force boot",
+  "cfi": "retain baseline CONFIG_CFI_CLANG and full LTO; do not switch to KCFI on Clang14",
+  "fs_verity": "retain baseline",
+  "bpf": "retain baseline security boundaries; no unrestricted loader",
+  "lts_update": "separate branch after base reproducibility and ABI checks; no blind merge",
+  "gpu_tables": "no changes",
+  "thermal_limits": "no changes"
+}

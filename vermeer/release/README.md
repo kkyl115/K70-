@@ -1,0 +1,1 @@
+Only the engineering source devkit and BootGuard AUDIT NOOP are authorized for this offline release. Neither ZIP installs a custom kernel. The NOOP ZIP does not restore a bootloop. A phone installer is withheld until current device/source/ABI/AVB/recovery gates have evidence.

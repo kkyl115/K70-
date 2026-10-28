@@ -1,0 +1,33 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+-- SukiSU-Ultra version: 41068 [v4.2.1-r2-d6b36700@vermeer-lab]
+-- KernelSU Manager package name: com.sukisu.ultra
+-- KernelSU Manager signature size: 0x35c
+-- KernelSU Manager signature hash: 947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef
+-- KernelSU is PR Build: 0
+-- KERNEL_VERSION: 5.15
+-- KERNEL_TYPE: GKI 2.0
+-- KPM is disabled
+-- KSU_NEW_DCACHE_FLUSH: 1
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/core/init.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/kernel_umount.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/module_blacklist.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/mount_hide.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/sulog.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/sucompat.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/lsm_hook.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/setuid_hook.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/syscall_event_bridge.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/syscall_hook_manager.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/tp_marker.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/arm64/patch_memory.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/hook/arm64/syscall_hook.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/file_wrapper.o
+In file included from /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/file_wrapper.c:16:
+/home/administrator/vermeer-build/common/security/selinux/include/objsec.h:28:10: fatal error: 'flask.h' file not found
+#include "flask.h"
+         ^~~~~~~~~
+1 error generated.
+make[2]: *** [/home/administrator/vermeer-build/common/scripts/Makefile.build:287: /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/file_wrapper.o] Error 1
+make[1]: *** [/home/administrator/vermeer-build/common/Makefile:1952: /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel] Error 2
+make: *** [Makefile:244: __sub-make] Error 2
+make: Leaving directory '/home/administrator/vermeer-build/common'

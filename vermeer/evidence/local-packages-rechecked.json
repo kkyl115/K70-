@@ -1,0 +1,38 @@
+[
+  {
+    "bytes": 42102848,
+    "sha256": "132dd7072e032a0b52b14fe2106455b66de925aba479b4d1ece4b62035f04a7c",
+    "avb_verified": false,
+    "deployable": false,
+    "scope": "structure only; not signature or device compatibility",
+    "kind": "kernel",
+    "kernel": {
+      "arm64_image_magic": true,
+      "versions": [
+        "5.15.178-android13-8-g362d545d31a5"
+      ],
+      "ikconfig_sha256": "7bc12444dbf8dff7e4f82b6c3a7acd0dff1aad14d6deb70d8e0884b11dbd60bd"
+    },
+    "package": "C:\\Users\\Administrator\\Desktop\\K70\\diagnostics-20261027\\packages\\android13-5.15.178-2025-03-AnyKernel3(1).zip",
+    "package_sha256": "2979b5ce380ca3bb3ba818386d5360a2a634f561c4217b624670caa13d32999d",
+    "config_matches_user_upload": false
+  },
+  {
+    "bytes": 43584000,
+    "sha256": "60111bd0fea5de317dbc19c6c6dd7996a4d3ea283bf02856d35c226094ea6ed3",
+    "avb_verified": false,
+    "deployable": false,
+    "scope": "structure only; not signature or device compatibility",
+    "kind": "kernel",
+    "kernel": {
+      "arm64_image_magic": true,
+      "versions": [
+        "5.15.178-android13-8-g362d545d31a5"
+      ],
+      "ikconfig_sha256": "71ebdb121e6cdcb647b2a2be0235f1bf6f6dbce5e10bf824da1ad4350e4b4289"
+    },
+    "package": "C:\\Users\\Administrator\\Desktop\\K70\\diagnostics-20261027\\packages\\android13-5.15.178-2025-03-AnyKernel3.zip",
+    "package_sha256": "5b32f2a2ce9e6fcb0797e8ea0f72613450e3bccd911b16e70cbf6053a6efd144",
+    "config_matches_user_upload": true
+  }
+]

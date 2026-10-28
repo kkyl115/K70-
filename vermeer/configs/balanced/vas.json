@@ -1,0 +1,1 @@
+{"schema":1,"mode":"balanced","observe_only":true,"latency_budget_us":4000,"migration_hold_us":4000,"improvement_permille":120,"energy_weight":100,"latency_weight":100,"source":"uncalibrated research hypothesis; not device optimized"}

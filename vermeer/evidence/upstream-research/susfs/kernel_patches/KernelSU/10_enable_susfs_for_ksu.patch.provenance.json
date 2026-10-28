@@ -1,0 +1,7 @@
+{
+  "url": "https://gitlab.com/simonpunk/susfs4ksu/-/raw/0b5f96716cb2fc7b035dce2f06cb8a51e1b9b108/kernel_patches/KernelSU/10_enable_susfs_for_ksu.patch",
+  "sha256": "64d32baa5a543a6f9988c1489e2021c467b84606570a388f4cbd44ff3ad77ed6",
+  "bytes": 108405,
+  "retrieved_utc": "2026-10-27T18:18:26Z",
+  "gitiles_base64_decoded": false
+}

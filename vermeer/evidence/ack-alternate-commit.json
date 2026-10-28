@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "362d545d31a5659546d5546c7ae206f745e98c3e",
+  "tree": "a543e75aaec591ea36ae72bb17b6f1c480a4d22c",
+  "parents": [
+    "f6b890f51b95954019d093f2aa6038263cd77f20"
+  ],
+  "author": {
+    "name": "yangshiyou",
+    "email": "yangshiyou@vivo.corp-partner.google.com",
+    "time": "Fri Dec 12 00:02:09 2025 +0800"
+  },
+  "committer": {
+    "name": "Yang Shiyou",
+    "email": "yangshiyou@vivo.corp-partner.google.com",
+    "time": "Wed Dec 17 08:29:33 2025 -0800"
+  },
+  "message": "ANDROID: GKI: Update symbol list for vivo\n\nDuring zone initialization adjust a more suitable watermark for\nCustomize, which can optimize kswapd load and system memory status.\n\n1 function symbol(s) added\n\u0027int __traceiter_android_vh_init_adjust_zone_wmark(void*, struct zone *, u64)\u0027\n\n1 variable symbol(s) added\n\u0027struct tracepoint __traceiter_android_vh_init_adjust_zone_wmark\u0027\n\nBug: 467886903\nBug: 468137818\nChange-Id: I3d8136043e1d9869647f3a244716ffafadf05c79\nSigned-off-by: yangshiyou \u003cyangshiyou@vivo.corp-partner.google.com\u003e\n(cherry picked from commit 401d2e5564fad8fc4b2fa18984c5bfe568e36feb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2f98d42da17bf7290c7062bd62c8b06142c2c125",
+      "old_mode": 33188,
+      "old_path": "android/abi_gki_aarch64.xml",
+      "new_id": "390ef293fa165dfb975bfd64ea10e8e567c01776",
+      "new_mode": 33188,
+      "new_path": "android/abi_gki_aarch64.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "05c924c8191574f1ff1f0c8055dca72efcd2a0e6",
+      "old_mode": 33188,
+      "old_path": "android/abi_gki_aarch64_vivo",
+      "new_id": "1913b398b0f91933340a916e2adb2586b15ab93a",
+      "new_mode": 33188,
+      "new_path": "android/abi_gki_aarch64_vivo"
+    }
+  ]
+}

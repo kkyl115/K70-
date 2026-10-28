@@ -1,0 +1,28 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+  GEN     Makefile
+  CALL    /home/administrator/vermeer-build/common/scripts/checksyscalls.sh
+  CALL    /home/administrator/vermeer-build/common/scripts/atomic/check-atomics.sh
+  DESCEND bpf/resolve_btfids
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      security/selinux/avc.o
+  CC      security/selinux/hooks.o
+  CC      security/selinux/selinuxfs.o
+  CC      security/selinux/netlink.o
+  CC      security/selinux/nlmsgtab.o
+  CC      security/selinux/netif.o
+  CC      security/selinux/netnode.o
+  CC      security/selinux/netport.o
+  CC      security/selinux/status.o
+  CC      security/selinux/ss/ebitmap.o
+  CC      security/selinux/ss/hashtab.o
+  CC      security/selinux/ss/symtab.o
+  CC      security/selinux/ss/sidtab.o
+  CC      security/selinux/ss/avtab.o
+  CC      security/selinux/ss/policydb.o
+  CC      security/selinux/ss/services.o
+  CC      security/selinux/ss/conditional.o
+  CC      security/selinux/ss/mls.o
+  CC      security/selinux/ss/context.o
+  CC      security/selinux/vendor_hooks.o
+  AR      security/selinux/built-in.a
+make: Leaving directory '/home/administrator/vermeer-build/common'

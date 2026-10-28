@@ -1,0 +1,16 @@
+#!/sbin/sh
+# TWRP touch Install action invokes this NOOP AUDIT only.
+OUTFD="$2"
+case "$OUTFD" in ''|*[!0-9]*) exit 2;; esac
+ui_print() { printf 'ui_print %s\nui_print\n' "$1" >&"$OUTFD"; }
+ui_print 'BootGuard AUDIT ONLY - no restoration or partition writes'
+product=$(getprop ro.product.device)
+slot=$(getprop ro.boot.slot_suffix)
+ui_print "Observed product=$product slot=$slot"
+if [ "$product" != vermeer ] || [ "$slot" != _a ]; then
+  ui_print 'REFUSED: expected vermeer, current slot A. Stop and inspect.'
+  exit 1
+fi
+ui_print 'NOOP complete. A is untouched. This package CANNOT recover a bootloop.'
+ui_print 'Keep the previously verified rescue environment and original backups.'
+exit 0

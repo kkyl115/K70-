@@ -1,0 +1,34 @@
+{
+  "ack": {
+    "repository": "https://android.googlesource.com/kernel/common",
+    "commit": "6f2f96be86b93de6ed58a2c46b456fb49734c382",
+    "selected_for": "baseline compile"
+  },
+  "sukisu": {
+    "repository": "https://github.com/SukiSU-Ultra/SukiSU-Ultra",
+    "commit": "d6b36700f3bd0a4c1585549b470dd30bb8774534",
+    "selected_for": "offline LKM compile"
+  },
+  "kpm": {
+    "repository": "https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch",
+    "commit": "bc2bf170c3251a849ecf52e98ff66b6df7160415",
+    "selected_for": "source research only"
+  },
+  "susfs": {
+    "repository": "https://gitlab.com/simonpunk/susfs4ksu",
+    "branch": "gki-android13-5.15",
+    "commit": "0b5f96716cb2fc7b035dce2f06cb8a51e1b9b108",
+    "selected_for": "compatibility check; not merged"
+  },
+  "micode": {
+    "repository": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource",
+    "branch": "bsp-vermeer-t-oss",
+    "commit": "53ef33eacdc4f7ac737451e4cfc91963d59e3956",
+    "selected_for": "BSP research; not current Android16 compatibility evidence"
+  },
+  "current_reported_ack": {
+    "repository": "https://android.googlesource.com/kernel/common",
+    "commit": "362d545d31a5659546d5546c7ae206f745e98c3e",
+    "selected_for": "new user-reported target base; exact CI patch stack missing"
+  }
+}

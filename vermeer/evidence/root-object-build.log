@@ -1,0 +1,48 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+-- SukiSU-Ultra version: 41068 [v4.2.1-r2-d6b36700@vermeer-lab]
+-- KernelSU Manager package name: com.sukisu.ultra
+-- KernelSU Manager signature size: 0x35c
+-- KernelSU Manager signature hash: 947ae944f3de4ed4c21a7e4f7953ecf351bfa2b36239da37a34111ad29993eef
+-- KernelSU is PR Build: 0
+-- KERNEL_VERSION: 5.15
+-- KERNEL_TYPE: GKI 2.0
+-- KPM is disabled
+-- KSU_NEW_DCACHE_FLUSH: 1
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/file_wrapper.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/event_queue.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/seccomp_cache.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/su_mount_ns.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/infra/symbol_resolver.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/manager/apk_sign.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/manager/pkg_observer.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/manager/throne_tracker.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/dynamic_manager.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/dynamic_sig_fallback.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/policy/allowlist.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/policy/app_profile.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/policy/feature.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/extension.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/cpu_spoof.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/umount_paths.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/susfs_extension.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/runtime/boot_event.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/runtime/ksud_integration.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/selinux/selinux.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/selinux/rules.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/selinux/sepolicy.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/sulog/event.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/sulog/fd.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/supercall/dispatch.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/supercall/perm.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/supercall/supercall.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/adb_root.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/selinux_hide.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/shell_su_adb_only.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/uts_spoof.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/feature/avc_spoof.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/extension/kpm.o
+  CC [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/preinit/preinit.o
+  RUNNER  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/preinit/runner.elf
+  AS [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/preinit/blob.o
+  AR [M]  /home/administrator/vermeer-build/root-sukisu-v4.2.1-r2/SukiSU-Ultra-d6b36700f3bd0a4c1585549b470dd30bb8774534/kernel/kernelsu.o
+make: Leaving directory '/home/administrator/vermeer-build/common'

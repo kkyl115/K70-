@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/ravindu644/Droidspaces-OSS/4344dc5fc4ab981f1cf2df54c93bf32a6ebbdc85/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_3_4_5.patch",
+  "sha256": "c47ff9ebb015430913058b3a08182b8c379812731613e1b23804eb6fa4e29ea4",
+  "bytes": 1393,
+  "retrieved_utc": "2026-10-28T03:48:13Z",
+  "gitiles_base64_decoded": false
+}

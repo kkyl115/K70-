@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "85294008d635da40e774c362a9e5d16a1b21e8fd",
+  "tree": "2d88dc6ebf41de362e349c66c853ace654b8f666",
+  "parents": [
+    "4cfd840c4068491523d35391a010a46391b0728f"
+  ],
+  "author": {
+    "name": "Betty Zhou",
+    "email": "bettyzhou@google.com",
+    "time": "Thu Feb 12 13:22:57 2026 -0800"
+  },
+  "committer": {
+    "name": "Betty Zhou",
+    "email": "bettyzhou@google.com",
+    "time": "Fri Feb 13 09:48:18 2026 -0800"
+  },
+  "message": "Comment out kernel/tests project for local testing only.\n\nRemove projects prebuilts/tradefed, prebuilts/asuite as they are not needed for local testing anymore.\n\nBug: 484063413\nChange-Id: I7dfb6390d0d0255c0fee638446dd44fe8e5bc6fc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f3cbadc88320b53c5541827155eb2cd58c75abd3",
+      "old_mode": 33188,
+      "old_path": "default.xml",
+      "new_id": "4abf0e1bbe85f141a580075bd4b86355148c53a9",
+      "new_mode": 33188,
+      "new_path": "default.xml"
+    }
+  ]
+}

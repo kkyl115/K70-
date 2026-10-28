@@ -1,0 +1,17 @@
+d79f76ed59bdcfbe8681afcded616e89954aa559318caa11ef5e327bc290c1b4  /home/administrator/vermeer-build/toolchains/clang-r450784e.tar.gz
+41131b03d674645836c23635a7e2ae478bd869b3b3da98204365c06610ec5438  /home/administrator/vermeer-build/toolchains/clang-r450784e/bin/clang
+858eaed0308ad1da1d21ff1df1616130cfe4b96f2502fd7099086f9cd48dbb41  /home/administrator/vermeer-build/toolchains/clang-r450784e/bin/ld.lld
+bc	1.07.1-4build1
+bison	2:3.8.2+dfsg-1ubuntu0.26.04.1
+build-essential	12.12ubuntu2.26.04.2
+cpio	2.15+dfsg-2.1ubuntu0.1
+dwarves	1.31-2ubuntu1
+flex	2.6.4-8.2build2
+gcc	4:15.2.0-5ubuntu1
+libelf-dev:amd64	0.194-4
+libssl-dev:amd64	3.5.5-1ubuntu3.7
+lz4	1.10.0-8
+make	4.4.1-3
+python3	3.14.3-0ubuntu2
+rsync	3.4.1+ds1-7ubuntu0.3
+zstd	1.5.7+dfsg-3

@@ -1,0 +1,21 @@
+{
+  "bytes": 201326592,
+  "sha256": "5b030bc2a740166fa9c34daa851f5174199067332675abe200245fe11473a95e",
+  "avb_verified": false,
+  "deployable": false,
+  "scope": "structure only; not signature or device compatibility",
+  "kind": "boot/init_boot",
+  "header_version": 4,
+  "kernel_size": 47442432,
+  "ramdisk_size": 0,
+  "boot_signature_size": 0,
+  "kernel_sha256": "f5acfde209dbc87f86ed5f0ecff1dc52d3b51638cc30932fd5cab38e7f71afee",
+  "cmdline": "",
+  "kernel": {
+    "arm64_image_magic": true,
+    "versions": [
+      "5.15.178-android13-8-00021-g6f2f96be86b9-ab13729987"
+    ],
+    "ikconfig_sha256": "fe494eff425a5b7b39db09a4959d2e98b97cd5086bd0b6a4554b5ad7d1387fb6"
+  }
+}

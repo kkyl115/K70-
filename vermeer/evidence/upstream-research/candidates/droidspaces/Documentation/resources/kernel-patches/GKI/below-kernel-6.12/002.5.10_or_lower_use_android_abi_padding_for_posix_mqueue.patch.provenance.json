@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/ravindu644/Droidspaces-OSS/4344dc5fc4ab981f1cf2df54c93bf32a6ebbdc85/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/002.5.10_or_lower_use_android_abi_padding_for_posix_mqueue.patch",
+  "sha256": "31982c85f4a65ca3ec71d27903626fb0234a39c4d3e99667bc849918e42693b7",
+  "bytes": 1399,
+  "retrieved_utc": "2026-10-28T03:48:16Z",
+  "gitiles_base64_decoded": false
+}

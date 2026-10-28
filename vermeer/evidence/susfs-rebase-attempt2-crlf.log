@@ -1,0 +1,50 @@
+error: patch failed: block/ioprio.c:97
+error: block/ioprio.c: patch does not apply
+error: patch failed: drivers/input/input.c:375
+error: drivers/input/input.c: patch does not apply
+error: patch failed: fs/Makefile:18
+error: fs/Makefile: patch does not apply
+error: patch failed: fs/exec.c:65
+error: fs/exec.c: patch does not apply
+error: patch failed: fs/namei.c:39
+error: fs/namei.c: patch does not apply
+error: patch failed: fs/namespace.c:32
+error: fs/namespace.c: patch does not apply
+error: patch failed: fs/notify/fdinfo.c:12
+error: fs/notify/fdinfo.c: patch does not apply
+error: patch failed: fs/open.c:33
+error: fs/open.c: patch does not apply
+error: patch failed: fs/proc/base.c:100
+error: fs/proc/base.c: patch does not apply
+error: patch failed: fs/proc/bootconfig.c:12
+error: fs/proc/bootconfig.c: patch does not apply
+error: patch failed: fs/proc/fd.c:13
+error: fs/proc/fd.c: patch does not apply
+error: patch failed: fs/proc/task_mmu.c:22
+error: fs/proc/task_mmu.c: patch does not apply
+error: patch failed: fs/proc_namespace.c:12
+error: fs/proc_namespace.c: patch does not apply
+error: patch failed: fs/read_write.c:628
+error: fs/read_write.c: patch does not apply
+error: patch failed: fs/readdir.c:24
+error: fs/readdir.c: patch does not apply
+error: patch failed: fs/stat.c:18
+error: fs/stat.c: patch does not apply
+error: patch failed: fs/statfs.c:9
+error: fs/statfs.c: patch does not apply
+error: patch failed: fs/super.c:37
+error: fs/super.c: patch does not apply
+error: patch failed: kernel/kallsyms.c:29
+error: kernel/kallsyms.c: patch does not apply
+error: patch failed: kernel/reboot.c:305
+error: kernel/reboot.c: patch does not apply
+error: patch failed: kernel/sys.c:203
+error: kernel/sys.c: patch does not apply
+error: patch failed: mm/memory.c:74
+error: mm/memory.c: patch does not apply
+error: patch failed: security/selinux/avc.c:47
+error: security/selinux/avc.c: patch does not apply
+error: patch failed: security/selinux/hooks.c:105
+error: security/selinux/hooks.c: patch does not apply
+error: patch failed: security/selinux/selinuxfs.c:43
+error: security/selinux/selinuxfs.c: patch does not apply

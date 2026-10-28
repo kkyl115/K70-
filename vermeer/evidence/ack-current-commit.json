@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f2f96be86b93de6ed58a2c46b456fb49734c382",
+  "tree": "242b08a1a0061a6a58096b6f8c5647845ab4011c",
+  "parents": [
+    "f2f503610b80f322eb41dffad4b49780b7697cc5"
+  ],
+  "author": {
+    "name": "Florian Westphal",
+    "email": "fw@strlen.de",
+    "time": "Mon Sep 26 17:16:50 2022 +0200"
+  },
+  "committer": {
+    "name": "Wei Zhang",
+    "email": "wei265.zhang@tcl.corp-partner.google.com",
+    "time": "Tue Jul 01 19:41:59 2025 -0700"
+  },
+  "message": "UPSTREAM: mm: fix BUG splat with kvmalloc + GFP_ATOMIC\n\nMartin Zaharinov reports BUG with 5.19.10 kernel:\n kernel BUG at mm/vmalloc.c:2437!\n invalid opcode: 0000 [#1] SMP\n CPU: 28 PID: 0 Comm: swapper/28 Tainted: G        W  O      5.19.9 #1\n [..]\n RIP: 0010:__get_vm_area_node+0x120/0x130\n  __vmalloc_node_range+0x96/0x1e0\n  kvmalloc_node+0x92/0xb0\n  bucket_table_alloc.isra.0+0x47/0x140\n  rhashtable_try_insert+0x3a4/0x440\n  rhashtable_insert_slow+0x1b/0x30\n [..]\n\nbucket_table_alloc uses kvzalloc(GPF_ATOMIC).  If kmalloc fails, this now\nfalls through to vmalloc and hits code paths that assume GFP_KERNEL.\n\nLink: https://lkml.kernel.org/r/20220926151650.15293-1-fw@strlen.de\nFixes: a421ef303008 (\"mm: allow !GFP_KERNEL allocations for kvmalloc\")\nSigned-off-by: Florian Westphal \u003cfw@strlen.de\u003e\nSuggested-by: Michal Hocko \u003cmhocko@suse.com\u003e\nLink: https://lore.kernel.org/linux-mm/Yy3MS2uhSgjF47dy@pc636/T/#t\nAcked-by: Michal Hocko \u003cmhocko@suse.com\u003e\nReported-by: Martin Zaharinov \u003cmicron10@gmail.com\u003e\nCc: Uladzislau Rezki (Sony) \u003curezki@gmail.com\u003e\nCc: Vlastimil Babka \u003cvbabka@suse.cz\u003e\nCc: \u003cstable@vger.kernel.org\u003e\nSigned-off-by: Andrew Morton \u003cakpm@linux-foundation.org\u003e\n\nBug: 425765070\nBug: 428807036\nChange-Id: I6d97d396ce211079ed54d155ba0711709bd23076\n(cherry picked from commit 30c19366636f72515679aa10dad61a4d988d4c9a)\nSigned-off-by: Wei Zhang \u003cwei265.zhang@tcl.corp-partner.google.com\u003e\n(cherry picked from commit a62b6eac4760ffdd39f6a7f102edf51fad6628b8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3be7381804dcf8671b0ec144e58800b21b9196e9",
+      "old_mode": 33188,
+      "old_path": "mm/util.c",
+      "new_id": "652a49f28c44fc9555a62599b373d9066334b2f4",
+      "new_mode": 33188,
+      "new_path": "mm/util.c"
+    }
+  ]
+}

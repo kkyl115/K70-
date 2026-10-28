@@ -1,0 +1,7 @@
+Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+no label, UUID=98045b16-e37c-4941-a605-6cc9990c8f0b
+NAME                                         TYPE SIZE USED PRIO
+/home/administrator/vermeer-build/build.swap file   4G   0B   -2
+               total        used        free      shared  buff/cache   available
+Mem:           7.8Gi       728Mi       6.5Gi       3.6Mi       686Mi       7.0Gi
+Swap:          4.0Gi          0B       4.0Gi

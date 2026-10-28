@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/torvalds/linux/38fec10eb60d687e30c8c6b5420d86e8149f7557/include/uapi/linux/ntsync.h",
+  "sha256": "006437ee52a3e04f921df77081eb5c21c44c71f598b10ac534c6ef9e78296262",
+  "bytes": 1614,
+  "retrieved_utc": "2026-10-28T03:48:31Z",
+  "gitiles_base64_decoded": false
+}

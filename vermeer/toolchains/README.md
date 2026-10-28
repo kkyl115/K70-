@@ -1,0 +1,1 @@
+The pinned Clang r450784e binary is stored in WSL at /home/administrator/vermeer-build/toolchains, not duplicated on the Windows desktop. lock.json fixes its source commit and archive/binary hashes. scripts/bootstrap.sh reproduces acquisition.

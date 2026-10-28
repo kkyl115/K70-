@@ -1,0 +1,33 @@
+Hit:1 http://archive.ubuntu.com/ubuntu resolute InRelease
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [751 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [178 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [110 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [334 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [111 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [201 kB]
+Get:10 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [517 kB]
+Get:11 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [104 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [1056 B]
+Get:13 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:14 https://download.docker.com/linux/ubuntu resolute InRelease [32.5 kB]
+Get:15 https://download.docker.com/linux/ubuntu resolute/stable amd64 Packages [31.9 kB]
+Get:16 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [607 kB]
+Get:17 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [141 kB]
+Ign:17 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en
+Get:18 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46.7 kB]
+Get:19 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [206 kB]
+Get:20 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [67.9 kB]
+Get:21 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [55.5 kB]
+Get:17 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [141 kB]
+Fetched 3770 kB in 19s (202 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Package libxml2 is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+E: Package 'libxml2' has no installation candidate

@@ -1,0 +1,13 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.patch text eol=lf
+*.img binary
+*.zip binary
+*.tar.gz binary
+# Preserve byte-for-byte captured evidence and original baseline configurations.
+evidence/** -text
+configs/baseline/** -text
+bootguard/recovery/update-binary text eol=lf

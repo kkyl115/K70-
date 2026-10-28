@@ -1,0 +1,8 @@
+{
+  "repository": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+  "commit": "9f759dee5cdc5f85d076c642a192f6a9232f7058",
+  "directory": "clang-r450784e",
+  "archive_sha256": "d79f76ed59bdcfbe8681afcded616e89954aa559318caa11ef5e327bc290c1b4",
+  "clang_sha256": "41131b03d674645836c23635a7e2ae478bd869b3b3da98204365c06610ec5438",
+  "host_dependencies": "evidence/build-dependencies.txt"
+}

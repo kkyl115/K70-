@@ -1,0 +1,4 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+  CC [M]  /home/administrator/vermeer-build/vas-probe/vas_core.o
+  CC [M]  /home/administrator/vermeer-build/vas-probe/vas_probe.o
+make: Leaving directory '/home/administrator/vermeer-build/common'

@@ -1,0 +1,76 @@
+{
+  "input_sha256": "71ebdb121e6cdcb647b2a2be0235f1bf6f6dbce5e10bf824da1ad4350e4b4289",
+  "evidence_scope": "supplied_config_only",
+  "features": {
+    "BBG": {
+      "CONFIG_BBG": "not_recorded",
+      "CONFIG_BBG_BLOCK_BOOT": "not_recorded",
+      "CONFIG_BBG_BLOCK_RECOVERY": "not_recorded",
+      "CONFIG_LSM": "\"landlock,lockdown,yama,loadpin,safesetid,integrity,selinux,smack,tomoyo,apparmor,bpf\""
+    },
+    "BBRv3": {
+      "CONFIG_TCP_CONG_BBR3": "y",
+      "CONFIG_DEFAULT_TCP_CONG": "\"bbr3\"",
+      "CONFIG_NET_SCH_FQ": "y"
+    },
+    "WireGuard": {
+      "CONFIG_WIREGUARD": "y",
+      "CONFIG_TUN": "y"
+    },
+    "NTSync": {
+      "CONFIG_NTSYNC": "not_recorded"
+    },
+    "ZRAM": {
+      "CONFIG_ZRAM": "m",
+      "CONFIG_ZSMALLOC": "m",
+      "CONFIG_ZRAM_DEF_COMP": "\"lzo-rle\"",
+      "CONFIG_ZRAM_WRITEBACK": "n",
+      "CONFIG_LZ4_COMPRESS": "y",
+      "CONFIG_ZSTD_COMPRESS": "y"
+    },
+    "DroidSpaces": {
+      "CONFIG_SYSVIPC": "n",
+      "CONFIG_POSIX_MQUEUE": "n",
+      "CONFIG_IPC_NS": "not_recorded",
+      "CONFIG_PID_NS": "n",
+      "CONFIG_DEVTMPFS": "n",
+      "CONFIG_NET_NS": "y",
+      "CONFIG_VETH": "y",
+      "CONFIG_USER_NS": "n",
+      "CONFIG_CGROUP_PIDS": "n",
+      "CONFIG_CFS_BANDWIDTH": "n"
+    },
+    "DAMON": {
+      "CONFIG_DAMON": "y",
+      "CONFIG_DAMON_PADDR": "y",
+      "CONFIG_DAMON_RECLAIM": "y"
+    },
+    "MGLRU_PSI": {
+      "CONFIG_LRU_GEN": "y",
+      "CONFIG_LRU_GEN_ENABLED": "n",
+      "CONFIG_PSI": "y"
+    },
+    "crash_evidence": {
+      "CONFIG_PSTORE": "y",
+      "CONFIG_PSTORE_RAM": "y",
+      "CONFIG_PSTORE_CONSOLE": "y"
+    },
+    "root_mount_visibility": {
+      "CONFIG_KSU": "y",
+      "CONFIG_KSU_SUSFS": "y",
+      "CONFIG_KSU_SUSFS_SUS_MOUNT": "y"
+    }
+  },
+  "droidspaces_core_requirements_not_shown_enabled": [
+    "CONFIG_SYSVIPC",
+    "CONFIG_POSIX_MQUEUE",
+    "CONFIG_IPC_NS",
+    "CONFIG_PID_NS",
+    "CONFIG_DEVTMPFS"
+  ],
+  "susfs_container_visibility_review_required": true,
+  "runtime_verified": false,
+  "source_patch_identity_verified": false,
+  "abi_verified": false,
+  "deployable": false
+}

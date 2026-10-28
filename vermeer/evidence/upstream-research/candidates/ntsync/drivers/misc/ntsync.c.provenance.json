@@ -1,0 +1,7 @@
+{
+  "url": "https://raw.githubusercontent.com/torvalds/linux/38fec10eb60d687e30c8c6b5420d86e8149f7557/drivers/misc/ntsync.c",
+  "sha256": "2fb92d6befb6a67cfba3ccab51bd65bc313994fe5c20c1223d3b79cb74129e45",
+  "bytes": 27224,
+  "retrieved_utc": "2026-10-28T03:48:29Z",
+  "gitiles_base64_decoded": false
+}
