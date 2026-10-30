@@ -1,6 +1,14 @@
 test_nan_rejected (test_analyze_ab.ABTests.test_nan_rejected) ... ok
 test_paired_math (test_analyze_ab.ABTests.test_paired_math) ... ok
 test_unpaired_rejected (test_analyze_ab.ABTests.test_unpaired_rejected) ... ok
+test_crc_corruption_is_not_a_pass (test_anykernel_audit.AnyKernelAuditTests.test_crc_corruption_is_not_a_pass) ... ok
+test_member_size_bound (test_anykernel_audit.AnyKernelAuditTests.test_member_size_bound) ... ok
+test_reject_ambiguous_installer (test_anykernel_audit.AnyKernelAuditTests.test_reject_ambiguous_installer) ... ok
+test_reject_case_collision (test_anykernel_audit.AnyKernelAuditTests.test_reject_case_collision) ... ok
+test_reject_symlink (test_anykernel_audit.AnyKernelAuditTests.test_reject_symlink) ... ok
+test_reject_traversal_and_windows_aliases (test_anykernel_audit.AnyKernelAuditTests.test_reject_traversal_and_windows_aliases) ... ok
+test_valid_root_and_all_member_hashes (test_anykernel_audit.AnyKernelAuditTests.test_valid_root_and_all_member_hashes) ... ok
+test_wrapped_archive_is_not_root_installer_or_runtime_proof (test_anykernel_audit.AnyKernelAuditTests.test_wrapped_archive_is_not_root_installer_or_runtime_proof) ... ok
 test_block_device_refused (test_bootguard.BootGuardTests.test_block_device_refused) ... ok
 test_commit_survives (test_bootguard.BootGuardTests.test_commit_survives) ... ok
 test_corrupt_backup (test_bootguard.BootGuardTests.test_corrupt_backup) ... ok
@@ -51,8 +59,12 @@ test_observe_only (test_vas.VasTests.test_observe_only) ... ok
 test_offline (test_vas.VasTests.test_offline) ... ok
 test_peak_demand (test_vas.VasTests.test_peak_demand) ... ok
 test_synthetic_replay (test_vas.VasTests.test_synthetic_replay) ... ok
+test_allocator_cost_not_payload_or_disksize (test_zram_analysis.ZramAnalysisTests.test_allocator_cost_not_payload_or_disksize) ... ok
+test_bad_counters (test_zram_analysis.ZramAnalysisTests.test_bad_counters) ... ok
+test_empty_and_same_page_counters (test_zram_analysis.ZramAnalysisTests.test_empty_and_same_page_counters) ... ok
+test_negative_savings_are_preserved (test_zram_analysis.ZramAnalysisTests.test_negative_savings_are_preserved) ... ok
 
 ----------------------------------------------------------------------
-Ran 53 tests in 0.516s
+Ran 65 tests in 0.361s
 
 OK

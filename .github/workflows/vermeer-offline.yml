@@ -1,0 +1,81 @@
+name: Vermeer offline engineering
+
+on:
+  push:
+    branches: [codex/vermeer-engineering]
+    paths: ['vermeer/**', '.github/workflows/vermeer-offline.yml']
+  workflow_dispatch:
+    inputs:
+      full_kernel:
+        description: 'Compile the pinned historical ACK baseline; no installer or Release'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: vermeer-offline-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Test file-only recovery model and VAS C core
+        working-directory: vermeer
+        run: bash scripts/test.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: vermeer-offline-tests-${{ github.sha }}
+          path: |
+            vermeer/evidence/automated-tests.log
+            vermeer/evidence/vas-synthetic-replay.json
+          if-no-files-found: error
+          retention-days: 14
+
+  historical-baseline:
+    if: github.event_name == 'workflow_dispatch' && inputs.full_kernel
+    needs: offline-tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install host build dependencies and record versions
+        working-directory: vermeer
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends build-essential bc bison flex libssl-dev libelf-dev libncurses-dev libxml2-utils libtinfo6 rsync cpio lz4 zstd device-tree-compiler kmod dwarves
+          dpkg-query -W > evidence/ci-host-packages.txt
+          free -h > evidence/ci-memory.txt
+          df -h > evidence/ci-storage.txt
+      - name: Fetch pinned source and verified Clang
+        working-directory: vermeer
+        run: bash scripts/bootstrap.sh
+      - name: Compile original full LTO and CFI baseline
+        working-directory: vermeer
+        env:
+          JOBS: '2'
+        run: bash scripts/build-baseline.sh
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: vermeer-historical-baseline-UNVERIFIED-${{ github.sha }}
+          path: |
+            vermeer/evidence/baseline-*
+            vermeer/evidence/ci-*
+            vermeer/build/baseline/Image
+            vermeer/build/baseline/Module.symvers
+            vermeer/build/baseline/System.map
+            vermeer/build/baseline/.config
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 7

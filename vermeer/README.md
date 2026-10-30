@@ -2,12 +2,13 @@
 
 Redmi K70 / vermeer 的离线工程工作区。**当前不是稳定内核或可刷写安装包。** 没有操作手机、覆盖 A 槽、修改槽位或关闭 AVB/SELinux。
 
+- [2026-10-31 当前内核核验](docs/当前内核核验-20261031.md)：新 ZIP 的 BBG/LZ4KD/KPM 实证、NoActive 配套关系和版本差异。
 - [验收报告](docs/验收报告.md)：分别说明代码、编译、自动化测试、模拟恢复与实机状态。
 - [技术路线与新想法](docs/技术路线与新想法.md)：BBG、BBRv3、NTSync、WireGuard、DroidSpaces、ZRAM、DAMON 等用途和真实限制。
 - [构建与操作指南](docs/构建与操作指南.md)：锁定源码/Clang、本地测试、待补资料。
 - [Root 集成](docs/上游与Root集成.md)、[ABI 核对](docs/资料核对与ABI.md)、[VAS](docs/VAS.md)、[BootGuard](docs/BootGuard.md)。
 
-历史 ACK 基线是 `6f2f96be86b93de6ed58a2c46b456fb49734c382`；后来上传资料报告的当前内核基于 `362d545d31a5659546d5546c7ae206f745e98c3e` 并带第三方补丁，二者严格分开。当前完整 patch 来源和对应 vendor/system_dlkm 仍未齐备。
+历史 ACK 基线是 `6f2f96be86b93de6ed58a2c46b456fb49734c382`；后来上传资料报告的当前内核基于 `362d545d31a5659546d5546c7ae206f745e98c3e` 并带第三方补丁，二者严格分开。2026-10-31 新 ZIP 内同为 g362d 字符串，但功能配置不同；截图显示 g8f7，与 ZIP 的字节级关联尚未完成。当前完整 patch 来源和对应 vendor/system_dlkm 仍未齐备。
 
 ## 可直接运行的离线部分
 

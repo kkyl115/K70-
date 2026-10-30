@@ -1,11 +1,11 @@
 {
-  "source_commit": "fa822131f79ac8520066643529c24078c126f6c4",
+  "source_commit": "7f7f1360a1206db340262a80c51588fd36f1c372",
   "source_worktree_snapshot": true,
   "branch": "codex/vermeer-engineering",
   "files": [
     {
       "path": ".gitattributes",
-      "sha256": "004e8981d38f9f589e38fb6201f40d15220aba78aa7774761b3d3fc0e017512a"
+      "sha256": "580bd08baee831a600a179cfded64cdac1587542b6c095ee85f922a8a498bf67"
     },
     {
       "path": ".gitignore",
@@ -21,7 +21,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "631c5fac948e2b896f211d1a7155a6a03607a705256f1904c20ec474ce445927"
+      "sha256": "0c9f8962ebfedbcc61102c39563bc889bb8ad70759a1fc2be211dfa573e75b46"
     },
     {
       "path": "bootguard/bootguard.py",
@@ -29,7 +29,7 @@
     },
     {
       "path": "bootguard/preflight/collect-readonly.sh",
-      "sha256": "3dcec9f3972c4abfe69522288695213b8f1880e67be593eb52610d0cc774d7f6"
+      "sha256": "19c7bd49fc419da46c6f5291bf1acd77a7612c89284772f2412ca95a31fe7fb2"
     },
     {
       "path": "bootguard/recovery/update-binary",
@@ -54,6 +54,10 @@
     {
       "path": "configs/baseline/historical-5.15.178.config",
       "sha256": "fe494eff425a5b7b39db09a4959d2e98b97cd5086bd0b6a4554b5ad7d1387fb6"
+    },
+    {
+      "path": "configs/baseline/received-20261031-g362d.config",
+      "sha256": "e1a14df5fc96ed03b4eb61164ca43a636fd2f60280d42902836b6a7761ba55bc"
     },
     {
       "path": "configs/baseline/user-supplied-5.15.178.config",
@@ -88,8 +92,12 @@
       "sha256": "32fd71d95cd96aeedf68c03401f648d80cbadd5bbddb236c30a6d758c9c5b749"
     },
     {
+      "path": "docs/\u5f53\u524d\u5185\u6838\u6838\u9a8c-20261031.md",
+      "sha256": "fac4b67be4f0613204a09b3a79ce87066ff84050c65d9b8065d3ec7ed61d3992"
+    },
+    {
       "path": "docs/\u6280\u672f\u8def\u7ebf\u4e0e\u65b0\u60f3\u6cd5.md",
-      "sha256": "440ba882264dbeac7673f74d6ed51514e770554e0a370c160460c8a191117d08"
+      "sha256": "4ae529771eb1e5503ab4e99e5b95a305580a30f4f247beb757e5b6decae3ce79"
     },
     {
       "path": "docs/\u6784\u5efa\u4e0e\u64cd\u4f5c\u6307\u5357.md",
@@ -101,7 +109,7 @@
     },
     {
       "path": "docs/\u9a8c\u6536\u62a5\u544a.md",
-      "sha256": "2f073d17d9938c020a30255d4e5f29219f4e41f61019706e11f29b24faf0f52b"
+      "sha256": "23590738fec0319b65dc854111ea389e8cf595b8b06a7c8a57646363fa4b60b7"
     },
     {
       "path": "evidence/abi-tool-install.log",
@@ -125,7 +133,7 @@
     },
     {
       "path": "evidence/automated-tests.log",
-      "sha256": "c37b8e28759bf4cfa9335682247765ff4c1270c2e934a7ef4be7c0f71256486f"
+      "sha256": "ce96452310022015e52cfbc71cb317aaa8fe8778e0ad4ddb509496e6f47c7f8b"
     },
     {
       "path": "evidence/baseline-attempt1-unreliable-shell-exit.json",
@@ -141,7 +149,7 @@
     },
     {
       "path": "evidence/baseline-build-exit.json",
-      "sha256": "8a13f60f5e5cf7527f6fa4d79e0477bba089a4a3a509dae1ab18b4c26d68c0e0"
+      "sha256": "9f3ba569ab471ea9f4911a2e5de9bcb0f1715ebfccb9e92acbb9cb64625fe439"
     },
     {
       "path": "evidence/baseline-build.log",
@@ -150,6 +158,14 @@
     {
       "path": "evidence/baseline-config-diff.json",
       "sha256": "153bb0121908969ef026d21edf1833a9bdda490c26ab45c5335b2029a0b6f3bd"
+    },
+    {
+      "path": "evidence/bbg-object-build.log",
+      "sha256": "d293496a46e7ef2f610758b9714e59d95ee55335e5643c77859312af48cff5ad"
+    },
+    {
+      "path": "evidence/bbg-object-result.json",
+      "sha256": "4c0945bf76acb134bfb49950ae2e48f54f1587a78b133cf0a97d8e99f064c846"
     },
     {
       "path": "evidence/build-dependencies.txt",
@@ -228,8 +244,24 @@
       "sha256": "4e9e2f0f953ccb67c8eec552a5ec002094a96cff23a595468789420f938ad65f"
     },
     {
+      "path": "evidence/package-verification.json",
+      "sha256": "5500b27af5667df21e6fc6996993b3cdf8edfc3b16ecaf888dd5607c012acafc"
+    },
+    {
       "path": "evidence/packaging-result.json",
-      "sha256": "6db267aeb9da409acd137d84d43f0df512f0060168a75f4f0e54c2c1f9f5264a"
+      "sha256": "28ab065f97b3303914be591c1c627f95880a4d84e5b505e145599354b1a3cc73"
+    },
+    {
+      "path": "evidence/received-kernel-20261031/anykernel-audit.json",
+      "sha256": "af4f0aed2ccfde023b67a42db09cae04c30477a1709c65da709978170baa2bc5"
+    },
+    {
+      "path": "evidence/received-kernel-20261031/feature-audit.json",
+      "sha256": "bdc669f65fa3fc59c750674d6dc6f40a2bf01539b284c7243e4019b9bf01ac8f"
+    },
+    {
+      "path": "evidence/received-kernel-20261031/user-runtime-observation.json",
+      "sha256": "dd27d6fbfdd44f3cfc10325d586d8a8b5e4fa1051f9235274090cc5f61a373cc"
     },
     {
       "path": "evidence/root-manager-lock.json",
@@ -576,6 +608,38 @@
       "sha256": "555f55d4f919d0a7f9aa47109b0e61521eedd951c6e44c8441dc88464e1dda6f"
     },
     {
+      "path": "evidence/upstream-research/candidates/rekernel-x/LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/LICENSE.provenance.json",
+      "sha256": "3a99bef9e7355fb8073039b9c2506706a2bfdf7e3e68dcb56c3960fd0dc7dffa"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/README.md",
+      "sha256": "fe22f681033216ae32400471cc3f20e4856dad3f73dff1ad0c2ec0b63a551bc0"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/README.md.provenance.json",
+      "sha256": "a32fdd295593b4ae7e0c1bdc0f2538a00984954ee495cae944323a2731f1dfb9"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/commit.json",
+      "sha256": "fc2fc6a5063b8bd3fe33646f83f2f115718a5c8c99bbb8e271e92488d2c8eb54"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/commit.json.provenance.json",
+      "sha256": "eb96b66a036345c8f1f27373ceb0a9788bdd52ee404da023e47b5e223cee6bf7"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/release-1.6.json",
+      "sha256": "6d7b59d82022c87267eb272148363734009b189ef8047ce17418551d4af050a8"
+    },
+    {
+      "path": "evidence/upstream-research/candidates/rekernel-x/release-1.6.json.provenance.json",
+      "sha256": "502972f64ee3add268618c736294a855e7a29bc17a16f0e7bb622ed2377bdf81"
+    },
+    {
       "path": "evidence/upstream-research/kpm-source.tar.gz",
       "sha256": "b4003386f9d1a0e3a9755464be3f8d82e44da42b050f27a85d67c95a139cc32f"
     },
@@ -836,6 +900,10 @@
       "sha256": "511067b400049a4a6f46816f67c6b2059a8ed5ab17150f6053536baaf16cda4e"
     },
     {
+      "path": "patches/kpm/README.md",
+      "sha256": "c9be6f79163df0f932259ac85fe79fa3eed91d35510c6e2d78ed8e3b61583226"
+    },
+    {
       "path": "patches/memory/policy.json",
       "sha256": "297af256e89242ddae89a524db2cb5a734201a00c7778bd144a9173de04fc27d"
     },
@@ -858,6 +926,10 @@
     {
       "path": "patches/scheduler-vas/vas_probe.c",
       "sha256": "d15be4c56b9d2ce5ce62ff1b1119ad8af0bb6c4af10608d0e98a7927dd629ad2"
+    },
+    {
+      "path": "patches/security/bbg/0001-offline-version.patch",
+      "sha256": "cdb37a8075bc1811c3cbcfe9b1afa3074d14ab177886614569babd9b79ef83e3"
     },
     {
       "path": "patches/security/policy.json",
@@ -896,16 +968,24 @@
       "sha256": "df29ec5b375be24ceb8f22d77ff32d97561499dbbdab7528084277645f95dc3a"
     },
     {
+      "path": "scripts/analyze-zram.py",
+      "sha256": "9c4d2c1e676134a9db1e9bd7cec9c44d202050df0e0605218ac233eaa92b51ba"
+    },
+    {
       "path": "scripts/analyze_ab.py",
       "sha256": "75d1f3ac28fb9c59149305547599b90c95a607fbeb8bf753de508ae2475d5548"
     },
     {
+      "path": "scripts/audit-anykernel.py",
+      "sha256": "3aa97c16920cf69bf044b06012c753338fa32f4db2e53b3ed8f353fee7a2f318"
+    },
+    {
       "path": "scripts/audit-features.py",
-      "sha256": "76a21caab2e3063ed226a16d5b45c59c027ef52562725677880dcaaac0bf644e"
+      "sha256": "5b94ae924b48736a9481c8dc665fa892bcecebbf720a649e2ca99aeaa7335d90"
     },
     {
       "path": "scripts/audit-modules.py",
-      "sha256": "4a28893cef6c9c69f448fcc429d5a923143effaab455eec05672b8651dfed75a"
+      "sha256": "fd8c55a9d0d5847c022fe0ac7f1e88cbeeb7f453997a3778b9f90c58ab83aea5"
     },
     {
       "path": "scripts/bootstrap.sh",
@@ -914,6 +994,10 @@
     {
       "path": "scripts/build-baseline.sh",
       "sha256": "258e8566904c178d53a99ed637f28a30d7a21858e82b48d6d13561a59891b863"
+    },
+    {
+      "path": "scripts/build-bbg-objects.sh",
+      "sha256": "e3b7e105e25b2b86a5db748e2dee9190c47de2b95a2a7b9de7e99de5cd7f3322"
     },
     {
       "path": "scripts/build-constrained.sh",
@@ -980,12 +1064,16 @@
       "sha256": "532ac9f95430955f2e43ba1bf781d50b855f8b9894fd76c854d067f834d8e077"
     },
     {
+      "path": "tests/test_anykernel_audit.py",
+      "sha256": "562eaf72fd13de8e646358fc512d68ada51d080f194e6b98df1b47099571d87b"
+    },
+    {
       "path": "tests/test_bootguard.py",
       "sha256": "4112575be874e9d20a87fea6fa84870030348b706e6ad313d8a88d30ebccebb0"
     },
     {
       "path": "tests/test_feature_inventory.py",
-      "sha256": "7ad5095059981fa6eab7e356140dee4b9ffc9670f3ec24d9e9be756cd7fba207"
+      "sha256": "d0d74f12bf9834a23aba944e97dd9bc057911b732ec40799e22e02215357eb7c"
     },
     {
       "path": "tests/test_kernel_audit.py",
@@ -993,7 +1081,7 @@
     },
     {
       "path": "tests/test_module_inventory.py",
-      "sha256": "5f83fe606b2ee4f74d3e260684757b297513537f056bb3b6a1f2073ff78d6f95"
+      "sha256": "bd751d69919b09951badfca4ee216a354b64338d14ee92b970437e4731cfc6ae"
     },
     {
       "path": "tests/test_recovery_noop.py",
@@ -1002,6 +1090,10 @@
     {
       "path": "tests/test_vas.py",
       "sha256": "2463d0de186ea10875d45d6c20763815eeea2dadf26d1e319d1d097a8666a70f"
+    },
+    {
+      "path": "tests/test_zram_analysis.py",
+      "sha256": "7846c9505202f271b93bdd86305aa6b21b5fb4a9d5ffc01af1d3ba36c1b66337"
     },
     {
       "path": "toolchains/README.md",

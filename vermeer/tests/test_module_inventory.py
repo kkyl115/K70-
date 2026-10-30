@@ -1,9 +1,11 @@
 import importlib.util
 from pathlib import Path
 import tempfile
+import sys
 import unittest
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/'scripts'))
 spec=importlib.util.spec_from_file_location('module_inventory',ROOT/'scripts/audit-modules.py')
 inventory=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(inventory)
@@ -18,7 +20,8 @@ class ModuleInventoryTests(unittest.TestCase):
     def test_corrupt_compressed_module_is_failure(self):
         with tempfile.TemporaryDirectory() as d:
             (Path(d)/'bad.ko.gz').write_bytes(b'not gzip')
+            (Path(d)/'bad.ko.xz').write_bytes(b'not xz')
             report=inventory.audit(d,'','5.15')
-        self.assertEqual(report['module_count'],1)
+        self.assertEqual(report['module_count'],2)
         self.assertEqual(report['crc_pass_count'],0)
         self.assertFalse(report['deployable'])

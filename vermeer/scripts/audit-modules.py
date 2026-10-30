@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline ELF/CRC inventory. Never equates matching CRCs with complete ABI."""
-import argparse,gzip,json,lzma,subprocess
+import argparse,gzip,json,lzma,struct,subprocess,zlib
 from pathlib import Path
 from kernel_audit import elf_module,compare_module
 
@@ -18,7 +18,7 @@ def audit(directory,symvers,vermagic):
             elif path.suffix=='.zst': data=subprocess.run(['zstd','-dc','--',str(path)],check=True,capture_output=True).stdout
             m=elf_module(data); result=compare_module(m,symvers,vermagic)
             report.append({'file':str(path.relative_to(directory)),'module':m,'check':result})
-        except (OSError,ValueError,subprocess.SubprocessError) as e:
+        except (OSError,ValueError,lzma.LZMAError,struct.error,zlib.error,subprocess.SubprocessError) as e:
             report.append({'file':str(path.relative_to(directory)),'error':str(e)})
     passes=sum(r.get('check',{}).get('symbol_crc_check')=='PASS' for r in report)
     return {'module_count':len(report),'crc_pass_count':passes,

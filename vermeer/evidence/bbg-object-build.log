@@ -1,0 +1,18 @@
+make: Entering directory '/home/administrator/vermeer-build/common'
+-- Baseband-guard: flask.h found, skip generation
+-- Baseband-guard/compat: found file_ioctl_compat
+-- Baseband-guard/compat: found selinux_state
+-- Baseband_guard/compat: found selinux_cred
+-- Baseband-guard/compat: found modern block device api
+-- Baseband-guard: CONFIG_BBG enabled, now checking...
+-- Kernel Version: 5.15
+-- Baseband_guard: Found DEFINE_LSM,now checking CONFIG_LSM...
+-- CONFIG_LSM value: landlock,lockdown,yama,loadpin,safesetid,integrity,selinux,smack,tomoyo,apparmor,bpf,baseband_guard
+-- Baseband-guard: Okay, Baseband_guard was found in CONFIG_LSM
+-- BBG was enabled!
+-- BBG version: 028ff7fd
+-- BBG repo: https://github.com/vc-teahouse/Baseband-guard
+  CC      /home/administrator/vermeer-build/bbg-object-probe/baseband_guard.o
+  CC      /home/administrator/vermeer-build/bbg-object-probe/blkdev_helper.o
+  CC      /home/administrator/vermeer-build/bbg-object-probe/tracing/tracing.o
+make: Leaving directory '/home/administrator/vermeer-build/common'

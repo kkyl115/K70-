@@ -1,0 +1,55 @@
+{
+  "recorded_date": "2026-10-31",
+  "source": "user_statement_and_screenshots_not_direct_device_collection",
+  "screenshots": [
+    {
+      "filename": "1000043771.jpg",
+      "sha256": "f7eab97d0c22003787f2bc2dd70871d319f910eaf344887a3457f359cfd0602a",
+      "scope": "user_supplied_screenshot"
+    },
+    {
+      "filename": "1000043772.jpg",
+      "sha256": "f87e740b016da60c10b95fdc55fdccf4ba9a2fa5e6b9f5dcf0c012427e713188",
+      "scope": "user_supplied_screenshot"
+    },
+    {
+      "filename": "1000043770.jpg",
+      "sha256": "75eef30a8589b1a1d9f9f754310ee92067b762206a402662035583080ee139e4",
+      "scope": "user_supplied_screenshot"
+    },
+    {
+      "filename": "codex-clipboard-a28f6a65-6694-47d3-a394-38805efe9918.jpg",
+      "sha256": "50f5ea77b897565f05d87fd5d0a67e80f52576ceee6f672bd10a9815121bb0e8",
+      "scope": "user_supplied_screenshot"
+    }
+  ],
+  "reported_os": "OS3.0.302.0.WNKCNXM",
+  "reported_model": "Redmi K70",
+  "reported_root_mode": "Built-in",
+  "reported_sukisu": "v4.3.0 (41100-6)",
+  "reported_root_full_version": "v4.3.0-85d3b048@LingLuo",
+  "displayed_kernel_release": "5.15.178-android13-11-g8f7e75155ef2",
+  "displayed_susfs": "v2.3.0 (SUSFS Inline Hook)",
+  "displayed_zygisk_next": "1.5.2 (864-a4a72ce-release)",
+  "displayed_selinux": "Enforcing",
+  "displayed_zram": {
+    "algorithm": "lz4kd",
+    "logical_capacity_MiB": 16384,
+    "swap_used_display": 3542,
+    "used_display_unit": "Scene display; not physical allocation",
+    "swappiness": 100,
+    "watermark_scale_factor": 46
+  },
+  "displayed_kpm": {
+    "name": "re_kernel_x",
+    "version": "1.6-20261010",
+    "authors": "Nep-Timeline, lzghzr, myflavor",
+    "loaded_count": 1,
+    "purpose_confirmed_by_user": "NoActive companion module"
+  },
+  "active_slot": "unknown_after_user_installation",
+  "phone_image_sha256": null,
+  "runtime_bbg_verified": false,
+  "kernel_zip_matches_running_image": null,
+  "device_operated_by_agent": false
+}

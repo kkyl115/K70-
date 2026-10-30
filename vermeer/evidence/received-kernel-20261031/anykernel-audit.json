@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "archive_name": "SukiSU_kernel-android13-5.15-178-AnyKernel3 (1).zip",
+  "archive_bytes": 21994144,
+  "archive_sha256": "2cc5205cc74144ad05c59eaac5defed77c451b7d6b952ed97baf30218e3cd543",
+  "member_crc_verified": true,
+  "members": [
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/Image",
+      "bytes": 42191360,
+      "sha256": "544d10dd1e00693f7389f4d73de205261535110b0a83be62042532323b162cc3"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/LICENSE",
+      "bytes": 11630,
+      "sha256": "df6f65da47d459fdf2a2ef0eadb34f37d838befc91352b64a84f35507bea95cd"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/META-INF/com/google/android/update-binary",
+      "bytes": 19948,
+      "sha256": "18bfaca89bdf67115447895e28b65a6127a8ddab6ff2561b214e70cef35f76f9"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/META-INF/com/google/android/updater-script",
+      "bytes": 115,
+      "sha256": "ef91e7d8a9b3dc2076be6412932d82657751d0f21471b1d09f2ca8855bcbb899"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/anykernel.sh",
+      "bytes": 2178,
+      "sha256": "521143bd511182fc9fcd45a2a6917d8e44d8daf9b4a36c356c45aaf76a71453b"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/banner",
+      "bytes": 717,
+      "sha256": "7620427adc638d1e515297155dbbbe5e202e81bcaa1b738a339bfa0e80340226"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/ak3-core.sh",
+      "bytes": 39792,
+      "sha256": "715d7bde56eed0c02d56956f2ffa3a41a181a6b2523b5e356f79f127f46d7b38"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/busybox",
+      "bytes": 1498688,
+      "sha256": "c629fce4b0dd3ba9775f851d0941e74582115f423258d3a79800f2bd11d30f5c"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/fec",
+      "bytes": 131424,
+      "sha256": "a486890d0fd713557c55af881a78b3fd11a16ff195e29bd8559b0407de08d60e"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/getevent",
+      "bytes": 433352,
+      "sha256": "5a4e48d9055888a2b41ec4a3b2cbcbe4a1d57693cffdb5f25c567c4cf65e9a01"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/httools_static",
+      "bytes": 742144,
+      "sha256": "9f7285341423ca02e1ff54a05b757db8bb09cfa36802879db3b358ae5a6c96aa"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/lptools_static",
+      "bytes": 618664,
+      "sha256": "da1b80e231bb7576d76e6f57bea4e27706805ec86b9b9c6524ac609c3179b969"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/magiskboot",
+      "bytes": 1015160,
+      "sha256": "4c480c9ffc51b4b9d8c3760bb188fd1eb73972a90983963ef791bca6faa65d6c"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/magiskpolicy",
+      "bytes": 340024,
+      "sha256": "699f0cf70efe3b20b720c19f180d02c7f2230ebcc785b7d979c9187ec4afd85f"
+    },
+    {
+      "path": "SukiSU_kernel-android13-5.15-178-AnyKernel3/tools/snapshotupdater_static",
+      "bytes": 2235040,
+      "sha256": "708b431da44619a716011153137d18252841ce4eb7f7ab17fe78df02ad2db55c"
+    }
+  ],
+  "package_prefix": "SukiSU_kernel-android13-5.15-178-AnyKernel3/",
+  "recovery_entry_at_archive_root": false,
+  "kernel": {
+    "bytes": 42191360,
+    "sha256": "544d10dd1e00693f7389f4d73de205261535110b0a83be62042532323b162cc3",
+    "avb_verified": false,
+    "deployable": false,
+    "scope": "structure only; not signature or device compatibility",
+    "kind": "kernel",
+    "kernel": {
+      "arm64_image_magic": true,
+      "versions": [
+        "5.15.178-android13-8-g362d545d31a5"
+      ],
+      "ikconfig_sha256": "e1a14df5fc96ed03b4eb61164ca43a636fd2f60280d42902836b6a7761ba55bc"
+    }
+  },
+  "embedded_identity_strings": [
+    "SUSFS Inline Hook",
+    "baseband_guard",
+    "v1.12.13",
+    "v2.3.0",
+    "v4.3.0-85d3b048@LingLuo"
+  ],
+  "bbg": {
+    "CONFIG_BBG": "y",
+    "CONFIG_BBG_BLOCK_BOOT": "n",
+    "CONFIG_BBG_BLOCK_RECOVERY": "n",
+    "CONFIG_LSM": "\"landlock,lockdown,yama,loadpin,safesetid,integrity,selinux,baseband_guard,smack,tomoyo,apparmor,bpf\""
+  },
+  "literal_assignments_only": {
+    "do.devicecheck": [
+      {
+        "line": 8,
+        "value": "0"
+      }
+    ],
+    "do.modules": [
+      {
+        "line": 9,
+        "value": "0"
+      }
+    ],
+    "do.systemless": [
+      {
+        "line": 10,
+        "value": "0"
+      }
+    ],
+    "do.cleanup": [
+      {
+        "line": 11,
+        "value": "1"
+      }
+    ],
+    "do.cleanuponabort": [
+      {
+        "line": 12,
+        "value": "0"
+      }
+    ],
+    "do.check_boot_version": [
+      {
+        "line": 13,
+        "value": "0"
+      }
+    ],
+    "keycheck.timeout": [
+      {
+        "line": 22,
+        "value": "10"
+      }
+    ],
+    "block": [
+      {
+        "line": 28,
+        "value": "boot"
+      }
+    ],
+    "is_slot_device": [
+      {
+        "line": 29,
+        "value": "auto"
+      }
+    ],
+    "ramdisk_compression": [
+      {
+        "line": 30,
+        "value": "auto"
+      }
+    ],
+    "patch_vbmeta_flag": [
+      {
+        "line": 31,
+        "value": "auto"
+      }
+    ],
+    "no_magisk_check": [
+      {
+        "line": 32,
+        "value": "1"
+      }
+    ]
+  },
+  "script_markers_only": {
+    "META-INF/com/google/android/update-binary": [
+      {
+        "line": 292,
+        "text": "do_devicecheck() {"
+      },
+      {
+        "line": 293,
+        "text": "[ \"$(file_getprop anykernel.sh do.devicecheck)\" == 1 ] || return 1;"
+      },
+      {
+        "line": 560,
+        "text": "do_devicecheck;"
+      }
+    ],
+    "anykernel.sh": [
+      {
+        "line": 8,
+        "text": "do.devicecheck=0"
+      },
+      {
+        "line": 13,
+        "text": "do.check_boot_version=0"
+      },
+      {
+        "line": 28,
+        "text": "block=boot"
+      },
+      {
+        "line": 31,
+        "text": "patch_vbmeta_flag=auto"
+      },
+      {
+        "line": 32,
+        "text": "no_magisk_check=1"
+      },
+      {
+        "line": 56,
+        "text": "write_boot"
+      },
+      {
+        "line": 58,
+        "text": "flash_boot"
+      }
+    ],
+    "tools/ak3-core.sh": [
+      {
+        "line": 82,
+        "text": "dd if=$BLOCK of=$BOOTIMG $CUSTOMDD;"
+      },
+      {
+        "line": 191,
+        "text": "### write_boot functions:"
+      },
+      {
+        "line": 220,
+        "text": "if [ ! \"$NO_MAGISK_CHECK\" ]; then"
+      },
+      {
+        "line": 246,
+        "text": "# flash_boot (build, sign and write image only)"
+      },
+      {
+        "line": 247,
+        "text": "flash_boot() {"
+      },
+      {
+        "line": 325,
+        "text": "if [ ! \"$magisk_patched\" -a ! \"$NO_MAGISK_CHECK\" ]; then"
+      },
+      {
+        "line": 385,
+        "text": "unset magisk_patched KEEPVERITY KEEPFORCEENCRYPT RECOVERYMODE PREINITDEVICE SHA1 RANDOMSEED; # leave PATCHVBMETAFLAG set for repack"
+      },
+      {
+        "line": 391,
+        "text": "case $PATCH_VBMETA_FLAG in"
+      },
+      {
+        "line": 392,
+        "text": "auto|\"\") [ \"$PATCHVBMETAFLAG\" ] || export PATCHVBMETAFLAG=false;;"
+      },
+      {
+        "line": 393,
+        "text": "1) export PATCHVBMETAFLAG=true;;"
+      },
+      {
+        "line": 394,
+        "text": "*) export PATCHVBMETAFLAG=false;;"
+      },
+      {
+        "line": 401,
+        "text": "[ \"$PATCHVBMETAFLAG\" ] && unset PATCHVBMETAFLAG;"
+      },
+      {
+        "line": 446,
+        "text": "dd if=/dev/zero of=$BLOCK $CUSTOMDD 2>/dev/null;"
+      },
+      {
+        "line": 447,
+        "text": "dd if=boot-new.img of=$BLOCK $CUSTOMDD;"
+      },
+      {
+        "line": 449,
+        "text": "cat boot-new.img /dev/zero > $BLOCK 2>/dev/null || true;"
+      },
+      {
+        "line": 506,
+        "text": "if [ -d /postinstall/tmp -a \"$SLOT_SELECT\" == \"inactive\" ]; then"
+      },
+      {
+        "line": 544,
+        "text": "dd if=/dev/zero of=$imgblock 2>/dev/null;"
+      },
+      {
+        "line": 545,
+        "text": "dd if=$img of=$imgblock;"
+      },
+      {
+        "line": 565,
+        "text": "### write_boot (repack ramdisk then build, sign and write image, vendor_dlkm and dtbo)"
+      },
+      {
+        "line": 566,
+        "text": "write_boot() {"
+      },
+      {
+        "line": 568,
+        "text": "flash_boot;"
+      },
+      {
+        "line": 818,
+        "text": "[ \"$patch_vbmeta_flag\" ] && PATCH_VBMETA_FLAG=\"$patch_vbmeta_flag\";"
+      },
+      {
+        "line": 820,
+        "text": "[ \"$slot_select\" ] && SLOT_SELECT=\"$slot_select\";"
+      },
+      {
+        "line": 822,
+        "text": "[ \"$no_magisk_check\" ] && NO_MAGISK_CHECK=\"$no_magisk_check\";"
+      },
+      {
+        "line": 823,
+        "text": "unset block is_slot_device ramdisk_compression patch_vbmeta_flag customdd slot_select no_block_display no_magisk_check;"
+      },
+      {
+        "line": 837,
+        "text": "if [ -d /postinstall/tmp -a ! \"$SLOT_SELECT\" ]; then"
+      },
+      {
+        "line": 838,
+        "text": "SLOT_SELECT=inactive;"
+      },
+      {
+        "line": 840,
+        "text": "case $SLOT_SELECT in"
+      },
+      {
+        "line": 1008,
+        "text": "do_check_boot_version() {"
+      },
+      {
+        "line": 1011,
+        "text": "# SKIPPED: do.check_boot_version=0 in anykernel.sh skips check"
+      },
+      {
+        "line": 1012,
+        "text": "if [ \"$(file_getprop anykernel.sh do.check_boot_version)\" != 1 ]; then"
+      },
+      {
+        "line": 1013,
+        "text": "ui_print \"  -> [SKIPPED] do.check_boot_version=0: version check SKIPPED.\""
+      },
+      {
+        "line": 1143,
+        "text": "do_check_boot_version;"
+      }
+    ]
+  },
+  "script_semantics_fully_audited": false,
+  "runtime_image_identity_verified": false,
+  "runtime_bbg_verified": false,
+  "abi_verified": false,
+  "deployable": false
+}
