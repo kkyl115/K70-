@@ -35,7 +35,7 @@ def export(repo):
             'source_worktree_snapshot':True,'branch':branch,'files':included,
             'excluded':['evidence/user-supplied','untracked build outputs, backups, credentials'],
             'pushed':False}
-    (destination/'delivery-manifest.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    (destination/'delivery-manifest.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
     return len(included)
 
 if __name__=='__main__':

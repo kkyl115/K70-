@@ -4,6 +4,6 @@
   "all_manifest_sha256_verified": true,
   "same_input_packaging_reproducible": true,
   "kernel_build_reproducible": false,
-  "devkit_sha256": "f2bb26b7aae34f4340158dc1a2b5a71a45193b6de6c2cfa444ad7bc6bbd06368",
+  "devkit_sha256": "bce6624daa4c738dac8b9dcf501e7532490af6065e0aada9a99bafcf613613c5",
   "flashable": false
 }

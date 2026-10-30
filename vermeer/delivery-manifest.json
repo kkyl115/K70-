@@ -1,5 +1,5 @@
 {
-  "source_commit": "7f7f1360a1206db340262a80c51588fd36f1c372",
+  "source_commit": "f29f53afcd04950ea56a0bb377bd1275e0642d13",
   "source_worktree_snapshot": true,
   "branch": "codex/vermeer-engineering",
   "files": [
@@ -245,11 +245,11 @@
     },
     {
       "path": "evidence/package-verification.json",
-      "sha256": "5500b27af5667df21e6fc6996993b3cdf8edfc3b16ecaf888dd5607c012acafc"
+      "sha256": "fc1209b7ac41ba9c54ecf8bd5e4badfb2803e537fa8f1038f6a5ac4c343b358d"
     },
     {
       "path": "evidence/packaging-result.json",
-      "sha256": "28ab065f97b3303914be591c1c627f95880a4d84e5b505e145599354b1a3cc73"
+      "sha256": "0b52f8a48fd2f9013e1bd923b2883a15e7a63f52d45f5dcd410f5547662de76b"
     },
     {
       "path": "evidence/received-kernel-20261031/anykernel-audit.json",
@@ -1025,7 +1025,7 @@
     },
     {
       "path": "scripts/export-delivery.py",
-      "sha256": "fd436566979554935294a2adfbefeab6aabda45ac9dba90ee5873bca9cdf5ef7"
+      "sha256": "e74b2773040f126ed317771447711683347abc6242c85c4071c598a10092ee54"
     },
     {
       "path": "scripts/kernel_audit.py",
@@ -1057,7 +1057,7 @@
     },
     {
       "path": "sources/upstream-lock.json",
-      "sha256": "ed73a80893f0cdaee4ed69c47a513704d27be926019d23e22697321ede0fc838"
+      "sha256": "ce68c1c7ffcf9c9d4db6cb4f23ec5a32ddabf63c775783f2c53abda111ecbdcc"
     },
     {
       "path": "tests/test_analyze_ab.py",
@@ -1101,7 +1101,7 @@
     },
     {
       "path": "toolchains/lock.json",
-      "sha256": "c3ac911cc46493c1c03cdf786c8dfe473648482c3dbc756021d6bfb08baee22f"
+      "sha256": "45006cfa066ad180a9fbfb6ae2747b858089ad17cf7d1678979a31a616050eb7"
     }
   ],
   "excluded": [
