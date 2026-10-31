@@ -1,0 +1,121 @@
+{
+  "observation_local_date": "2026-10-31",
+  "observation_utc": "2026-10-30T16:56:11Z",
+  "scope": "single_read_only_adb_shell_snapshot_no_root",
+  "raw_log_sha256": "ce8dbb99fa775d5f986c431dac1f73bb864b1db93ee134a1c99a1e91be8c9e05",
+  "raw_log_published": false,
+  "kernel_banner": "Linux version 5.15.178-android13-8-g362d545d31a5 (build-user@build-host) (Android (8508608, based on r450784e) clang version 14.0.7 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6), LLD 14.0.7) #1 SMP PREEMPT Thu Oct 29 21:59:53 UTC 2026",
+  "reported_uname": "5.15.178-android13-11-g8f7e75155ef2",
+  "banner_and_uname_differ": true,
+  "current_image_hash_verified": false,
+  "reported_slot": "_a",
+  "reported_selinux": "Enforcing",
+  "boot_security_properties": {
+    "reported": "green / locked / flash.locked=1",
+    "attested": false,
+    "note": "Conflicts with prior unlocked baseline; properties may be modified. Not proof of relock or AVB verification."
+  },
+  "lru_gen_enabled": "0x0000",
+  "tcp_congestion_control": "cubic",
+  "tcp_available_congestion_control": "reno cubic",
+  "top_app_cpuset": "0-7",
+  "background_cpuset": "0-2",
+  "cpu_topology_reported": [
+    {
+      "cpu": 0,
+      "reported_midr": "0x00000000411fd461",
+      "reported_part": "Cortex-A510",
+      "reported_capacity": "280"
+    },
+    {
+      "cpu": 1,
+      "reported_midr": "0x00000000411fd461",
+      "reported_part": "Cortex-A510",
+      "reported_capacity": "280"
+    },
+    {
+      "cpu": 2,
+      "reported_midr": "0x00000000411fd461",
+      "reported_part": "Cortex-A510",
+      "reported_capacity": "280"
+    },
+    {
+      "cpu": 3,
+      "reported_midr": "0x00000000411fd4d0",
+      "reported_part": "Cortex-A715",
+      "reported_capacity": "855"
+    },
+    {
+      "cpu": 4,
+      "reported_midr": "0x00000000411fd4d0",
+      "reported_part": "Cortex-A715",
+      "reported_capacity": "855"
+    },
+    {
+      "cpu": 5,
+      "reported_midr": "0x00000000412fd470",
+      "reported_part": "Cortex-A710",
+      "reported_capacity": "855"
+    },
+    {
+      "cpu": 6,
+      "reported_midr": "0x00000000412fd470",
+      "reported_part": "Cortex-A710",
+      "reported_capacity": "855"
+    },
+    {
+      "cpu": 7,
+      "reported_midr": "0x00000000411fd4e0",
+      "reported_part": "Cortex-X3",
+      "reported_capacity": "1024"
+    }
+  ],
+  "frequency_values_unit": "kHz",
+  "cpufreq_policies": [
+    {
+      "policy": 0,
+      "related_cpus": "0 1 2",
+      "scaling_governor": "walt",
+      "cpuinfo_min_freq": "307200",
+      "cpuinfo_max_freq": "2016000",
+      "scaling_min_freq": "672000",
+      "scaling_max_freq": null
+    },
+    {
+      "policy": 3,
+      "related_cpus": "3 4 5 6",
+      "scaling_governor": "walt",
+      "cpuinfo_min_freq": "499200",
+      "cpuinfo_max_freq": "2803200",
+      "scaling_min_freq": "499200",
+      "scaling_max_freq": "2188800"
+    },
+    {
+      "policy": 7,
+      "related_cpus": "7",
+      "scaling_governor": "walt",
+      "cpuinfo_min_freq": "595200",
+      "cpuinfo_max_freq": "3187200",
+      "scaling_min_freq": "595200",
+      "scaling_max_freq": "2092800"
+    }
+  ],
+  "observed_vendor_module_names": [
+    "migt",
+    "msm_performance",
+    "sched_walt",
+    "metis",
+    "mi_schedule",
+    "qcom_cpufreq_hw"
+  ],
+  "memory": {
+    "MemTotal_KiB": 15553528,
+    "MemAvailable_KiB": 2361212,
+    "SwapTotal_KiB": 16777212,
+    "SwapFree_KiB": 6185216
+  },
+  "bbg_active_lsm": "unknown_unreadable",
+  "zram_physical_allocation": "unknown_unreadable",
+  "performance_benchmark": false,
+  "device_settings_changed": false
+}

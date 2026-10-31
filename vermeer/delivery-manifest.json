@@ -1,5 +1,5 @@
 {
-  "source_commit": "f29f53afcd04950ea56a0bb377bd1275e0642d13",
+  "source_commit": "7e9248b833cc76d86473366d5aaf13f84666b6c5",
   "source_worktree_snapshot": true,
   "branch": "codex/vermeer-engineering",
   "files": [
@@ -21,7 +21,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "0c9f8962ebfedbcc61102c39563bc889bb8ad70759a1fc2be211dfa573e75b46"
+      "sha256": "c3ae668f532e37c4aa6b9b5de2957b91494bf7f15b8a3f490ba6c9209b2608d6"
     },
     {
       "path": "bootguard/bootguard.py",
@@ -29,7 +29,7 @@
     },
     {
       "path": "bootguard/preflight/collect-readonly.sh",
-      "sha256": "19c7bd49fc419da46c6f5291bf1acd77a7612c89284772f2412ca95a31fe7fb2"
+      "sha256": "01fc779664673e5a1db55449ce45ad1bef27be49a6ae32a9d1b9aa23b4a588c2"
     },
     {
       "path": "bootguard/recovery/update-binary",
@@ -84,6 +84,10 @@
       "sha256": "2c6bd45ff6c2676b9f7279346f074a64e77302bb311f4e965b58e6ac2e1b1340"
     },
     {
+      "path": "docs/\u4e0b\u4e00\u9636\u6bb5\u6280\u672f\u4e0e\u8c03\u53c2\u95e8\u7981.md",
+      "sha256": "6f2abd60722d65749621acbeb98d36cd0e7513e996c482f2845c26bbb1335afc"
+    },
+    {
       "path": "docs/\u4ea4\u4ed8\u4ed3\u5e93\u5ba1\u67e5.md",
       "sha256": "007fd28918bd926cc8f3dc6913b3fb33bc8021e0ac70e235c97f8e89cf358098"
     },
@@ -93,7 +97,7 @@
     },
     {
       "path": "docs/\u5f53\u524d\u5185\u6838\u6838\u9a8c-20261031.md",
-      "sha256": "fac4b67be4f0613204a09b3a79ce87066ff84050c65d9b8065d3ec7ed61d3992"
+      "sha256": "7dd191220e042ceeabaa0b4b437084acfb050195a4d81445077bb75f2599d8fc"
     },
     {
       "path": "docs/\u6280\u672f\u8def\u7ebf\u4e0e\u65b0\u60f3\u6cd5.md",
@@ -109,7 +113,7 @@
     },
     {
       "path": "docs/\u9a8c\u6536\u62a5\u544a.md",
-      "sha256": "23590738fec0319b65dc854111ea389e8cf595b8b06a7c8a57646363fa4b60b7"
+      "sha256": "559da5f4eaeb0adc871a1803eecc926db4d1673a2144d950f5b4ecd052065c55"
     },
     {
       "path": "evidence/abi-tool-install.log",
@@ -133,7 +137,7 @@
     },
     {
       "path": "evidence/automated-tests.log",
-      "sha256": "ce96452310022015e52cfbc71cb317aaa8fe8778e0ad4ddb509496e6f47c7f8b"
+      "sha256": "6cce678d8a0dddc03b2fd094a4c9fa432cab36e2504ce8d510e965d6e1c64afd"
     },
     {
       "path": "evidence/baseline-attempt1-unreliable-shell-exit.json",
@@ -208,6 +212,10 @@
       "sha256": "eb607e6c33f0dedfffedd174ce2b316358a4269958f4d4a5ab58f49997a76816"
     },
     {
+      "path": "evidence/device-observation-20261031.json",
+      "sha256": "5a26317c01c23ff4d45cdc671aaed0e253b587036c5df50f321ded7f5300568a"
+    },
+    {
       "path": "evidence/feature-audit-current-config.json",
       "sha256": "afa3e222b96e770e9a43e364ef14f5cebbfb393a25129ccaa55db089a3df06bc"
     },
@@ -245,11 +253,11 @@
     },
     {
       "path": "evidence/package-verification.json",
-      "sha256": "fc1209b7ac41ba9c54ecf8bd5e4badfb2803e537fa8f1038f6a5ac4c343b358d"
+      "sha256": "0362146b4abf440416beb687708a924675b34be7a76c7b754ebfdfa3836b081d"
     },
     {
       "path": "evidence/packaging-result.json",
-      "sha256": "0b52f8a48fd2f9013e1bd923b2883a15e7a63f52d45f5dcd410f5547662de76b"
+      "sha256": "8f2a6db04ba801da24a2b431546860b4aefa64dd8fc6438daa57aa4d3598a97a"
     },
     {
       "path": "evidence/received-kernel-20261031/anykernel-audit.json",
@@ -1016,6 +1024,10 @@
       "sha256": "08f4c8daeb3a713acaf660992d2b31d91a9b2d6f310c3315c66f8d1dc105903a"
     },
     {
+      "path": "scripts/collect-adb-readonly.py",
+      "sha256": "fc6e1d0a091f674f0b57e28372b1d9f24bf3b065cf5d4fa54d46e6cf83f04118"
+    },
+    {
       "path": "scripts/control-build.py",
       "sha256": "53c8c90e2f6ed2e4d7a07c54290f34a9a12ecc752c96cfc4a0c300227a61b574"
     },
@@ -1058,6 +1070,10 @@
     {
       "path": "sources/upstream-lock.json",
       "sha256": "ce68c1c7ffcf9c9d4db6cb4f23ec5a32ddabf63c775783f2c53abda111ecbdcc"
+    },
+    {
+      "path": "tests/test_adb_readonly.py",
+      "sha256": "19740d231e7c9dd69bad72a3b827e303bc29a71d5c69052ef0c3f6e5aa99a079"
     },
     {
       "path": "tests/test_analyze_ab.py",

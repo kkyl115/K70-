@@ -1,7 +1,8 @@
 # Vermeer Ultimate Kernel + BootGuard
 
-Redmi K70 / vermeer 的离线工程工作区。**当前不是稳定内核或可刷写安装包。** 没有操作手机、覆盖 A 槽、修改槽位或关闭 AVB/SELinux。
+Redmi K70 / vermeer 的离线工程工作区。**当前不是稳定内核或可刷写安装包。** 已在机主授权后做只读采集；没有覆盖 A 槽、修改槽位、调整手机参数或关闭 AVB/SELinux。
 
+- [下一阶段技术与调参门禁](docs/下一阶段技术与调参门禁.md)：首轮实机只读数据、WALT 三策略域、MGLRU 关闭状态和可实现方向。
 - [2026-10-31 当前内核核验](docs/当前内核核验-20261031.md)：新 ZIP 的 BBG/LZ4KD/KPM 实证、NoActive 配套关系和版本差异。
 - [验收报告](docs/验收报告.md)：分别说明代码、编译、自动化测试、模拟恢复与实机状态。
 - [技术路线与新想法](docs/技术路线与新想法.md)：BBG、BBRv3、NTSync、WireGuard、DroidSpaces、ZRAM、DAMON 等用途和真实限制。

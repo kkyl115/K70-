@@ -4,12 +4,25 @@
 printf '%s\n' 'BootGuard read-only collection v2; review output before sharing. No phone settings are changed.'
 date -u
 uname -r
-for prop in ro.product.device ro.product.vendor.device ro.build.version.incremental ro.build.version.release ro.boot.slot_suffix ro.virtual_ab.enabled ro.boot.verifiedbootstate ro.boot.vbmeta.device_state ro.boot.flash.locked sys.boot_completed; do
+for prop in ro.product.device ro.product.vendor.device ro.build.version.incremental ro.build.version.release ro.boot.slot_suffix ro.virtual_ab.enabled ro.boot.verifiedbootstate ro.boot.vbmeta.device_state ro.boot.flash.locked sys.boot_completed ro.lmk.use_psi ro.lmk.thrashing_limit ro.lmk.swap_free_low_percentage; do
   printf '%s=' "$prop"
   getprop "$prop"
 done
+printf '\n%s\n' 'Qualcomm WALT tunables (only known control values are read):'
+for path in /sys/devices/system/cpu/cpufreq/policy*/walt/up_rate_limit_us /sys/devices/system/cpu/cpufreq/policy*/walt/down_rate_limit_us /sys/devices/system/cpu/cpufreq/policy*/walt/hispeed_load /sys/devices/system/cpu/cpufreq/policy*/walt/hispeed_freq /sys/devices/system/cpu/cpufreq/walt/up_rate_limit_us /sys/devices/system/cpu/cpufreq/walt/down_rate_limit_us /sys/devices/system/cpu/cpufreq/walt/hispeed_load /sys/devices/system/cpu/cpufreq/walt/hispeed_freq; do
+  printf '\n%s\n' "$path"
+  if [ -r "$path" ]; then cat "$path"; else printf '%s\n' 'UNKNOWN: absent or unreadable'; fi
+done
+printf '\n%s\n' 'Scheduling, I/O and thermal observation; no control nodes are written:'
+for path in /dev/cpuset/top-app/cpus /dev/cpuset/foreground/cpus /dev/cpuset/background/cpus /dev/cpuctl/top-app/cpu.uclamp.min /dev/cpuctl/top-app/cpu.uclamp.max /dev/cpuctl/background/cpu.uclamp.max /sys/fs/cgroup/top-app/cpu.uclamp.min /sys/fs/cgroup/top-app/cpu.uclamp.max /sys/devices/system/cpu/cpufreq/policy*/cpuinfo_min_freq /sys/devices/system/cpu/cpufreq/policy*/cpuinfo_max_freq /sys/devices/system/cpu/cpufreq/policy*/schedutil/rate_limit_us /sys/devices/system/cpu/cpufreq/policy*/schedutil/up_rate_limit_us /sys/devices/system/cpu/cpufreq/policy*/schedutil/down_rate_limit_us /sys/block/sd*/queue/scheduler /sys/block/sd*/queue/read_ahead_kb /sys/class/thermal/thermal_zone*/type /sys/class/thermal/thermal_zone*/temp /sys/class/power_supply/battery/status /sys/class/power_supply/battery/temp; do
+  printf '\n%s\n' "$path"
+  if [ -r "$path" ]; then cat "$path"; else printf '%s\n' 'UNKNOWN: absent or unreadable'; fi
+done
 getenforce
-cat /proc/version /proc/pressure/cpu /proc/pressure/memory /proc/pressure/io 2>/dev/null
+for path in /proc/version /proc/uptime /proc/pressure/cpu /proc/pressure/memory /proc/pressure/io; do
+  printf '\n%s\n' "$path"
+  if [ -r "$path" ]; then cat "$path"; else printf '%s\n' 'UNKNOWN: absent or unreadable'; fi
+done
 # Do not print the complete cmdline/bootconfig: those may contain serial numbers.
 tr ' ' '\n' < /proc/cmdline 2>/dev/null | grep -E '^androidboot\.(slot|slot_suffix|verifiedbootstate|vbmeta.device_state)='
 grep -E '^androidboot\.(slot|slot_suffix|verifiedbootstate|vbmeta.device_state)[[:space:]]*=' /proc/bootconfig 2>/dev/null
