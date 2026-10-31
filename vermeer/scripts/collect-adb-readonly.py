@@ -53,6 +53,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--adb', default=shutil.which('adb'))
     p.add_argument('--root', action='store_true', help='ask existing su to run the read-only collector')
+    p.add_argument('--pressure', action='store_true', help='four read-only pressure samples, ten seconds apart')
     args = p.parse_args()
     if not args.adb:
         p.error('adb not found')
@@ -77,7 +78,8 @@ def main():
         require_vermeer(model)
         if args.root:
             require_root(adb('-s', serial, 'shell', 'su -c id', timeout=15).decode('utf-8', 'strict'))
-        script = (ROOT / 'bootguard/preflight/collect-readonly.sh').read_bytes().replace(b'\r\n', b'\n')
+        payload_name = 'collect-pressure-readonly.sh' if args.pressure else 'collect-readonly.sh'
+        script = (ROOT / 'bootguard/preflight' / payload_name).read_bytes().replace(b'\r\n', b'\n')
         stdout = adb('-s', serial, 'shell', 'su -c sh' if args.root else 'sh',
                      payload=script, timeout=60)
         stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
@@ -86,6 +88,8 @@ def main():
         (destination / 'runtime.txt').write_bytes(stdout)
         record = {'collected_utc': stamp, 'device_model_checked': 'vermeer',
                   'root_read_requested': args.root,
+                  'collection_kind': 'pressure_4x10s' if args.pressure else 'runtime_snapshot',
+                  'collection_end_marker_seen': stdout.rstrip().endswith(b'BOOTGUARD_READ_ONLY_COMPLETE'),
                   'collector_sha256': hashlib.sha256(script).hexdigest(),
                   'output_sha256': hashlib.sha256(stdout).hexdigest(),
                   'output_bytes': len(stdout), 'phone_settings_changed': False,
@@ -94,7 +98,7 @@ def main():
         (destination / 'receipt.json').write_text(json.dumps(record, indent=2) + '\n',
                                                  encoding='utf-8', newline='\n')
         print(json.dumps({'output_directory': str(destination), **record}, ensure_ascii=False))
-        return 0
+        return 0 if record['collection_end_marker_seen'] else 2
     except subprocess.TimeoutExpired:
         print(json.dumps({'error': 'ADB request timed out; check device authorization',
                           'collection_completed': False}))

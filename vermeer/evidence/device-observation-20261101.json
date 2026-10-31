@@ -1,0 +1,157 @@
+{
+  "observation_local_date": "2026-11-01",
+  "timezone": "Asia/Singapore",
+  "scope": "authorized_root_read_only_runtime_and_short_uncontrolled_pressure_capture",
+  "raw_logs_published": false,
+  "snapshot_receipt": {
+    "collected_utc": "20261031T164651559363Z",
+    "device_model_checked": "vermeer",
+    "root_read_requested": true,
+    "collector_sha256": "01fc779664673e5a1db55449ce45ad1bef27be49a6ae32a9d1b9aa23b4a588c2",
+    "output_sha256": "6b1de5d9c33b673ade4431aa2bfc2b572f110853edcd4008e5cda1673d47357d",
+    "output_bytes": 50000,
+    "phone_settings_changed": false,
+    "phone_files_uploaded": false,
+    "published": false,
+    "abi_verified": false,
+    "deployable": false
+  },
+  "diagnostic_receipt": {
+    "collected_utc": "20261031T164937169825Z",
+    "device_model_checked": "vermeer",
+    "root_read_requested": true,
+    "collection_kind": "runtime_snapshot",
+    "collection_end_marker_seen": true,
+    "collector_sha256": "ddbd397a68395f34f98a3b3c06be40412213c42fdd2ec0bb84831bc49a2e590a",
+    "output_sha256": "a46a24b19b578bf07dc0c964f768500cbfc261884b8744a2de4f553861c5fc8e",
+    "output_bytes": 52709,
+    "phone_settings_changed": false,
+    "phone_files_uploaded": false,
+    "published": false,
+    "abi_verified": false,
+    "deployable": false
+  },
+  "config_comparison": {
+    "running_config_sha256": "e1a14df5fc96ed03b4eb61164ca43a636fd2f60280d42902836b6a7761ba55bc",
+    "received_zip_config_sha256": "e1a14df5fc96ed03b4eb61164ca43a636fd2f60280d42902836b6a7761ba55bc",
+    "identical": true,
+    "whole_image_identity_proved": false
+  },
+  "bbg": {
+    "compiled": true,
+    "runtime_execution_evidence": "kernel log records baseband_guard classifying processes by SELinux domain",
+    "active_lsm_interface": "absent; no securityfs mount visible in collector namespace",
+    "write_denial_test_performed": false,
+    "complete_protection_verified": false,
+    "block_boot_config": false,
+    "block_recovery_config": false
+  },
+  "mglru": {
+    "enabled": "0x0000",
+    "min_ttl_ms": 0
+  },
+  "damon_reclaim_enabled": "N",
+  "zram": {
+    "active_algorithm": "lz4kd",
+    "algorithm_list": "lzo lzo-rle lz4 lz4hc lz4k lz4k_oplus [lz4kd] deflate 842 zstd ",
+    "disksize_bytes": 17179869184,
+    "source": "caller_supplied_mm_stat",
+    "unit": "bytes",
+    "logical_original_bytes": 10645270528,
+    "compressed_payload_bytes": 3950292660,
+    "allocator_memory_bytes": 4120825856,
+    "payload_compression_ratio": 2.69480553574985,
+    "effective_ratio_including_allocator": 2.5832857053399345,
+    "net_memory_saved_bytes": 6524444672,
+    "trailing_counters_raw": [
+      "0",
+      "4237991936",
+      "172248",
+      "1235169",
+      "198880",
+      "976345"
+    ],
+    "notes": [
+      "disksize is logical capacity, not preallocated RAM",
+      "swap used is not the physical compressed memory size",
+      "one snapshot cannot establish latency, energy, or algorithm superiority"
+    ],
+    "performance_improvement_verified": false
+  },
+  "vm": {
+    "swappiness": 100,
+    "watermark_scale_factor": 46
+  },
+  "cpufreq": [
+    {
+      "policy": 0,
+      "related_cpus": "0 1 2",
+      "governor": "walt",
+      "up_rate_limit_us": 0,
+      "down_rate_limit_us": 0,
+      "hispeed_load": 90,
+      "hispeed_freq": 1267200,
+      "hispeed_freq_unit": "kHz"
+    },
+    {
+      "policy": 3,
+      "related_cpus": "3 4 5 6",
+      "governor": "walt",
+      "up_rate_limit_us": 0,
+      "down_rate_limit_us": 0,
+      "hispeed_load": 90,
+      "hispeed_freq": 1555200,
+      "hispeed_freq_unit": "kHz"
+    },
+    {
+      "policy": 7,
+      "related_cpus": "7",
+      "governor": "walt",
+      "up_rate_limit_us": 0,
+      "down_rate_limit_us": 0,
+      "hispeed_load": 90,
+      "hispeed_freq": 1728000,
+      "hispeed_freq_unit": "kHz"
+    }
+  ],
+  "io_schedulers": {
+    "sda": {
+      "available_and_active": "mq-deadline kyber bfq [cpq] none",
+      "read_ahead_kb": 512
+    },
+    "sdb": {
+      "available_and_active": "mq-deadline kyber [bfq] cpq none",
+      "read_ahead_kb": 512
+    },
+    "sdc": {
+      "available_and_active": "mq-deadline kyber [bfq] cpq none",
+      "read_ahead_kb": 512
+    },
+    "sdd": {
+      "available_and_active": "mq-deadline kyber [bfq] cpq none",
+      "read_ahead_kb": 512
+    },
+    "sde": {
+      "available_and_active": "mq-deadline kyber [bfq] cpq none",
+      "read_ahead_kb": 512
+    },
+    "sdf": {
+      "available_and_active": "mq-deadline kyber [bfq] cpq none",
+      "read_ahead_kb": 512
+    }
+  },
+  "bootctl": {
+    "current_slot": 0,
+    "slot_count": 2,
+    "queries_exit_codes": {
+      "is-slot-bootable_0": 0,
+      "is-slot-marked-successful_0": 0,
+      "is-slot-bootable_1": 0,
+      "is-slot-marked-successful_1": 0
+    },
+    "b_slot_current_os_boot_proved": false,
+    "retry_count_proved": false
+  },
+  "device_settings_changed": false,
+  "image_built_or_deployed": false
+}

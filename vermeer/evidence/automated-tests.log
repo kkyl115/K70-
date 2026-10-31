@@ -8,6 +8,7 @@ test_paired_math (test_analyze_ab.ABTests.test_paired_math) ... ok
 test_unpaired_rejected (test_analyze_ab.ABTests.test_unpaired_rejected) ... ok
 test_crc_corruption_is_not_a_pass (test_anykernel_audit.AnyKernelAuditTests.test_crc_corruption_is_not_a_pass) ... ok
 test_member_size_bound (test_anykernel_audit.AnyKernelAuditTests.test_member_size_bound) ... ok
+test_original_zip_name_is_checked_before_host_normalization (test_anykernel_audit.AnyKernelAuditTests.test_original_zip_name_is_checked_before_host_normalization) ... ok
 test_reject_ambiguous_installer (test_anykernel_audit.AnyKernelAuditTests.test_reject_ambiguous_installer) ... ok
 test_reject_case_collision (test_anykernel_audit.AnyKernelAuditTests.test_reject_case_collision) ... ok
 test_reject_symlink (test_anykernel_audit.AnyKernelAuditTests.test_reject_symlink) ... ok
@@ -48,6 +49,13 @@ test_truncated (test_kernel_audit.AuditTests.test_truncated) ... ok
 test_unknown (test_kernel_audit.AuditTests.test_unknown) ... ok
 test_corrupt_compressed_module_is_failure (test_module_inventory.ModuleInventoryTests.test_corrupt_compressed_module_is_failure) ... ok
 test_empty_inventory_cannot_pass (test_module_inventory.ModuleInventoryTests.test_empty_inventory_cannot_pass) ... ok
+test_delta_units_and_no_cpu_full_claim (test_pressure_analysis.PressureTests.test_delta_units_and_no_cpu_full_claim) ... ok
+test_impossible_psi_is_unknown (test_pressure_analysis.PressureTests.test_impossible_psi_is_unknown) ... ok
+test_missing_pressure_is_unknown (test_pressure_analysis.PressureTests.test_missing_pressure_is_unknown) ... ok
+test_nonfinite_time_is_refused (test_pressure_analysis.PressureTests.test_nonfinite_time_is_refused) ... ok
+test_reboot_is_refused (test_pressure_analysis.PressureTests.test_reboot_is_refused) ... ok
+test_reset_counter_is_unknown (test_pressure_analysis.PressureTests.test_reset_counter_is_unknown) ... ok
+test_truncated_capture_is_refused (test_pressure_analysis.PressureTests.test_truncated_capture_is_refused) ... ok
 test_normal_a_noop (test_recovery_noop.RecoveryNoopTests.test_normal_a_noop) ... ok
 test_wrong_product (test_recovery_noop.RecoveryNoopTests.test_wrong_product) ... ok
 test_wrong_slot (test_recovery_noop.RecoveryNoopTests.test_wrong_slot) ... ok
@@ -70,6 +78,6 @@ test_empty_and_same_page_counters (test_zram_analysis.ZramAnalysisTests.test_emp
 test_negative_savings_are_preserved (test_zram_analysis.ZramAnalysisTests.test_negative_savings_are_preserved) ... ok
 
 ----------------------------------------------------------------------
-Ran 70 tests in 0.576s
+Ran 78 tests in 0.562s
 
 OK

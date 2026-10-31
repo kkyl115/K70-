@@ -19,6 +19,12 @@ for path in /dev/cpuset/top-app/cpus /dev/cpuset/foreground/cpus /dev/cpuset/bac
   if [ -r "$path" ]; then cat "$path"; else printf '%s\n' 'UNKNOWN: absent or unreadable'; fi
 done
 getenforce
+printf '\n%s\n' 'BBG passive diagnostics; no mount and no write probe:'
+ls -ld /sys/kernel/security /sys/kernel/security/lsm 2>&1
+grep ' securityfs ' /proc/mounts 2>/dev/null
+dmesg 2>/dev/null | grep -i -E 'baseband_guard|baseband.guard|\[bbg\]' | tail -n 20
+printf '\n%s\n' '/sys/kernel/mm/lru_gen/min_ttl_ms'
+cat /sys/kernel/mm/lru_gen/min_ttl_ms 2>&1
 for path in /proc/version /proc/uptime /proc/pressure/cpu /proc/pressure/memory /proc/pressure/io; do
   printf '\n%s\n' "$path"
   if [ -r "$path" ]; then cat "$path"; else printf '%s\n' 'UNKNOWN: absent or unreadable'; fi
@@ -43,11 +49,17 @@ fi
 printf '\n%s\n' 'NoActive/ReKernel-X: record app mode/version manually; KPM may not appear in /proc/modules.'
 printf '%s\n' 'Missing baseband_guard in an unreadable LSM list does not prove BBG disabled. No block write probe is permitted.'
 if command -v bootctl >/dev/null 2>&1; then
+  printf '\n%s\n' 'bootctl get-current-slot:'
   bootctl get-current-slot
+  printf '%s\n' 'bootctl get-number-slots:'
   bootctl get-number-slots
-  bootctl is-slot-bootable 0
-  bootctl is-slot-marked-successful 0
-  bootctl is-slot-bootable 1
-  bootctl is-slot-marked-successful 1
+  for slot in 0 1; do
+    for query in is-slot-bootable is-slot-marked-successful; do
+      bootctl "$query" "$slot"
+      result=$?
+      printf 'bootctl %s %s exit=%s (raw status; validate HAL semantics)\n' "$query" "$slot" "$result"
+    done
+  done
 fi
 printf '%s\n' 'UNKNOWN until separately verified: snapshot merge, native retry count, early mark-success timing, complete partition hashes, AVB descriptors, current dlkm CRCs.'
+printf '%s\n' 'BOOTGUARD_READ_ONLY_COMPLETE'

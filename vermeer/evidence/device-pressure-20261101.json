@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "sample_count": 4,
+  "sample_read_duration_seconds": [
+    0.43000000000029104,
+    0.43000000000029104,
+    0.42000000000189175,
+    0.5599999999976717
+  ],
+  "same_boot_verified": true,
+  "windows": [
+    {
+      "from_sample": 0,
+      "to_sample": 1,
+      "elapsed_seconds_approx": 10.5099999999984,
+      "psi": {
+        "cpu": {
+          "some": {
+            "stall_us": 1591417,
+            "approx_wall_time_percent": 15.14193149381772
+          }
+        },
+        "memory": {
+          "some": {
+            "stall_us": 82059,
+            "approx_wall_time_percent": 0.7807706945767126
+          },
+          "full": {
+            "stall_us": 80745,
+            "approx_wall_time_percent": 0.7682683158897459
+          }
+        },
+        "io": {
+          "some": {
+            "stall_us": 114714,
+            "approx_wall_time_percent": 1.0914747859183394
+          },
+          "full": {
+            "stall_us": 80684,
+            "approx_wall_time_percent": 0.7676879162703358
+          }
+        }
+      },
+      "vmstat": {
+        "allocstall_dma32": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_movable": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_normal": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "compact_stall": {
+          "delta": 2,
+          "per_second": 0.19029495718366363
+        },
+        "oom_kill": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgmajfault": {
+          "delta": 2568,
+          "per_second": 244.33872502382408
+        },
+        "pgscan_anon": {
+          "delta": 64316,
+          "per_second": 6119.505233112254
+        },
+        "pgscan_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_direct_throttle": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_file": {
+          "delta": 290356,
+          "per_second": 27626.641294009918
+        },
+        "pgscan_kswapd": {
+          "delta": 354672,
+          "per_second": 33746.14652712217
+        },
+        "pgsteal_anon": {
+          "delta": 3619,
+          "per_second": 344.3387250238393
+        },
+        "pgsteal_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgsteal_file": {
+          "delta": 274583,
+          "per_second": 26125.880114180953
+        },
+        "pgsteal_kswapd": {
+          "delta": 278202,
+          "per_second": 26470.218839204794
+        },
+        "pswpin": {
+          "delta": 2452,
+          "per_second": 233.30161750717158
+        },
+        "pswpout": {
+          "delta": 3536,
+          "per_second": 336.44148430071726
+        },
+        "workingset_refault_anon": {
+          "delta": 2498,
+          "per_second": 237.67840152239586
+        },
+        "workingset_refault_file": {
+          "delta": 51429,
+          "per_second": 4893.339676499318
+        }
+      },
+      "swap": {
+        "pswpin_MiB_per_second": 0.911334443387389,
+        "pswpout_MiB_per_second": 1.3142245480496768
+      },
+      "issues": []
+    },
+    {
+      "from_sample": 1,
+      "to_sample": 2,
+      "elapsed_seconds_approx": 10.49500000000262,
+      "psi": {
+        "cpu": {
+          "some": {
+            "stall_us": 1401427,
+            "approx_wall_time_percent": 13.35328251548023
+          }
+        },
+        "memory": {
+          "some": {
+            "stall_us": 63077,
+            "approx_wall_time_percent": 0.6010195331108552
+          },
+          "full": {
+            "stall_us": 55266,
+            "approx_wall_time_percent": 0.5265936160074912
+          }
+        },
+        "io": {
+          "some": {
+            "stall_us": 491279,
+            "approx_wall_time_percent": 4.681076703190827
+          },
+          "full": {
+            "stall_us": 452920,
+            "approx_wall_time_percent": 4.315578847068957
+          }
+        }
+      },
+      "vmstat": {
+        "allocstall_dma32": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_movable": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_normal": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "compact_stall": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "oom_kill": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgmajfault": {
+          "delta": 17869,
+          "per_second": 1702.6202953783268
+        },
+        "pgscan_anon": {
+          "delta": 5747,
+          "per_second": 547.5940924248276
+        },
+        "pgscan_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_direct_throttle": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_file": {
+          "delta": 41894,
+          "per_second": 3991.8056217236344
+        },
+        "pgscan_kswapd": {
+          "delta": 47641,
+          "per_second": 4539.399714148462
+        },
+        "pgsteal_anon": {
+          "delta": 2670,
+          "per_second": 254.40686040965542
+        },
+        "pgsteal_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgsteal_file": {
+          "delta": 39884,
+          "per_second": 3800.2858504040064
+        },
+        "pgsteal_kswapd": {
+          "delta": 42554,
+          "per_second": 4054.6927108136615
+        },
+        "pswpin": {
+          "delta": 17635,
+          "per_second": 1680.3239637918628
+        },
+        "pswpout": {
+          "delta": 2660,
+          "per_second": 253.4540257264732
+        },
+        "workingset_refault_anon": {
+          "delta": 17634,
+          "per_second": 1680.2286803235445
+        },
+        "workingset_refault_file": {
+          "delta": 38336,
+          "per_second": 3652.787041447397
+        }
+      },
+      "swap": {
+        "pswpin_MiB_per_second": 6.563765483561964,
+        "pswpout_MiB_per_second": 0.9900547879940359
+      },
+      "issues": []
+    },
+    {
+      "from_sample": 2,
+      "to_sample": 3,
+      "elapsed_seconds_approx": 10.559999999997672,
+      "psi": {
+        "cpu": {
+          "some": {
+            "stall_us": 1372591,
+            "approx_wall_time_percent": 12.9980208333362
+          }
+        },
+        "memory": {
+          "some": {
+            "stall_us": 14184,
+            "approx_wall_time_percent": 0.13431818181821142
+          },
+          "full": {
+            "stall_us": 12893,
+            "approx_wall_time_percent": 0.12209280303032995
+          }
+        },
+        "io": {
+          "some": {
+            "stall_us": 482453,
+            "approx_wall_time_percent": 4.56868371212222
+          },
+          "full": {
+            "stall_us": 451246,
+            "approx_wall_time_percent": 4.2731628787888205
+          }
+        }
+      },
+      "vmstat": {
+        "allocstall_dma32": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_movable": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "allocstall_normal": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "compact_stall": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "oom_kill": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgmajfault": {
+          "delta": 3348,
+          "per_second": 317.0454545455244
+        },
+        "pgscan_anon": {
+          "delta": 226,
+          "per_second": 21.40151515151987
+        },
+        "pgscan_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_direct_throttle": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgscan_file": {
+          "delta": 1850,
+          "per_second": 175.18939393943256
+        },
+        "pgscan_kswapd": {
+          "delta": 2076,
+          "per_second": 196.59090909095244
+        },
+        "pgsteal_anon": {
+          "delta": 63,
+          "per_second": 5.965909090910406
+        },
+        "pgsteal_direct": {
+          "delta": 0,
+          "per_second": 0.0
+        },
+        "pgsteal_file": {
+          "delta": 1822,
+          "per_second": 172.53787878791684
+        },
+        "pgsteal_kswapd": {
+          "delta": 1885,
+          "per_second": 178.50378787882724
+        },
+        "pswpin": {
+          "delta": 3472,
+          "per_second": 328.7878787879513
+        },
+        "pswpout": {
+          "delta": 63,
+          "per_second": 5.965909090910406
+        },
+        "workingset_refault_anon": {
+          "delta": 3469,
+          "per_second": 328.5037878788603
+        },
+        "workingset_refault_file": {
+          "delta": 11832,
+          "per_second": 1120.4545454547924
+        }
+      },
+      "swap": {
+        "pswpin_MiB_per_second": 1.2843276515154347,
+        "pswpout_MiB_per_second": 0.023304332386368774
+      },
+      "issues": []
+    }
+  ],
+  "battery_status_by_sample": [
+    "Charging",
+    "Charging",
+    "Charging",
+    "Charging"
+  ],
+  "battery_temperature_deciC_by_sample": [
+    "419",
+    "418",
+    "418",
+    "417"
+  ],
+  "mglru_enabled_by_sample": [
+    "0x0000",
+    "0x0000",
+    "0x0000",
+    "0x0000"
+  ],
+  "controlled_benchmark": false,
+  "performance_improvement_verified": false,
+  "notes": [
+    "Reads are sequential; rates use sample midpoint uptime and are approximate.",
+    "PSI percentages are stall wall time, not CPU utilization or app latency.",
+    "Missing/reset counters remain unknown, never zero-filled.",
+    "VM counter units follow their names; pswpin/pswpout count pages.",
+    "Foreground workload, charging, temperature and module activity are uncontrolled."
+  ],
+  "raw_capture_sha256": "c5079d8794ae013d896f5eee0963401eafa0e475f1840b3092fd7737729523cd"
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "initial_windows_suite": {
+    "exit": 1,
+    "tests_run": 64,
+    "failures": 1,
+    "errors": 1,
+    "skipped": 5
+  },
+  "root_causes": [
+    "Windows Python ZipInfo normalizes backslashes while constructing fixtures and parsing archive names; original filename was not checked.",
+    "Native Windows PATH has no GCC for the POSIX VAS shared-library tests; full suite belongs in WSL/Linux."
+  ],
+  "fix": [
+    "Validate orig_filename against normalized filename and reject a mismatch, including NUL truncation.",
+    "Create malformed ZIP names at the byte level so writer normalization cannot invalidate the regression test.",
+    "Run full suite in existing Ubuntu WSL; no compiler installation or skipped-test substitution."
+  ],
+  "verification": {
+    "windows_anykernel": {
+      "passed": 9,
+      "failed": 0
+    },
+    "linux_full": {
+      "passed": 78,
+      "failed": 0,
+      "skipped": 0
+    },
+    "shell_syntax": "passed via scripts/test.sh"
+  },
+  "kernel_full_build": false
+}

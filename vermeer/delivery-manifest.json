@@ -1,5 +1,5 @@
 {
-  "source_commit": "7e9248b833cc76d86473366d5aaf13f84666b6c5",
+  "source_commit": "e199758640a1375188a23cbc78d87897ee72fdea",
   "source_worktree_snapshot": true,
   "branch": "codex/vermeer-engineering",
   "files": [
@@ -21,15 +21,19 @@
     },
     {
       "path": "README.md",
-      "sha256": "c3ae668f532e37c4aa6b9b5de2957b91494bf7f15b8a3f490ba6c9209b2608d6"
+      "sha256": "d815db34f667be2ea9dddc3adfb678de4389c626ac68604b27352dddd5452eed"
     },
     {
       "path": "bootguard/bootguard.py",
       "sha256": "8743895a51ad412057c56dc1a8e8b26dde1cb22292351f1fe3a8e1dc7987f048"
     },
     {
+      "path": "bootguard/preflight/collect-pressure-readonly.sh",
+      "sha256": "7acf689a459da64007e4b281b6825c0e1c4db76619989106a87c974dc9bf4f40"
+    },
+    {
       "path": "bootguard/preflight/collect-readonly.sh",
-      "sha256": "01fc779664673e5a1db55449ce45ad1bef27be49a6ae32a9d1b9aa23b4a588c2"
+      "sha256": "ddbd397a68395f34f98a3b3c06be40412213c42fdd2ec0bb84831bc49a2e590a"
     },
     {
       "path": "bootguard/recovery/update-binary",
@@ -85,7 +89,7 @@
     },
     {
       "path": "docs/\u4e0b\u4e00\u9636\u6bb5\u6280\u672f\u4e0e\u8c03\u53c2\u95e8\u7981.md",
-      "sha256": "6f2abd60722d65749621acbeb98d36cd0e7513e996c482f2845c26bbb1335afc"
+      "sha256": "bce0f0aaf1a8026729037f21dca3cadcdcd1455afde9ab1a890e062e4274fcfc"
     },
     {
       "path": "docs/\u4ea4\u4ed8\u4ed3\u5e93\u5ba1\u67e5.md",
@@ -94,6 +98,10 @@
     {
       "path": "docs/\u5185\u5b58\u7f51\u7edc\u5b58\u50a8\u5b89\u5168.md",
       "sha256": "32fd71d95cd96aeedf68c03401f648d80cbadd5bbddb236c30a6d758c9c5b749"
+    },
+    {
+      "path": "docs/\u5b9e\u673a\u6838\u9a8c\u4e0e\u4e0b\u4e00\u6b65-20261101.md",
+      "sha256": "51005aa211a764a0a50d291d726cc9914e25037c95011e0e6db0afc76daf8880"
     },
     {
       "path": "docs/\u5f53\u524d\u5185\u6838\u6838\u9a8c-20261031.md",
@@ -113,7 +121,7 @@
     },
     {
       "path": "docs/\u9a8c\u6536\u62a5\u544a.md",
-      "sha256": "559da5f4eaeb0adc871a1803eecc926db4d1673a2144d950f5b4ecd052065c55"
+      "sha256": "cd9788acfb9a4c08233f7d56d8eae536edd0c475fa60c2508ea330e7d9b691ce"
     },
     {
       "path": "evidence/abi-tool-install.log",
@@ -137,7 +145,7 @@
     },
     {
       "path": "evidence/automated-tests.log",
-      "sha256": "6cce678d8a0dddc03b2fd094a4c9fa432cab36e2504ce8d510e965d6e1c64afd"
+      "sha256": "9e203016dce15fd56fe3b651c69994a3f8ffb3fae6c17f8eebe0fa4fdf9e5c4f"
     },
     {
       "path": "evidence/baseline-attempt1-unreliable-shell-exit.json",
@@ -216,6 +224,14 @@
       "sha256": "5a26317c01c23ff4d45cdc671aaed0e253b587036c5df50f321ded7f5300568a"
     },
     {
+      "path": "evidence/device-observation-20261101.json",
+      "sha256": "a6bdf2b552c46ede65b134be51eaa06fafa4f4b54953ffb02eace9bbdacf1666"
+    },
+    {
+      "path": "evidence/device-pressure-20261101.json",
+      "sha256": "5db66b9f47ab33798894681911fc05bed26f385ad7511373126ff6d7e760527b"
+    },
+    {
       "path": "evidence/feature-audit-current-config.json",
       "sha256": "afa3e222b96e770e9a43e364ef14f5cebbfb393a25129ccaa55db089a3df06bc"
     },
@@ -253,11 +269,15 @@
     },
     {
       "path": "evidence/package-verification.json",
-      "sha256": "0362146b4abf440416beb687708a924675b34be7a76c7b754ebfdfa3836b081d"
+      "sha256": "0d2a2d7adc3b07abbd841b646f42a9a100c9ea851635669dc5264eea9a011691"
     },
     {
       "path": "evidence/packaging-result.json",
-      "sha256": "8f2a6db04ba801da24a2b431546860b4aefa64dd8fc6438daa57aa4d3598a97a"
+      "sha256": "73eb827d12e8cd7be9ef777e0b14556d45370fb8012e6c5a7f8400a138246847"
+    },
+    {
+      "path": "evidence/readonly-tools-validation-20261101.json",
+      "sha256": "e0a0939d29ebac0d3a097ceaf73d103155354ca8f919834f2adfc73033983f78"
     },
     {
       "path": "evidence/received-kernel-20261031/anykernel-audit.json",
@@ -976,6 +996,10 @@
       "sha256": "df29ec5b375be24ceb8f22d77ff32d97561499dbbdab7528084277645f95dc3a"
     },
     {
+      "path": "scripts/analyze-pressure.py",
+      "sha256": "28679f307fc3e1cd80345505fa9af6848637c8d690173b462400558b12de22a2"
+    },
+    {
       "path": "scripts/analyze-zram.py",
       "sha256": "9c4d2c1e676134a9db1e9bd7cec9c44d202050df0e0605218ac233eaa92b51ba"
     },
@@ -985,7 +1009,7 @@
     },
     {
       "path": "scripts/audit-anykernel.py",
-      "sha256": "3aa97c16920cf69bf044b06012c753338fa32f4db2e53b3ed8f353fee7a2f318"
+      "sha256": "a57cd7642ded5c7d63457e7e42347eaf1e7575fa5a64ccc80c8f9fe0f6e94d3b"
     },
     {
       "path": "scripts/audit-features.py",
@@ -1025,7 +1049,7 @@
     },
     {
       "path": "scripts/collect-adb-readonly.py",
-      "sha256": "fc6e1d0a091f674f0b57e28372b1d9f24bf3b065cf5d4fa54d46e6cf83f04118"
+      "sha256": "e366d6dadeca13f4da3fb63490af3613086a81ae5172f04f7f4fe8ed8871dd61"
     },
     {
       "path": "scripts/control-build.py",
@@ -1081,7 +1105,7 @@
     },
     {
       "path": "tests/test_anykernel_audit.py",
-      "sha256": "562eaf72fd13de8e646358fc512d68ada51d080f194e6b98df1b47099571d87b"
+      "sha256": "049e9e9caff7b8d92ec85432dbd9af5a7ce849f5b09bf488deb0ad2723d96735"
     },
     {
       "path": "tests/test_bootguard.py",
@@ -1098,6 +1122,10 @@
     {
       "path": "tests/test_module_inventory.py",
       "sha256": "bd751d69919b09951badfca4ee216a354b64338d14ee92b970437e4731cfc6ae"
+    },
+    {
+      "path": "tests/test_pressure_analysis.py",
+      "sha256": "1336e77e5d050e342b808ce39084f080e6b5d6f3cb4c847ac927516199284466"
     },
     {
       "path": "tests/test_recovery_noop.py",

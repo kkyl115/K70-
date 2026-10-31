@@ -1,8 +1,8 @@
 {
-  "source_files": 277,
+  "source_files": 284,
   "archives": {
     "BootGuard-AUDIT-NOOP.zip": "1e90366a76e3f9e1cdcf95b392eaa8e3320829d9955a956e2454186f3bb4eebf",
-    "Vermeer-Engineering-Devkit-NOT-FLASHABLE.zip": "a3c882d1d9a69a97f0d905de45f720ae4f1be7c744fd7ce473450388346b1dc1"
+    "Vermeer-Engineering-Devkit-NOT-FLASHABLE.zip": "f3043c430af7fc60a4f4febf2c73a188446a4e7e15af60e8daaf5962f71ca7b5"
   },
   "flashable_kernel_released": false
 }

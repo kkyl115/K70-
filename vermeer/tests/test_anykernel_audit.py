@@ -47,9 +47,20 @@ class AnyKernelAuditTests(unittest.TestCase):
         self.assertEqual(len(result['members']), 3)
 
     def test_reject_traversal_and_windows_aliases(self):
-        for name in ('../escape', '/absolute', 'x\\escape', 'C:/escape', 'x/../Image'):
+        for name in ('../escape', '/absolute', 'C:/escape', 'x/../Image'):
             with self.subTest(name=name), self.assertRaises(ValueError):
                 ak.audit(self.package(extra=[(name, b'bad')]))
+
+    def test_original_zip_name_is_checked_before_host_normalization(self):
+        for name in (b'x\\escape', b'x\x00escape'):
+            with self.subTest(name=name):
+                p = self.package(extra=[('x@escape', b'bad')])
+                # Change both ZIP header names, bypassing the writer's host
+                # normalization. Names have equal lengths; data CRC is intact.
+                payload = p.read_bytes()
+                self.assertEqual(payload.count(b'x@escape'), 2)
+                p.write_bytes(payload.replace(b'x@escape', name))
+                with self.assertRaises(ValueError): ak.audit(p)
 
     def test_reject_case_collision(self):
         with self.assertRaises(ValueError):

@@ -1,9 +1,10 @@
 {
-  "source_files_verified": 277,
-  "archive_crc_verified": true,
+  "date": "2026-11-01",
+  "archive_sha256": "f3043c430af7fc60a4f4febf2c73a188446a4e7e15af60e8daaf5962f71ca7b5",
+  "source_files_verified": 284,
+  "all_member_crcs_verified": true,
   "all_manifest_sha256_verified": true,
-  "same_input_packaging_reproducible": true,
-  "kernel_build_reproducible": false,
-  "devkit_sha256": "a3c882d1d9a69a97f0d905de45f720ae4f1be7c744fd7ce473450388346b1dc1",
+  "repeat_packaging_identical": true,
+  "kernel_build_reproducibility_verified": false,
   "flashable": false
 }

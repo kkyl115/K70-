@@ -31,6 +31,10 @@ def validate_members(infos):
     total, seen = 0, set()
     for info in infos:
         name = info.filename
+        # ZipInfo normalizes backslashes on Windows and strips NUL suffixes.
+        # Reject the original spelling too, before a hostile name can disappear.
+        if info.orig_filename != name:
+            raise ValueError('normalized or truncated member name refused')
         parts = name.rstrip('/').split('/')
         if (not name or '\\' in name or ':' in name or name.startswith('/')
                 or any(p in ('', '.', '..') for p in parts)
